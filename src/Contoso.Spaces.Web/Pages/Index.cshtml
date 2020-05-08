@@ -1,0 +1,119 @@
+﻿@page
+@model IndexModel
+<div class="jumbotron jumbotron-fluid bg-dark mb-0" alt="Photo by Benjamin Child on Unsplash - https://unsplash.com/photos/GWe0dlVD9e0">
+    <div class="container text-white">
+        <h1 class="display-2 text-white d-none d-lg-block">
+            Elevate your work style
+        </h1>
+        <h1 class="display-4 text-white text-center d-lg-none">
+            Elevate your work style
+        </h1>
+        <p class="lead text-center">
+            Transform the way you work, meet clients and collaborate with an inspiring and unique office experience.
+        </p>
+        <hr class="my-4">
+        <a class="btn btn-primary btn-lg" href="#" role="button">Explore our locations</a>
+    </div>
+</div>
+<main class="container">
+    <div class="card bg-dark">
+        <div class="card-body">
+            <h5 class="card-title display-4 text-center">
+                Featured Locations
+            </h5>
+        </div>
+    </div>
+    @foreach (var group in Model.FeaturedLocations.Batch(2))
+    {
+        <div class="card-group">
+            @foreach (var location in group)
+            {
+                <div class="card text-white bg-dark">
+                    <div class="card-body">
+                        <h5 class="card-title text-center">
+                            @location.Name
+                        </h5>
+                        <div class="card-text my-2">
+                            <div class="row">
+                                <i class="fa-stack fa-lg col-sm-2 text-center @(location.ParkingIncluded ? String.Empty : "text-muted")">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fa fa-car fa-stack-1x text-dark"></i>
+                                </i>
+                                @if (location.ParkingIncluded)
+                                {
+                                    <i class="fa fa-check text-success fa-2x col-sm-2 text-center" aria-hidden="true"></i>
+                                }
+                                else
+                                {
+                                    <span class="col-sm-2"></span>
+                                }
+                                <span class="col-sm-8 text-center">
+                                    @(location.ParkingIncluded ? "Parking included" : "No parking available")
+                                </span>
+                            </div>
+                            <div class="row">
+                                <i class="fa-stack fa-lg col-sm-2 text-center @(location.ConferenceRoomsIncluded ? String.Empty : "text-muted")">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fa fa-suitcase fa-stack-1x text-dark"></i>
+                                </i>
+                                @if (location.ConferenceRoomsIncluded)
+                                {
+                                    <i class="fa fa-check text-success fa-2x col-sm-2 text-center" aria-hidden="true"></i>
+                                }
+                                else
+                                {
+                                    <span class="col-sm-2"></span>
+                                }
+                                <span class="col-sm-8 text-center">
+                                    @(location.ConferenceRoomsIncluded ? "Conference rooms available" : "No conference rooms")
+                                </span>
+                            </div>
+                            <div class="row">
+                                <i class="fa-stack fa-lg col-sm-2 text-center @(location.ReceptionIncluded ? String.Empty : "text-muted")">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fa fa-car fa-stack-1x text-dark"></i>
+                                </i>
+                                @if (location.ReceptionIncluded)
+                                {
+                                    <i class="fa fa-check text-success fa-2x col-sm-2 text-center" aria-hidden="true"></i>
+                                }
+                                else
+                                {
+                                    <span class="col-sm-2"></span>
+                                }
+                                <span class="col-sm-8 text-center">
+                                    @(location.ReceptionIncluded ? "Reception services provided" : "No reception services")
+                                </span>
+                            </div>
+                            <div class="row">
+                                <i class="fa-stack fa-lg col-sm-2 text-center @(location.PublicAccess ? String.Empty : "text-muted")">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fa fa-car fa-stack-1x text-dark"></i>
+                                </i>
+                                @if (location.PublicAccess)
+                                {
+                                    <i class="fa fa-check text-success fa-2x col-sm-2 text-center" aria-hidden="true"></i>
+                                }
+                                else
+                                {
+                                    <span class="col-sm-2"></span>
+                                }
+                                <span class="col-sm-8 text-center">
+                                    @(location.PublicAccess ? "Public access available" : "No public access")
+                                </span>
+                            </div>
+                        </div>
+                        <p class="card-text">
+                            <small class="text-muted">
+                                @location.MailingAddress
+                            </small>
+                        </p>
+                        <a asp-page="/locations" asp-route-id="@location.Id" class="btn btn-secondary">
+                            Learn more
+                        </a>
+                    </div>
+                </div>
+            }
+        </div>
+    }
+</main>

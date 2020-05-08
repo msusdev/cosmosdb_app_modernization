@@ -1,0 +1,3123 @@
+[
+    {
+        "Name": "McGlynn - Kunze Square",
+        "Longitude": 47.621201,
+        "Latitude": -122.338181,
+        "MailingAddress": "320 Westlake Ave N Seattle, WA 98109",
+        "Rooms": [
+            {
+                "Description": "Coworking Office",
+                "MonthlyRate": 6120.92,
+                "Seats": 5,
+                "PrivateFacilities": false,
+                "PhoneIncluded": true,
+                "Windows": false,
+                "Corner": false
+            },
+            {
+                "Description": "Coworking Corner Suite",
+                "MonthlyRate": 7220.4,
+                "Seats": 5,
+                "PrivateFacilities": true,
+                "PhoneIncluded": true,
+                "Windows": false,
+                "Corner": true
+            },
+            {
+                "Description": "Coworking Office",
+                "MonthlyRate": 8924.69,
+                "Seats": 5,
+                "PrivateFacilities": false,
+                "PhoneIncluded": false,
+                "Windows": false,
+                "Corner": false
+            },
+            {
+                "Description": "Pair Office",
+                "MonthlyRate": 3788.99,
+                "Seats": 2,
+                "PrivateFacilities": false,
+                "PhoneIncluded": true,
+                "Windows": false,
+                "Corner": false
+            },
+            {
+                "Description": "Pair Corner Office",
+                "MonthlyRate": 2948.0,
+                "Seats": 2,
+                "PrivateFacilities": false,
+                "PhoneIncluded": true,
+                "Windows": false,
+                "Corner": true
+            }
+        ],
+        "ParkingIncluded": true,
+        "ConferenceRoomsIncluded": true,
+        "ReceptionIncluded": true,
+        "PublicAccess": false,
+        "LastRenovationDate": "1982-05-08T00:00:00+00:00",
+        "Image": "601e072a-dfea-4928-ad87-dbf75d1d6448.png"
+    },
+    {
+        "Name": "Schoen, Rau and Windler Square",
+        "Longitude": 35.1087,
+        "Latitude": -106.605949,
+        "MailingAddress": "3400 Menaul Blvd NE Albuquerque, NM 87107",
+        "Rooms": [
+            {
+                "Description": "Team Corner Suite",
+                "MonthlyRate": 4114.3,
+                "Seats": 4,
+                "PrivateFacilities": true,
+                "PhoneIncluded": true,
+                "Windows": false,
+                "Corner": true
+            },
+            {
+                "Description": "Single Corner Office",
+                "MonthlyRate": 1112.43,
+                "Seats": 1,
+                "PrivateFacilities": false,
+                "PhoneIncluded": true,
+                "Windows": false,
+                "Corner": true
+            },
+            {
+                "Description": "Team Office",
+                "MonthlyRate": 7878.98,
+                "Seats": 4,
+                "PrivateFacilities": false,
+                "PhoneIncluded": false,
+                "Windows": false,
+                "Corner": false
+            },
+            {
+                "Description": "Single Suite",
+                "MonthlyRate": 1830.52,
+                "Seats": 1,
+                "PrivateFacilities": true,
+                "PhoneIncluded": true,
+                "Windows": false,
+                "Corner": false
+            },
+            {
+                "Description": "Single Suite",
+                "MonthlyRate": 1449.02,
+                "Seats": 1,
+                "PrivateFacilities": true,
+                "PhoneIncluded": false,
+                "Windows": false,
+                "Corner": false
+            },
+            {
+                "Description": "Team Office",
+                "MonthlyRate": 3405.94,
+                "Seats": 3,
+                "PrivateFacilities": false,
+                "PhoneIncluded": false,
+                "Windows": false,
+                "Corner": false
+            },
+            {
+                "Description": "Pair Corner Suite",
+                "MonthlyRate": 2010.4,
+                "Seats": 2,
+                "PrivateFacilities": true,
+                "PhoneIncluded": false,
+                "Windows": false,
+                "Corner": true
+            },
+            {
+                "Description": "Coworking Office",
+                "MonthlyRate": 9805.22,
+                "Seats": 5,
+                "PrivateFacilities": false,
+                "PhoneIncluded": false,
+                "Windows": false,
+                "Corner": false
+            }
+        ],
+        "ParkingIncluded": false,
+        "ConferenceRoomsIncluded": false,
+        "ReceptionIncluded": false,
+        "PublicAccess": true,
+        "LastRenovationDate": "2014-10-31T00:00:00+00:00",
+        "Image": "2e164e90-db72-4847-9a2a-a73ea6cd9d83.png"
+    },
+    {
+        "Name": "Cronin Group Plaza",
+        "Longitude": 36.107281,
+        "Latitude": -86.816017,
+        "MailingAddress": "2126 Abbott Martin Rd Nashville, TN 37215",
+        "Rooms": [
+            {
+                "Description": "Single Suite",
+                "MonthlyRate": 1851.99,
+                "Seats": 1,
+                "PrivateFacilities": true,
+                "PhoneIncluded": true,
+                "Windows": false,
+                "Corner": false
+            },
+            {
+                "Description": "Coworking Corner Suite",
+                "MonthlyRate": 8741.43,
+                "Seats": 5,
+                "PrivateFacilities": true,
+                "PhoneIncluded": true,
+                "Windows": false,
+                "Corner": true
+            }
+        ],
+        "ParkingIncluded": false,
+        "ConferenceRoomsIncluded": false,
+        "ReceptionIncluded": true,
+        "PublicAccess": false,
+        "LastRenovationDate": "1981-10-05T00:00:00+00:00",
+        "Image": "a01d958c-cf5e-438a-ba73-e6fd3ed3d2db.png"
+    },
+    {
+        "Name": "Kuhlman, Ankunding and Howe Square",
+        "Longitude": 47.676857,
+        "Latitude": -122.198074,
+        "MailingAddress": "550 Kirkland Way Kirkland, WA 98033",
+        "Rooms": [
+            {
+                "Description": "Coworking Suite",
+                "MonthlyRate": 9295.58,
+                "Seats": 5,
+                "PrivateFacilities": true,
+                "PhoneIncluded": true,
+                "Windows": false,
+                "Corner": false
+            },
+            {
+                "Description": "Single Corner Office",
+                "MonthlyRate": 1694.52,
+                "Seats": 1,
+                "PrivateFacilities": false,
+                "PhoneIncluded": false,
+                "Windows": false,
+                "Corner": true
+            },
+            {
+                "Description": "Coworking Corner Office",
+                "MonthlyRate": 6557.93,
+                "Seats": 5,
+                "PrivateFacilities": false,
+                "PhoneIncluded": true,
+                "Windows": false,
+                "Corner": true
+            },
+            {
+                "Description": "Team Suite",
+                "MonthlyRate": 6622.99,
+                "Seats": 4,
+                "PrivateFacilities": true,
+                "PhoneIncluded": false,
+                "Windows": false,
+                "Corner": false
+            },
+            {
+                "Description": "Team Office",
+                "MonthlyRate": 3811.47,
+                "Seats": 3,
+                "PrivateFacilities": false,
+                "PhoneIncluded": false,
+                "Windows": false,
+                "Corner": false
+            },
+            {
+                "Description": "Coworking Office",
+                "MonthlyRate": 5797.65,
+                "Seats": 5,
+                "PrivateFacilities": false,
+                "PhoneIncluded": true,
+                "Windows": false,
+                "Corner": false
+            }
+        ],
+        "ParkingIncluded": false,
+        "ConferenceRoomsIncluded": false,
+        "ReceptionIncluded": false,
+        "PublicAccess": false,
+        "LastRenovationDate": "1969-09-16T00:00:00+00:00",
+        "Image": "632240d8-edd6-440c-8c82-b871e705ccf3.png"
+    },
+    {
+        "Name": "Gutkowski Inc Building",
+        "Longitude": 33.846432,
+        "Latitude": -84.362465,
+        "MailingAddress": "3393 Peachtree Rd Atlanta, GA 30326",
+        "Rooms": [
+            {
+                "Description": "Team Office",
+                "MonthlyRate": 3180.39,
+                "Seats": 3,
+                "PrivateFacilities": false,
+                "PhoneIncluded": false,
+                "Windows": false,
+                "Corner": false
+            },
+            {
+                "Description": "Team Office",
+                "MonthlyRate": 5088.93,
+                "Seats": 4,
+                "PrivateFacilities": false,
+                "PhoneIncluded": false,
+                "Windows": false,
+                "Corner": false
+            },
+            {
+                "Description": "Coworking Corner Office",
+                "MonthlyRate": 8733.47,
+                "Seats": 5,
+                "PrivateFacilities": false,
+                "PhoneIncluded": false,
+                "Windows": false,
+                "Corner": true
+            },
+            {
+                "Description": "Single Suite",
+                "MonthlyRate": 1971.5,
+                "Seats": 1,
+                "PrivateFacilities": true,
+                "PhoneIncluded": false,
+                "Windows": false,
+                "Corner": false
+            },
+            {
+                "Description": "Team Office",
+                "MonthlyRate": 4137.11,
+                "Seats": 3,
+                "PrivateFacilities": false,
+                "PhoneIncluded": false,
+                "Windows": false,
+                "Corner": false
+            },
+            {
+                "Description": "Team Suite",
+                "MonthlyRate": 4065.2,
+                "Seats": 3,
+                "PrivateFacilities": true,
+                "PhoneIncluded": true,
+                "Windows": false,
+                "Corner": false
+            },
+            {
+                "Description": "Coworking Corner Office",
+                "MonthlyRate": 9916.61,
+                "Seats": 5,
+                "PrivateFacilities": false,
+                "PhoneIncluded": true,
+                "Windows": false,
+                "Corner": true
+            },
+            {
+                "Description": "Single Suite",
+                "MonthlyRate": 1980.85,
+                "Seats": 1,
+                "PrivateFacilities": true,
+                "PhoneIncluded": false,
+                "Windows": false,
+                "Corner": false
+            }
+        ],
+        "ParkingIncluded": true,
+        "ConferenceRoomsIncluded": false,
+        "ReceptionIncluded": true,
+        "PublicAccess": true,
+        "LastRenovationDate": "2015-09-20T00:00:00+00:00",
+        "Image": "588b4490-ac65-426f-848e-ee20bccb19ec.png"
+    },
+    {
+        "Name": "Stamm - Heidenreich Complex",
+        "Longitude": 25.956699,
+        "Latitude": -80.146729,
+        "MailingAddress": "19575 Biscayne Blvd Aventura, FL 33180",
+        "Rooms": [
+            {
+                "Description": "Team Suite",
+                "MonthlyRate": 4658.72,
+                "Seats": 4,
+                "PrivateFacilities": true,
+                "PhoneIncluded": false,
+                "Windows": false,
+                "Corner": false
+            },
+            {
+                "Description": "Team Corner Suite",
+                "MonthlyRate": 3900.11,
+                "Seats": 3,
+                "PrivateFacilities": true,
+                "PhoneIncluded": false,
+                "Windows": false,
+                "Corner": true
+            },
+            {
+                "Description": "Single Corner Office",
+                "MonthlyRate": 1475.62,
+                "Seats": 1,
+                "PrivateFacilities": false,
+                "PhoneIncluded": false,
+                "Windows": false,
+                "Corner": true
+            },
+            {
+                "Description": "Single Office",
+                "MonthlyRate": 1776.99,
+                "Seats": 1,
+                "PrivateFacilities": false,
+                "PhoneIncluded": true,
+                "Windows": false,
+                "Corner": false
+            },
+            {
+                "Description": "Pair Corner Suite",
+                "MonthlyRate": 2843.25,
+                "Seats": 2,
+                "PrivateFacilities": true,
+                "PhoneIncluded": true,
+                "Windows": false,
+                "Corner": true
+            }
+        ],
+        "ParkingIncluded": false,
+        "ConferenceRoomsIncluded": false,
+        "ReceptionIncluded": false,
+        "PublicAccess": true,
+        "LastRenovationDate": "1950-04-23T00:00:00+00:00",
+        "Image": "5d6edd5c-469c-442f-9b7e-dc20d1cd5024.png"
+    },
+    {
+        "Name": "Goyette - Luettgen Plaza",
+        "Longitude": 37.793369,
+        "Latitude": -122.394234,
+        "MailingAddress": "1 Market San Francisco, CA  94105",
+        "Rooms": [
+            {
+                "Description": "Coworking Suite",
+                "MonthlyRate": 9026.75,
+                "Seats": 5,
+                "PrivateFacilities": true,
+                "PhoneIncluded": false,
+                "Windows": false,
+                "Corner": false
+            },
+            {
+                "Description": "Single Suite",
+                "MonthlyRate": 1703.95,
+                "Seats": 1,
+                "PrivateFacilities": true,
+                "PhoneIncluded": false,
+                "Windows": false,
+                "Corner": false
+            }
+        ],
+        "ParkingIncluded": true,
+        "ConferenceRoomsIncluded": true,
+        "ReceptionIncluded": true,
+        "PublicAccess": false,
+        "LastRenovationDate": "1953-07-12T00:00:00+00:00",
+        "Image": "8b6c58fc-45d0-4a14-8d87-15c2646499fb.png"
+    },
+    {
+        "Name": "Sipes Group Complex",
+        "Longitude": 39.717941,
+        "Latitude": -104.952133,
+        "MailingAddress": "3000 E 1st Ave, Denver, CO 80206",
+        "Rooms": [
+            {
+                "Description": "Coworking Corner Suite",
+                "MonthlyRate": 7139.72,
+                "Seats": 5,
+                "PrivateFacilities": true,
+                "PhoneIncluded": true,
+                "Windows": false,
+                "Corner": true
+            },
+            {
+                "Description": "Single Office",
+                "MonthlyRate": 1790.76,
+                "Seats": 1,
+                "PrivateFacilities": false,
+                "PhoneIncluded": true,
+                "Windows": false,
+                "Corner": false
+            },
+            {
+                "Description": "Team Office",
+                "MonthlyRate": 4698.57,
+                "Seats": 4,
+                "PrivateFacilities": false,
+                "PhoneIncluded": true,
+                "Windows": false,
+                "Corner": false
+            },
+            {
+                "Description": "Team Office",
+                "MonthlyRate": 4544.96,
+                "Seats": 3,
+                "PrivateFacilities": false,
+                "PhoneIncluded": false,
+                "Windows": false,
+                "Corner": false
+            },
+            {
+                "Description": "Single Suite",
+                "MonthlyRate": 1829.03,
+                "Seats": 1,
+                "PrivateFacilities": true,
+                "PhoneIncluded": true,
+                "Windows": false,
+                "Corner": false
+            },
+            {
+                "Description": "Team Corner Suite",
+                "MonthlyRate": 5408.63,
+                "Seats": 3,
+                "PrivateFacilities": true,
+                "PhoneIncluded": false,
+                "Windows": false,
+                "Corner": true
+            },
+            {
+                "Description": "Team Office",
+                "MonthlyRate": 4524.19,
+                "Seats": 3,
+                "PrivateFacilities": false,
+                "PhoneIncluded": true,
+                "Windows": false,
+                "Corner": false
+            },
+            {
+                "Description": "Pair Office",
+                "MonthlyRate": 3585.98,
+                "Seats": 2,
+                "PrivateFacilities": false,
+                "PhoneIncluded": false,
+                "Windows": false,
+                "Corner": false
+            }
+        ],
+        "ParkingIncluded": false,
+        "ConferenceRoomsIncluded": false,
+        "ReceptionIncluded": true,
+        "PublicAccess": true,
+        "LastRenovationDate": "1987-05-14T00:00:00+00:00",
+        "Image": "210fad93-2ead-473f-9b3e-9ef63fd84bc7.png"
+    },
+    {
+        "Name": "Reichert - Luettgen Complex",
+        "Longitude": 47.612839,
+        "Latitude": -122.335114,
+        "MailingAddress": "600 Pine St Seattle, WA 98101",
+        "Rooms": [
+            {
+                "Description": "Team Office",
+                "MonthlyRate": 4422.75,
+                "Seats": 3,
+                "PrivateFacilities": false,
+                "PhoneIncluded": true,
+                "Windows": false,
+                "Corner": false
+            },
+            {
+                "Description": "Team Corner Office",
+                "MonthlyRate": 4793.23,
+                "Seats": 3,
+                "PrivateFacilities": false,
+                "PhoneIncluded": false,
+                "Windows": false,
+                "Corner": true
+            },
+            {
+                "Description": "Coworking Corner Office",
+                "MonthlyRate": 9294.15,
+                "Seats": 5,
+                "PrivateFacilities": false,
+                "PhoneIncluded": false,
+                "Windows": false,
+                "Corner": true
+            },
+            {
+                "Description": "Team Corner Suite",
+                "MonthlyRate": 5381.71,
+                "Seats": 3,
+                "PrivateFacilities": true,
+                "PhoneIncluded": true,
+                "Windows": false,
+                "Corner": true
+            },
+            {
+                "Description": "Team Office",
+                "MonthlyRate": 3243.65,
+                "Seats": 3,
+                "PrivateFacilities": false,
+                "PhoneIncluded": true,
+                "Windows": false,
+                "Corner": false
+            },
+            {
+                "Description": "Single Corner Suite",
+                "MonthlyRate": 1044.41,
+                "Seats": 1,
+                "PrivateFacilities": true,
+                "PhoneIncluded": true,
+                "Windows": false,
+                "Corner": true
+            },
+            {
+                "Description": "Team Corner Suite",
+                "MonthlyRate": 3247.39,
+                "Seats": 3,
+                "PrivateFacilities": true,
+                "PhoneIncluded": false,
+                "Windows": false,
+                "Corner": true
+            }
+        ],
+        "ParkingIncluded": false,
+        "ConferenceRoomsIncluded": false,
+        "ReceptionIncluded": true,
+        "PublicAccess": true,
+        "LastRenovationDate": "2000-08-25T00:00:00+00:00",
+        "Image": "0284b16d-5908-4ca5-bf83-c7cf978795dc.png"
+    },
+    {
+        "Name": "Bosco, Moen and Hand Center",
+        "Longitude": 47.79454,
+        "Latitude": -122.1967,
+        "MailingAddress": "22422 29th Dr SE Bothell, WA 98021",
+        "Rooms": [
+            {
+                "Description": "Coworking Suite",
+                "MonthlyRate": 8297.78,
+                "Seats": 5,
+                "PrivateFacilities": true,
+                "PhoneIncluded": true,
+                "Windows": false,
+                "Corner": false
+            },
+            {
+                "Description": "Single Office",
+                "MonthlyRate": 1649.22,
+                "Seats": 1,
+                "PrivateFacilities": false,
+                "PhoneIncluded": true,
+                "Windows": false,
+                "Corner": false
+            },
+            {
+                "Description": "Single Suite",
+                "MonthlyRate": 1407.41,
+                "Seats": 1,
+                "PrivateFacilities": true,
+                "PhoneIncluded": true,
+                "Windows": false,
+                "Corner": false
+            },
+            {
+                "Description": "Single Corner Office",
+                "MonthlyRate": 1432.03,
+                "Seats": 1,
+                "PrivateFacilities": false,
+                "PhoneIncluded": true,
+                "Windows": false,
+                "Corner": true
+            },
+            {
+                "Description": "Pair Suite",
+                "MonthlyRate": 3833.26,
+                "Seats": 2,
+                "PrivateFacilities": true,
+                "PhoneIncluded": false,
+                "Windows": false,
+                "Corner": false
+            },
+            {
+                "Description": "Team Corner Office",
+                "MonthlyRate": 5755.21,
+                "Seats": 4,
+                "PrivateFacilities": false,
+                "PhoneIncluded": false,
+                "Windows": false,
+                "Corner": true
+            },
+            {
+                "Description": "Coworking Corner Office",
+                "MonthlyRate": 7734.48,
+                "Seats": 5,
+                "PrivateFacilities": false,
+                "PhoneIncluded": false,
+                "Windows": false,
+                "Corner": true
+            },
+            {
+                "Description": "Team Suite",
+                "MonthlyRate": 5944.61,
+                "Seats": 4,
+                "PrivateFacilities": true,
+                "PhoneIncluded": true,
+                "Windows": false,
+                "Corner": false
+            },
+            {
+                "Description": "Team Corner Office",
+                "MonthlyRate": 7514.28,
+                "Seats": 4,
+                "PrivateFacilities": false,
+                "PhoneIncluded": true,
+                "Windows": false,
+                "Corner": true
+            },
+            {
+                "Description": "Pair Suite",
+                "MonthlyRate": 2100.36,
+                "Seats": 2,
+                "PrivateFacilities": true,
+                "PhoneIncluded": true,
+                "Windows": false,
+                "Corner": false
+            }
+        ],
+        "ParkingIncluded": true,
+        "ConferenceRoomsIncluded": true,
+        "ReceptionIncluded": false,
+        "PublicAccess": false,
+        "LastRenovationDate": "1981-11-26T00:00:00+00:00",
+        "Image": "c7499088-d4af-45c3-8a64-7bfe0e7f49c4.png"
+    },
+    {
+        "Name": "Turcotte, Carroll and Hermiston Square",
+        "Longitude": 35.104061,
+        "Latitude": -89.847656,
+        "MailingAddress": "6465 N Quail Hollow Rd Memphis, TN 38120",
+        "Rooms": [
+            {
+                "Description": "Team Corner Office",
+                "MonthlyRate": 4760.78,
+                "Seats": 3,
+                "PrivateFacilities": false,
+                "PhoneIncluded": false,
+                "Windows": false,
+                "Corner": true
+            },
+            {
+                "Description": "Pair Suite",
+                "MonthlyRate": 3094.52,
+                "Seats": 2,
+                "PrivateFacilities": true,
+                "PhoneIncluded": true,
+                "Windows": false,
+                "Corner": false
+            },
+            {
+                "Description": "Team Office",
+                "MonthlyRate": 6700.48,
+                "Seats": 4,
+                "PrivateFacilities": false,
+                "PhoneIncluded": false,
+                "Windows": false,
+                "Corner": false
+            },
+            {
+                "Description": "Team Office",
+                "MonthlyRate": 4096.01,
+                "Seats": 3,
+                "PrivateFacilities": false,
+                "PhoneIncluded": true,
+                "Windows": false,
+                "Corner": false
+            },
+            {
+                "Description": "Pair Suite",
+                "MonthlyRate": 3320.12,
+                "Seats": 2,
+                "PrivateFacilities": true,
+                "PhoneIncluded": false,
+                "Windows": false,
+                "Corner": false
+            }
+        ],
+        "ParkingIncluded": false,
+        "ConferenceRoomsIncluded": false,
+        "ReceptionIncluded": false,
+        "PublicAccess": true,
+        "LastRenovationDate": "1983-10-31T00:00:00+00:00",
+        "Image": "59ab5aed-8acf-46c9-a544-58bef746334c.png"
+    },
+    {
+        "Name": "Ziemann and Sons Plaza",
+        "Longitude": 29.518398,
+        "Latitude": -98.495422,
+        "MailingAddress": "7400 San Pedro Ave San Antonio, TX 78216",
+        "Rooms": [
+            {
+                "Description": "Team Suite",
+                "MonthlyRate": 5501.62,
+                "Seats": 3,
+                "PrivateFacilities": true,
+                "PhoneIncluded": true,
+                "Windows": false,
+                "Corner": false
+            },
+            {
+                "Description": "Team Suite",
+                "MonthlyRate": 6731.65,
+                "Seats": 4,
+                "PrivateFacilities": true,
+                "PhoneIncluded": false,
+                "Windows": false,
+                "Corner": false
+            }
+        ],
+        "ParkingIncluded": true,
+        "ConferenceRoomsIncluded": false,
+        "ReceptionIncluded": true,
+        "PublicAccess": false,
+        "LastRenovationDate": "1960-02-06T00:00:00+00:00",
+        "Image": "c58285f0-081b-4afb-b616-f3edd2be34aa.png"
+    },
+    {
+        "Name": "Lehner - Kuhic Complex",
+        "Longitude": 27.384417,
+        "Latitude": -82.452843,
+        "MailingAddress": "140 University Town Center Dr Sarasota, FL 34243",
+        "Rooms": [
+            {
+                "Description": "Pair Corner Suite",
+                "MonthlyRate": 2642.25,
+                "Seats": 2,
+                "PrivateFacilities": true,
+                "PhoneIncluded": false,
+                "Windows": false,
+                "Corner": true
+            },
+            {
+                "Description": "Single Corner Office",
+                "MonthlyRate": 1454.92,
+                "Seats": 1,
+                "PrivateFacilities": false,
+                "PhoneIncluded": true,
+                "Windows": false,
+                "Corner": true
+            },
+            {
+                "Description": "Single Corner Suite",
+                "MonthlyRate": 1867.02,
+                "Seats": 1,
+                "PrivateFacilities": true,
+                "PhoneIncluded": false,
+                "Windows": false,
+                "Corner": true
+            },
+            {
+                "Description": "Team Corner Office",
+                "MonthlyRate": 4156.35,
+                "Seats": 4,
+                "PrivateFacilities": false,
+                "PhoneIncluded": true,
+                "Windows": false,
+                "Corner": true
+            },
+            {
+                "Description": "Pair Suite",
+                "MonthlyRate": 3811.29,
+                "Seats": 2,
+                "PrivateFacilities": true,
+                "PhoneIncluded": false,
+                "Windows": false,
+                "Corner": false
+            }
+        ],
+        "ParkingIncluded": false,
+        "ConferenceRoomsIncluded": false,
+        "ReceptionIncluded": false,
+        "PublicAccess": false,
+        "LastRenovationDate": "1979-02-18T00:00:00+00:00",
+        "Image": "68080618-a420-4659-a476-4d8438eb8859.png"
+    },
+    {
+        "Name": "Thiel, Kreiger and Gleichner Square",
+        "Longitude": 33.923931,
+        "Latitude": -84.34153,
+        "MailingAddress": "4400 Ashford Dunwoody Rd NE Atlanta, GA 30346",
+        "Rooms": [
+            {
+                "Description": "Team Suite",
+                "MonthlyRate": 5834.71,
+                "Seats": 4,
+                "PrivateFacilities": true,
+                "PhoneIncluded": true,
+                "Windows": false,
+                "Corner": false
+            },
+            {
+                "Description": "Team Corner Office",
+                "MonthlyRate": 7154.41,
+                "Seats": 4,
+                "PrivateFacilities": false,
+                "PhoneIncluded": true,
+                "Windows": false,
+                "Corner": true
+            },
+            {
+                "Description": "Team Suite",
+                "MonthlyRate": 4647.4,
+                "Seats": 3,
+                "PrivateFacilities": true,
+                "PhoneIncluded": false,
+                "Windows": false,
+                "Corner": false
+            },
+            {
+                "Description": "Coworking Office",
+                "MonthlyRate": 6829.34,
+                "Seats": 5,
+                "PrivateFacilities": false,
+                "PhoneIncluded": true,
+                "Windows": false,
+                "Corner": false
+            },
+            {
+                "Description": "Single Corner Office",
+                "MonthlyRate": 1439.1,
+                "Seats": 1,
+                "PrivateFacilities": false,
+                "PhoneIncluded": true,
+                "Windows": false,
+                "Corner": true
+            },
+            {
+                "Description": "Coworking Office",
+                "MonthlyRate": 5913.27,
+                "Seats": 5,
+                "PrivateFacilities": false,
+                "PhoneIncluded": true,
+                "Windows": false,
+                "Corner": false
+            }
+        ],
+        "ParkingIncluded": true,
+        "ConferenceRoomsIncluded": true,
+        "ReceptionIncluded": false,
+        "PublicAccess": true,
+        "LastRenovationDate": "1973-10-19T00:00:00+00:00",
+        "Image": "8c24048c-9feb-40fb-9bef-a9d768d89dc5.png"
+    },
+    {
+        "Name": "Dickens LLC Building",
+        "Longitude": 42.347179,
+        "Latitude": -71.082466,
+        "MailingAddress": "800 Boylston St Boston, MA 02199",
+        "Rooms": [
+            {
+                "Description": "Single Suite",
+                "MonthlyRate": 1354.2,
+                "Seats": 1,
+                "PrivateFacilities": true,
+                "PhoneIncluded": false,
+                "Windows": false,
+                "Corner": false
+            },
+            {
+                "Description": "Team Corner Suite",
+                "MonthlyRate": 4244.65,
+                "Seats": 4,
+                "PrivateFacilities": true,
+                "PhoneIncluded": true,
+                "Windows": false,
+                "Corner": true
+            },
+            {
+                "Description": "Coworking Corner Suite",
+                "MonthlyRate": 6972.28,
+                "Seats": 5,
+                "PrivateFacilities": true,
+                "PhoneIncluded": true,
+                "Windows": false,
+                "Corner": true
+            },
+            {
+                "Description": "Coworking Corner Suite",
+                "MonthlyRate": 6749.98,
+                "Seats": 5,
+                "PrivateFacilities": true,
+                "PhoneIncluded": false,
+                "Windows": false,
+                "Corner": true
+            },
+            {
+                "Description": "Pair Corner Office",
+                "MonthlyRate": 2288.46,
+                "Seats": 2,
+                "PrivateFacilities": false,
+                "PhoneIncluded": true,
+                "Windows": false,
+                "Corner": true
+            },
+            {
+                "Description": "Coworking Corner Office",
+                "MonthlyRate": 5670.72,
+                "Seats": 5,
+                "PrivateFacilities": false,
+                "PhoneIncluded": false,
+                "Windows": false,
+                "Corner": true
+            },
+            {
+                "Description": "Coworking Office",
+                "MonthlyRate": 6230.85,
+                "Seats": 5,
+                "PrivateFacilities": false,
+                "PhoneIncluded": false,
+                "Windows": false,
+                "Corner": false
+            }
+        ],
+        "ParkingIncluded": true,
+        "ConferenceRoomsIncluded": false,
+        "ReceptionIncluded": true,
+        "PublicAccess": false,
+        "LastRenovationDate": "1953-12-07T00:00:00+00:00",
+        "Image": "06f6ae63-8b94-432b-823e-86d94d415cea.png"
+    },
+    {
+        "Name": "Waelchi Inc Complex",
+        "Longitude": 27.943701,
+        "Latitude": -82.537735,
+        "MailingAddress": "5426 Bay Center Dr Tampa, FL 33609",
+        "Rooms": [
+            {
+                "Description": "Team Corner Office",
+                "MonthlyRate": 4636.47,
+                "Seats": 4,
+                "PrivateFacilities": false,
+                "PhoneIncluded": false,
+                "Windows": false,
+                "Corner": true
+            },
+            {
+                "Description": "Coworking Corner Suite",
+                "MonthlyRate": 8577.4,
+                "Seats": 5,
+                "PrivateFacilities": true,
+                "PhoneIncluded": true,
+                "Windows": false,
+                "Corner": true
+            },
+            {
+                "Description": "Single Office",
+                "MonthlyRate": 1240.7,
+                "Seats": 1,
+                "PrivateFacilities": false,
+                "PhoneIncluded": false,
+                "Windows": false,
+                "Corner": false
+            },
+            {
+                "Description": "Team Corner Office",
+                "MonthlyRate": 4740.77,
+                "Seats": 4,
+                "PrivateFacilities": false,
+                "PhoneIncluded": true,
+                "Windows": false,
+                "Corner": true
+            },
+            {
+                "Description": "Team Suite",
+                "MonthlyRate": 4765.39,
+                "Seats": 3,
+                "PrivateFacilities": true,
+                "PhoneIncluded": true,
+                "Windows": false,
+                "Corner": false
+            },
+            {
+                "Description": "Team Suite",
+                "MonthlyRate": 4751.42,
+                "Seats": 4,
+                "PrivateFacilities": true,
+                "PhoneIncluded": false,
+                "Windows": false,
+                "Corner": false
+            },
+            {
+                "Description": "Team Suite",
+                "MonthlyRate": 5717.38,
+                "Seats": 3,
+                "PrivateFacilities": true,
+                "PhoneIncluded": false,
+                "Windows": false,
+                "Corner": false
+            }
+        ],
+        "ParkingIncluded": true,
+        "ConferenceRoomsIncluded": false,
+        "ReceptionIncluded": false,
+        "PublicAccess": false,
+        "LastRenovationDate": "1999-11-14T00:00:00+00:00",
+        "Image": "48f95173-5633-4ced-8988-7a6ecce52f9f.png"
+    },
+    {
+        "Name": "Bashirian - Williamson Center",
+        "Longitude": 30.40016,
+        "Latitude": -97.726486,
+        "MailingAddress": "3309 Esperanza Xing Austin, TX 78758",
+        "Rooms": [
+            {
+                "Description": "Coworking Office",
+                "MonthlyRate": 8689.26,
+                "Seats": 5,
+                "PrivateFacilities": false,
+                "PhoneIncluded": true,
+                "Windows": false,
+                "Corner": false
+            },
+            {
+                "Description": "Single Corner Suite",
+                "MonthlyRate": 1264.78,
+                "Seats": 1,
+                "PrivateFacilities": true,
+                "PhoneIncluded": true,
+                "Windows": false,
+                "Corner": true
+            },
+            {
+                "Description": "Pair Corner Office",
+                "MonthlyRate": 2117.66,
+                "Seats": 2,
+                "PrivateFacilities": false,
+                "PhoneIncluded": false,
+                "Windows": false,
+                "Corner": true
+            },
+            {
+                "Description": "Pair Office",
+                "MonthlyRate": 2626.71,
+                "Seats": 2,
+                "PrivateFacilities": false,
+                "PhoneIncluded": true,
+                "Windows": false,
+                "Corner": false
+            },
+            {
+                "Description": "Team Corner Office",
+                "MonthlyRate": 5591.48,
+                "Seats": 3,
+                "PrivateFacilities": false,
+                "PhoneIncluded": true,
+                "Windows": false,
+                "Corner": true
+            },
+            {
+                "Description": "Pair Suite",
+                "MonthlyRate": 2151.46,
+                "Seats": 2,
+                "PrivateFacilities": true,
+                "PhoneIncluded": true,
+                "Windows": false,
+                "Corner": false
+            },
+            {
+                "Description": "Pair Corner Suite",
+                "MonthlyRate": 2274.99,
+                "Seats": 2,
+                "PrivateFacilities": true,
+                "PhoneIncluded": false,
+                "Windows": false,
+                "Corner": true
+            }
+        ],
+        "ParkingIncluded": false,
+        "ConferenceRoomsIncluded": true,
+        "ReceptionIncluded": true,
+        "PublicAccess": true,
+        "LastRenovationDate": "2018-08-29T00:00:00+00:00",
+        "Image": "e2e10c64-be63-47af-942b-6da5a43438d1.png"
+    },
+    {
+        "Name": "Weissnat, Smitham and Waters Square",
+        "Longitude": 40.738651,
+        "Latitude": -74.003571,
+        "MailingAddress": "8th Ave New York, NY 10014",
+        "Rooms": [
+            {
+                "Description": "Pair Suite",
+                "MonthlyRate": 2871.47,
+                "Seats": 2,
+                "PrivateFacilities": true,
+                "PhoneIncluded": true,
+                "Windows": false,
+                "Corner": false
+            },
+            {
+                "Description": "Team Suite",
+                "MonthlyRate": 5685.52,
+                "Seats": 3,
+                "PrivateFacilities": true,
+                "PhoneIncluded": true,
+                "Windows": false,
+                "Corner": false
+            },
+            {
+                "Description": "Single Corner Office",
+                "MonthlyRate": 1098.64,
+                "Seats": 1,
+                "PrivateFacilities": false,
+                "PhoneIncluded": true,
+                "Windows": false,
+                "Corner": true
+            },
+            {
+                "Description": "Single Suite",
+                "MonthlyRate": 1117.78,
+                "Seats": 1,
+                "PrivateFacilities": true,
+                "PhoneIncluded": false,
+                "Windows": false,
+                "Corner": false
+            },
+            {
+                "Description": "Team Suite",
+                "MonthlyRate": 4616.4,
+                "Seats": 4,
+                "PrivateFacilities": true,
+                "PhoneIncluded": false,
+                "Windows": false,
+                "Corner": false
+            },
+            {
+                "Description": "Single Corner Office",
+                "MonthlyRate": 1430.92,
+                "Seats": 1,
+                "PrivateFacilities": false,
+                "PhoneIncluded": true,
+                "Windows": false,
+                "Corner": true
+            },
+            {
+                "Description": "Single Suite",
+                "MonthlyRate": 1951.41,
+                "Seats": 1,
+                "PrivateFacilities": true,
+                "PhoneIncluded": true,
+                "Windows": false,
+                "Corner": false
+            },
+            {
+                "Description": "Coworking Corner Office",
+                "MonthlyRate": 8394.49,
+                "Seats": 5,
+                "PrivateFacilities": false,
+                "PhoneIncluded": false,
+                "Windows": false,
+                "Corner": true
+            },
+            {
+                "Description": "Pair Suite",
+                "MonthlyRate": 3177.1,
+                "Seats": 2,
+                "PrivateFacilities": true,
+                "PhoneIncluded": false,
+                "Windows": false,
+                "Corner": false
+            }
+        ],
+        "ParkingIncluded": false,
+        "ConferenceRoomsIncluded": true,
+        "ReceptionIncluded": false,
+        "PublicAccess": true,
+        "LastRenovationDate": "1994-10-10T00:00:00+00:00",
+        "Image": "59cf1b5a-9877-4f16-a303-3c55d0e3bac4.png"
+    },
+    {
+        "Name": "Gorczany - Abbott Complex",
+        "Longitude": 42.336109,
+        "Latitude": -83.049103,
+        "MailingAddress": "1555 Broadway St Detroit, MI 48226",
+        "Rooms": [
+            {
+                "Description": "Pair Corner Office",
+                "MonthlyRate": 2508.43,
+                "Seats": 2,
+                "PrivateFacilities": false,
+                "PhoneIncluded": true,
+                "Windows": false,
+                "Corner": true
+            },
+            {
+                "Description": "Single Corner Suite",
+                "MonthlyRate": 1014.78,
+                "Seats": 1,
+                "PrivateFacilities": true,
+                "PhoneIncluded": true,
+                "Windows": false,
+                "Corner": true
+            },
+            {
+                "Description": "Team Corner Suite",
+                "MonthlyRate": 3018.15,
+                "Seats": 3,
+                "PrivateFacilities": true,
+                "PhoneIncluded": true,
+                "Windows": false,
+                "Corner": true
+            },
+            {
+                "Description": "Team Corner Suite",
+                "MonthlyRate": 5398.86,
+                "Seats": 4,
+                "PrivateFacilities": true,
+                "PhoneIncluded": true,
+                "Windows": false,
+                "Corner": true
+            },
+            {
+                "Description": "Pair Corner Suite",
+                "MonthlyRate": 3120.35,
+                "Seats": 2,
+                "PrivateFacilities": true,
+                "PhoneIncluded": true,
+                "Windows": false,
+                "Corner": true
+            },
+            {
+                "Description": "Single Suite",
+                "MonthlyRate": 1465.39,
+                "Seats": 1,
+                "PrivateFacilities": true,
+                "PhoneIncluded": false,
+                "Windows": false,
+                "Corner": false
+            }
+        ],
+        "ParkingIncluded": false,
+        "ConferenceRoomsIncluded": false,
+        "ReceptionIncluded": false,
+        "PublicAccess": false,
+        "LastRenovationDate": "1954-01-30T00:00:00+00:00",
+        "Image": "14e04e68-d886-4e94-9d88-e980cf3bcf74.png"
+    },
+    {
+        "Name": "Kilback, Lueilwitz and Kiehn Complex",
+        "Longitude": 30.004539,
+        "Latitude": -90.156708,
+        "MailingAddress": "3301 Veterans Memorial Blvd Metairie, LA 70002",
+        "Rooms": [
+            {
+                "Description": "Coworking Corner Office",
+                "MonthlyRate": 7681.41,
+                "Seats": 5,
+                "PrivateFacilities": false,
+                "PhoneIncluded": true,
+                "Windows": false,
+                "Corner": true
+            },
+            {
+                "Description": "Pair Suite",
+                "MonthlyRate": 2574.39,
+                "Seats": 2,
+                "PrivateFacilities": true,
+                "PhoneIncluded": true,
+                "Windows": false,
+                "Corner": false
+            },
+            {
+                "Description": "Pair Office",
+                "MonthlyRate": 2290.19,
+                "Seats": 2,
+                "PrivateFacilities": false,
+                "PhoneIncluded": false,
+                "Windows": false,
+                "Corner": false
+            },
+            {
+                "Description": "Single Corner Office",
+                "MonthlyRate": 1694.38,
+                "Seats": 1,
+                "PrivateFacilities": false,
+                "PhoneIncluded": true,
+                "Windows": false,
+                "Corner": true
+            }
+        ],
+        "ParkingIncluded": false,
+        "ConferenceRoomsIncluded": true,
+        "ReceptionIncluded": true,
+        "PublicAccess": true,
+        "LastRenovationDate": "2009-06-25T00:00:00+00:00",
+        "Image": "fed69212-cd44-4f1f-b845-94610c44074c.png"
+    },
+    {
+        "Name": "Mueller Inc Square",
+        "Longitude": 21.295841,
+        "Latitude": -157.846817,
+        "MailingAddress": "1450 Ala Moana Blvd 2238 Ala Moana Ctr Honolulu, HI 96814",
+        "Rooms": [
+            {
+                "Description": "Team Office",
+                "MonthlyRate": 4086.09,
+                "Seats": 4,
+                "PrivateFacilities": false,
+                "PhoneIncluded": true,
+                "Windows": false,
+                "Corner": false
+            },
+            {
+                "Description": "Single Corner Office",
+                "MonthlyRate": 1184.85,
+                "Seats": 1,
+                "PrivateFacilities": false,
+                "PhoneIncluded": false,
+                "Windows": false,
+                "Corner": true
+            },
+            {
+                "Description": "Team Corner Suite",
+                "MonthlyRate": 3796.12,
+                "Seats": 3,
+                "PrivateFacilities": true,
+                "PhoneIncluded": true,
+                "Windows": false,
+                "Corner": true
+            },
+            {
+                "Description": "Team Suite",
+                "MonthlyRate": 4554.74,
+                "Seats": 4,
+                "PrivateFacilities": true,
+                "PhoneIncluded": false,
+                "Windows": false,
+                "Corner": false
+            },
+            {
+                "Description": "Single Office",
+                "MonthlyRate": 1320.82,
+                "Seats": 1,
+                "PrivateFacilities": false,
+                "PhoneIncluded": true,
+                "Windows": false,
+                "Corner": false
+            },
+            {
+                "Description": "Coworking Corner Suite",
+                "MonthlyRate": 9924.4,
+                "Seats": 5,
+                "PrivateFacilities": true,
+                "PhoneIncluded": false,
+                "Windows": false,
+                "Corner": true
+            }
+        ],
+        "ParkingIncluded": true,
+        "ConferenceRoomsIncluded": true,
+        "ReceptionIncluded": true,
+        "PublicAccess": false,
+        "LastRenovationDate": "1951-05-10T00:00:00+00:00",
+        "Image": "1febe3a7-1e37-44b7-b789-d871924daf05.png"
+    },
+    {
+        "Name": "Carter - Gaylord Building",
+        "Longitude": 42.36137,
+        "Latitude": -71.08123,
+        "MailingAddress": "1 Memorial Dr Cambridge, MA 02142",
+        "Rooms": [
+            {
+                "Description": "Single Corner Suite",
+                "MonthlyRate": 1480.17,
+                "Seats": 1,
+                "PrivateFacilities": true,
+                "PhoneIncluded": true,
+                "Windows": false,
+                "Corner": true
+            },
+            {
+                "Description": "Single Corner Suite",
+                "MonthlyRate": 1645.12,
+                "Seats": 1,
+                "PrivateFacilities": true,
+                "PhoneIncluded": false,
+                "Windows": false,
+                "Corner": true
+            },
+            {
+                "Description": "Pair Office",
+                "MonthlyRate": 2991.29,
+                "Seats": 2,
+                "PrivateFacilities": false,
+                "PhoneIncluded": true,
+                "Windows": false,
+                "Corner": false
+            },
+            {
+                "Description": "Single Corner Suite",
+                "MonthlyRate": 1417.29,
+                "Seats": 1,
+                "PrivateFacilities": true,
+                "PhoneIncluded": false,
+                "Windows": false,
+                "Corner": true
+            },
+            {
+                "Description": "Pair Corner Office",
+                "MonthlyRate": 2420.65,
+                "Seats": 2,
+                "PrivateFacilities": false,
+                "PhoneIncluded": true,
+                "Windows": false,
+                "Corner": true
+            },
+            {
+                "Description": "Single Corner Suite",
+                "MonthlyRate": 1075.04,
+                "Seats": 1,
+                "PrivateFacilities": true,
+                "PhoneIncluded": true,
+                "Windows": false,
+                "Corner": true
+            },
+            {
+                "Description": "Pair Corner Office",
+                "MonthlyRate": 2659.78,
+                "Seats": 2,
+                "PrivateFacilities": false,
+                "PhoneIncluded": false,
+                "Windows": false,
+                "Corner": true
+            }
+        ],
+        "ParkingIncluded": true,
+        "ConferenceRoomsIncluded": true,
+        "ReceptionIncluded": true,
+        "PublicAccess": true,
+        "LastRenovationDate": "2006-02-07T00:00:00+00:00",
+        "Image": "41aa4010-f1ce-4997-803d-4c18f2252ad8.png"
+    },
+    {
+        "Name": "Morissette, Wunsch and Boyle Square",
+        "Longitude": 37.242077,
+        "Latitude": -121.781952,
+        "MailingAddress": "9 Great Oaks Blvd, San Jose, CA  95119",
+        "Rooms": [
+            {
+                "Description": "Single Corner Office",
+                "MonthlyRate": 1897.59,
+                "Seats": 1,
+                "PrivateFacilities": false,
+                "PhoneIncluded": false,
+                "Windows": false,
+                "Corner": true
+            },
+            {
+                "Description": "Pair Office",
+                "MonthlyRate": 2833.94,
+                "Seats": 2,
+                "PrivateFacilities": false,
+                "PhoneIncluded": true,
+                "Windows": false,
+                "Corner": false
+            },
+            {
+                "Description": "Pair Corner Suite",
+                "MonthlyRate": 3662.66,
+                "Seats": 2,
+                "PrivateFacilities": true,
+                "PhoneIncluded": false,
+                "Windows": false,
+                "Corner": true
+            }
+        ],
+        "ParkingIncluded": true,
+        "ConferenceRoomsIncluded": true,
+        "ReceptionIncluded": false,
+        "PublicAccess": false,
+        "LastRenovationDate": "1960-07-02T00:00:00+00:00",
+        "Image": "f38845ea-15c2-4cc7-b46f-c657761f68c0.png"
+    },
+    {
+        "Name": "Bahringer Inc Complex",
+        "Longitude": 41.88951,
+        "Latitude": -87.62864,
+        "MailingAddress": "20 W Kinzie St Chicago, IL 60654",
+        "Rooms": [
+            {
+                "Description": "Single Corner Suite",
+                "MonthlyRate": 1812.52,
+                "Seats": 1,
+                "PrivateFacilities": true,
+                "PhoneIncluded": true,
+                "Windows": false,
+                "Corner": true
+            },
+            {
+                "Description": "Pair Suite",
+                "MonthlyRate": 3369.46,
+                "Seats": 2,
+                "PrivateFacilities": true,
+                "PhoneIncluded": false,
+                "Windows": false,
+                "Corner": false
+            },
+            {
+                "Description": "Coworking Corner Office",
+                "MonthlyRate": 9111.55,
+                "Seats": 5,
+                "PrivateFacilities": false,
+                "PhoneIncluded": true,
+                "Windows": false,
+                "Corner": true
+            }
+        ],
+        "ParkingIncluded": true,
+        "ConferenceRoomsIncluded": false,
+        "ReceptionIncluded": false,
+        "PublicAccess": false,
+        "LastRenovationDate": "1987-06-02T00:00:00+00:00",
+        "Image": "1010078e-2537-4aa1-be46-dd1c2e3ca015.png"
+    },
+    {
+        "Name": "Schimmel - Steuber Complex",
+        "Longitude": 43.616871,
+        "Latitude": -116.220711,
+        "MailingAddress": "1649 Shoreline Dr Boise, ID 83702",
+        "Rooms": [
+            {
+                "Description": "Pair Corner Suite",
+                "MonthlyRate": 2360.57,
+                "Seats": 2,
+                "PrivateFacilities": true,
+                "PhoneIncluded": false,
+                "Windows": false,
+                "Corner": true
+            },
+            {
+                "Description": "Single Office",
+                "MonthlyRate": 1457.8,
+                "Seats": 1,
+                "PrivateFacilities": false,
+                "PhoneIncluded": true,
+                "Windows": false,
+                "Corner": false
+            },
+            {
+                "Description": "Team Corner Office",
+                "MonthlyRate": 4494.55,
+                "Seats": 4,
+                "PrivateFacilities": false,
+                "PhoneIncluded": false,
+                "Windows": false,
+                "Corner": true
+            },
+            {
+                "Description": "Coworking Corner Office",
+                "MonthlyRate": 7379.82,
+                "Seats": 5,
+                "PrivateFacilities": false,
+                "PhoneIncluded": false,
+                "Windows": false,
+                "Corner": true
+            },
+            {
+                "Description": "Pair Office",
+                "MonthlyRate": 2744.15,
+                "Seats": 2,
+                "PrivateFacilities": false,
+                "PhoneIncluded": true,
+                "Windows": false,
+                "Corner": false
+            },
+            {
+                "Description": "Coworking Suite",
+                "MonthlyRate": 8549.02,
+                "Seats": 5,
+                "PrivateFacilities": true,
+                "PhoneIncluded": true,
+                "Windows": false,
+                "Corner": false
+            },
+            {
+                "Description": "Pair Office",
+                "MonthlyRate": 2396.25,
+                "Seats": 2,
+                "PrivateFacilities": false,
+                "PhoneIncluded": true,
+                "Windows": false,
+                "Corner": false
+            },
+            {
+                "Description": "Pair Corner Suite",
+                "MonthlyRate": 2865.04,
+                "Seats": 2,
+                "PrivateFacilities": true,
+                "PhoneIncluded": false,
+                "Windows": false,
+                "Corner": true
+            },
+            {
+                "Description": "Single Corner Office",
+                "MonthlyRate": 1887.97,
+                "Seats": 1,
+                "PrivateFacilities": false,
+                "PhoneIncluded": true,
+                "Windows": false,
+                "Corner": true
+            },
+            {
+                "Description": "Coworking Suite",
+                "MonthlyRate": 5271.62,
+                "Seats": 5,
+                "PrivateFacilities": true,
+                "PhoneIncluded": false,
+                "Windows": false,
+                "Corner": false
+            }
+        ],
+        "ParkingIncluded": false,
+        "ConferenceRoomsIncluded": false,
+        "ReceptionIncluded": false,
+        "PublicAccess": true,
+        "LastRenovationDate": "1981-01-14T00:00:00+00:00",
+        "Image": "3b9ad467-8d8e-42d8-b2a5-96204fafcb4b.png"
+    },
+    {
+        "Name": "Langosh and Sons Complex",
+        "Longitude": 45.448959,
+        "Latitude": -122.782829,
+        "MailingAddress": "9585 SW Washington Square Rd Portland, OR 97223",
+        "Rooms": [
+            {
+                "Description": "Coworking Corner Office",
+                "MonthlyRate": 8671.72,
+                "Seats": 5,
+                "PrivateFacilities": false,
+                "PhoneIncluded": false,
+                "Windows": false,
+                "Corner": true
+            },
+            {
+                "Description": "Team Suite",
+                "MonthlyRate": 5485.02,
+                "Seats": 3,
+                "PrivateFacilities": true,
+                "PhoneIncluded": true,
+                "Windows": false,
+                "Corner": false
+            },
+            {
+                "Description": "Team Suite",
+                "MonthlyRate": 4650.2,
+                "Seats": 3,
+                "PrivateFacilities": true,
+                "PhoneIncluded": false,
+                "Windows": false,
+                "Corner": false
+            }
+        ],
+        "ParkingIncluded": true,
+        "ConferenceRoomsIncluded": false,
+        "ReceptionIncluded": false,
+        "PublicAccess": false,
+        "LastRenovationDate": "1977-05-25T00:00:00+00:00",
+        "Image": "a1cc99c1-7f0d-4d85-bb28-52d4b6d07967.png"
+    },
+    {
+        "Name": "Schinner and Sons Building",
+        "Longitude": 40.756729,
+        "Latitude": -73.989792,
+        "MailingAddress": "11 Times Sq New York, NY 10036",
+        "Rooms": [
+            {
+                "Description": "Team Corner Suite",
+                "MonthlyRate": 6530.15,
+                "Seats": 4,
+                "PrivateFacilities": true,
+                "PhoneIncluded": false,
+                "Windows": false,
+                "Corner": true
+            },
+            {
+                "Description": "Coworking Corner Suite",
+                "MonthlyRate": 6733.36,
+                "Seats": 5,
+                "PrivateFacilities": true,
+                "PhoneIncluded": false,
+                "Windows": false,
+                "Corner": true
+            },
+            {
+                "Description": "Pair Corner Suite",
+                "MonthlyRate": 2786.3,
+                "Seats": 2,
+                "PrivateFacilities": true,
+                "PhoneIncluded": true,
+                "Windows": false,
+                "Corner": true
+            },
+            {
+                "Description": "Pair Office",
+                "MonthlyRate": 3973.13,
+                "Seats": 2,
+                "PrivateFacilities": false,
+                "PhoneIncluded": false,
+                "Windows": false,
+                "Corner": false
+            },
+            {
+                "Description": "Coworking Corner Suite",
+                "MonthlyRate": 7674.63,
+                "Seats": 5,
+                "PrivateFacilities": true,
+                "PhoneIncluded": false,
+                "Windows": false,
+                "Corner": true
+            },
+            {
+                "Description": "Team Suite",
+                "MonthlyRate": 3650.71,
+                "Seats": 3,
+                "PrivateFacilities": true,
+                "PhoneIncluded": true,
+                "Windows": false,
+                "Corner": false
+            },
+            {
+                "Description": "Team Office",
+                "MonthlyRate": 7336.61,
+                "Seats": 4,
+                "PrivateFacilities": false,
+                "PhoneIncluded": false,
+                "Windows": false,
+                "Corner": false
+            },
+            {
+                "Description": "Single Corner Suite",
+                "MonthlyRate": 1316.03,
+                "Seats": 1,
+                "PrivateFacilities": true,
+                "PhoneIncluded": false,
+                "Windows": false,
+                "Corner": true
+            },
+            {
+                "Description": "Coworking Corner Office",
+                "MonthlyRate": 5480.86,
+                "Seats": 5,
+                "PrivateFacilities": false,
+                "PhoneIncluded": true,
+                "Windows": false,
+                "Corner": true
+            }
+        ],
+        "ParkingIncluded": true,
+        "ConferenceRoomsIncluded": false,
+        "ReceptionIncluded": true,
+        "PublicAccess": true,
+        "LastRenovationDate": "2013-10-30T00:00:00+00:00",
+        "Image": "771da4a1-87d4-4114-bc33-ae3dc50c5d0a.png"
+    },
+    {
+        "Name": "Murphy, Thiel and Morar Plaza",
+        "Longitude": 47.640656,
+        "Latitude": -122.126381,
+        "MailingAddress": "16021 NE 36th Way Redmond, WA 98052",
+        "Rooms": [
+            {
+                "Description": "Single Corner Office",
+                "MonthlyRate": 1212.57,
+                "Seats": 1,
+                "PrivateFacilities": false,
+                "PhoneIncluded": true,
+                "Windows": false,
+                "Corner": true
+            },
+            {
+                "Description": "Pair Office",
+                "MonthlyRate": 3361.48,
+                "Seats": 2,
+                "PrivateFacilities": false,
+                "PhoneIncluded": true,
+                "Windows": false,
+                "Corner": false
+            },
+            {
+                "Description": "Single Suite",
+                "MonthlyRate": 1403.76,
+                "Seats": 1,
+                "PrivateFacilities": true,
+                "PhoneIncluded": false,
+                "Windows": false,
+                "Corner": false
+            },
+            {
+                "Description": "Coworking Office",
+                "MonthlyRate": 5066.23,
+                "Seats": 5,
+                "PrivateFacilities": false,
+                "PhoneIncluded": true,
+                "Windows": false,
+                "Corner": false
+            },
+            {
+                "Description": "Team Corner Office",
+                "MonthlyRate": 5114.18,
+                "Seats": 3,
+                "PrivateFacilities": false,
+                "PhoneIncluded": true,
+                "Windows": false,
+                "Corner": true
+            },
+            {
+                "Description": "Single Corner Suite",
+                "MonthlyRate": 1900.73,
+                "Seats": 1,
+                "PrivateFacilities": true,
+                "PhoneIncluded": true,
+                "Windows": false,
+                "Corner": true
+            },
+            {
+                "Description": "Single Corner Office",
+                "MonthlyRate": 1505.9,
+                "Seats": 1,
+                "PrivateFacilities": false,
+                "PhoneIncluded": false,
+                "Windows": false,
+                "Corner": true
+            },
+            {
+                "Description": "Team Corner Suite",
+                "MonthlyRate": 3030.39,
+                "Seats": 3,
+                "PrivateFacilities": true,
+                "PhoneIncluded": false,
+                "Windows": false,
+                "Corner": true
+            },
+            {
+                "Description": "Coworking Corner Suite",
+                "MonthlyRate": 6433.95,
+                "Seats": 5,
+                "PrivateFacilities": true,
+                "PhoneIncluded": false,
+                "Windows": false,
+                "Corner": true
+            }
+        ],
+        "ParkingIncluded": false,
+        "ConferenceRoomsIncluded": false,
+        "ReceptionIncluded": true,
+        "PublicAccess": true,
+        "LastRenovationDate": "1975-09-18T00:00:00+00:00",
+        "Image": "8233bd2d-8ca7-457a-8452-c302ebe21533.png"
+    },
+    {
+        "Name": "Wolff, Douglas and Hagenes Square",
+        "Longitude": 41.725285,
+        "Latitude": -72.761261,
+        "MailingAddress": "1500 New Britain Ave West Hartford, CT 06110",
+        "Rooms": [
+            {
+                "Description": "Pair Office",
+                "MonthlyRate": 2607.22,
+                "Seats": 2,
+                "PrivateFacilities": false,
+                "PhoneIncluded": false,
+                "Windows": false,
+                "Corner": false
+            },
+            {
+                "Description": "Single Corner Office",
+                "MonthlyRate": 1389.03,
+                "Seats": 1,
+                "PrivateFacilities": false,
+                "PhoneIncluded": false,
+                "Windows": false,
+                "Corner": true
+            },
+            {
+                "Description": "Coworking Corner Suite",
+                "MonthlyRate": 7763.82,
+                "Seats": 5,
+                "PrivateFacilities": true,
+                "PhoneIncluded": false,
+                "Windows": false,
+                "Corner": true
+            }
+        ],
+        "ParkingIncluded": false,
+        "ConferenceRoomsIncluded": true,
+        "ReceptionIncluded": true,
+        "PublicAccess": true,
+        "LastRenovationDate": "1987-04-19T00:00:00+00:00",
+        "Image": "99821ccb-9293-4653-92a0-83a43d55411f.png"
+    },
+    {
+        "Name": "Wunsch LLC Center",
+        "Longitude": 47.644508,
+        "Latitude": -122.13694,
+        "MailingAddress": "15255 NE 40th Redmond, WA 98052",
+        "Rooms": [
+            {
+                "Description": "Coworking Corner Suite",
+                "MonthlyRate": 8815.41,
+                "Seats": 5,
+                "PrivateFacilities": true,
+                "PhoneIncluded": false,
+                "Windows": false,
+                "Corner": true
+            },
+            {
+                "Description": "Single Corner Office",
+                "MonthlyRate": 1420.73,
+                "Seats": 1,
+                "PrivateFacilities": false,
+                "PhoneIncluded": true,
+                "Windows": false,
+                "Corner": true
+            },
+            {
+                "Description": "Pair Suite",
+                "MonthlyRate": 2882.65,
+                "Seats": 2,
+                "PrivateFacilities": true,
+                "PhoneIncluded": true,
+                "Windows": false,
+                "Corner": false
+            },
+            {
+                "Description": "Team Corner Office",
+                "MonthlyRate": 3485.03,
+                "Seats": 3,
+                "PrivateFacilities": false,
+                "PhoneIncluded": false,
+                "Windows": false,
+                "Corner": true
+            },
+            {
+                "Description": "Team Corner Office",
+                "MonthlyRate": 5339.08,
+                "Seats": 4,
+                "PrivateFacilities": false,
+                "PhoneIncluded": false,
+                "Windows": false,
+                "Corner": true
+            },
+            {
+                "Description": "Team Suite",
+                "MonthlyRate": 4652.78,
+                "Seats": 4,
+                "PrivateFacilities": true,
+                "PhoneIncluded": true,
+                "Windows": false,
+                "Corner": false
+            }
+        ],
+        "ParkingIncluded": false,
+        "ConferenceRoomsIncluded": true,
+        "ReceptionIncluded": true,
+        "PublicAccess": true,
+        "LastRenovationDate": "1978-11-21T00:00:00+00:00",
+        "Image": "672adc6c-72f6-49c2-aa03-bb2d9b9b8a27.png"
+    },
+    {
+        "Name": "Schuster Inc Building",
+        "Longitude": 38.863659,
+        "Latitude": -77.060066,
+        "MailingAddress": "1100 S Hayes St Arlington, VA 22202",
+        "Rooms": [
+            {
+                "Description": "Team Corner Suite",
+                "MonthlyRate": 5253.62,
+                "Seats": 4,
+                "PrivateFacilities": true,
+                "PhoneIncluded": true,
+                "Windows": false,
+                "Corner": true
+            },
+            {
+                "Description": "Pair Office",
+                "MonthlyRate": 3555.14,
+                "Seats": 2,
+                "PrivateFacilities": false,
+                "PhoneIncluded": false,
+                "Windows": false,
+                "Corner": false
+            }
+        ],
+        "ParkingIncluded": true,
+        "ConferenceRoomsIncluded": true,
+        "ReceptionIncluded": false,
+        "PublicAccess": false,
+        "LastRenovationDate": "1996-01-27T00:00:00+00:00",
+        "Image": "f5aa7996-ca52-4419-9b5a-6e1288b9569a.png"
+    },
+    {
+        "Name": "Champlin - Bauch Square",
+        "Longitude": 37.362087,
+        "Latitude": -121.946564,
+        "MailingAddress": "2045 Lafayette St Santa Clara, CA  95050",
+        "Rooms": [
+            {
+                "Description": "Team Corner Suite",
+                "MonthlyRate": 3620.28,
+                "Seats": 3,
+                "PrivateFacilities": true,
+                "PhoneIncluded": false,
+                "Windows": false,
+                "Corner": true
+            },
+            {
+                "Description": "Team Suite",
+                "MonthlyRate": 7209.24,
+                "Seats": 4,
+                "PrivateFacilities": true,
+                "PhoneIncluded": true,
+                "Windows": false,
+                "Corner": false
+            },
+            {
+                "Description": "Pair Corner Office",
+                "MonthlyRate": 3524.81,
+                "Seats": 2,
+                "PrivateFacilities": false,
+                "PhoneIncluded": false,
+                "Windows": false,
+                "Corner": true
+            },
+            {
+                "Description": "Single Corner Suite",
+                "MonthlyRate": 1641.48,
+                "Seats": 1,
+                "PrivateFacilities": true,
+                "PhoneIncluded": true,
+                "Windows": false,
+                "Corner": true
+            },
+            {
+                "Description": "Single Corner Suite",
+                "MonthlyRate": 1931.15,
+                "Seats": 1,
+                "PrivateFacilities": true,
+                "PhoneIncluded": false,
+                "Windows": false,
+                "Corner": true
+            },
+            {
+                "Description": "Team Corner Suite",
+                "MonthlyRate": 3206.39,
+                "Seats": 3,
+                "PrivateFacilities": true,
+                "PhoneIncluded": true,
+                "Windows": false,
+                "Corner": true
+            },
+            {
+                "Description": "Single Corner Suite",
+                "MonthlyRate": 1449.74,
+                "Seats": 1,
+                "PrivateFacilities": true,
+                "PhoneIncluded": true,
+                "Windows": false,
+                "Corner": true
+            }
+        ],
+        "ParkingIncluded": false,
+        "ConferenceRoomsIncluded": false,
+        "ReceptionIncluded": false,
+        "PublicAccess": false,
+        "LastRenovationDate": "1960-02-24T00:00:00+00:00",
+        "Image": "9a26782e-136a-4d4d-af80-85fedb0097a8.png"
+    },
+    {
+        "Name": "Watsica - Parisian Complex",
+        "Longitude": 38.67219,
+        "Latitude": -90.44081,
+        "MailingAddress": "3 Cityplace Dr St. Louis, MO 63141",
+        "Rooms": [
+            {
+                "Description": "Pair Corner Suite",
+                "MonthlyRate": 2562.0,
+                "Seats": 2,
+                "PrivateFacilities": true,
+                "PhoneIncluded": true,
+                "Windows": false,
+                "Corner": true
+            },
+            {
+                "Description": "Team Corner Suite",
+                "MonthlyRate": 5971.57,
+                "Seats": 3,
+                "PrivateFacilities": true,
+                "PhoneIncluded": true,
+                "Windows": false,
+                "Corner": true
+            },
+            {
+                "Description": "Team Suite",
+                "MonthlyRate": 4481.49,
+                "Seats": 3,
+                "PrivateFacilities": true,
+                "PhoneIncluded": false,
+                "Windows": false,
+                "Corner": false
+            },
+            {
+                "Description": "Pair Office",
+                "MonthlyRate": 2820.17,
+                "Seats": 2,
+                "PrivateFacilities": false,
+                "PhoneIncluded": true,
+                "Windows": false,
+                "Corner": false
+            }
+        ],
+        "ParkingIncluded": false,
+        "ConferenceRoomsIncluded": true,
+        "ReceptionIncluded": false,
+        "PublicAccess": false,
+        "LastRenovationDate": "1954-03-18T00:00:00+00:00",
+        "Image": "b498d2ac-5d23-4d7b-b7fb-d65370bfd296.png"
+    },
+    {
+        "Name": "Hammes - Welch Square",
+        "Longitude": 37.415588,
+        "Latitude": -122.075577,
+        "MailingAddress": "1288 Pear Ave Mountain View, CA  94043",
+        "Rooms": [
+            {
+                "Description": "Coworking Office",
+                "MonthlyRate": 9236.44,
+                "Seats": 5,
+                "PrivateFacilities": false,
+                "PhoneIncluded": true,
+                "Windows": false,
+                "Corner": false
+            },
+            {
+                "Description": "Team Office",
+                "MonthlyRate": 7018.88,
+                "Seats": 4,
+                "PrivateFacilities": false,
+                "PhoneIncluded": true,
+                "Windows": false,
+                "Corner": false
+            },
+            {
+                "Description": "Single Corner Suite",
+                "MonthlyRate": 1850.29,
+                "Seats": 1,
+                "PrivateFacilities": true,
+                "PhoneIncluded": false,
+                "Windows": false,
+                "Corner": true
+            }
+        ],
+        "ParkingIncluded": true,
+        "ConferenceRoomsIncluded": true,
+        "ReceptionIncluded": true,
+        "PublicAccess": true,
+        "LastRenovationDate": "1982-08-07T00:00:00+00:00",
+        "Image": "a2c415e9-2ba1-4273-abd9-83a6e245249f.png"
+    },
+    {
+        "Name": "Mertz Group Square",
+        "Longitude": 36.072445,
+        "Latitude": -95.889305,
+        "MailingAddress": "7633 E 63rd Pl Tulsa, OK 74133",
+        "Rooms": [
+            {
+                "Description": "Team Corner Office",
+                "MonthlyRate": 4192.34,
+                "Seats": 4,
+                "PrivateFacilities": false,
+                "PhoneIncluded": true,
+                "Windows": false,
+                "Corner": true
+            },
+            {
+                "Description": "Pair Corner Office",
+                "MonthlyRate": 2879.76,
+                "Seats": 2,
+                "PrivateFacilities": false,
+                "PhoneIncluded": true,
+                "Windows": false,
+                "Corner": true
+            }
+        ],
+        "ParkingIncluded": true,
+        "ConferenceRoomsIncluded": false,
+        "ReceptionIncluded": false,
+        "PublicAccess": true,
+        "LastRenovationDate": "1988-04-04T00:00:00+00:00",
+        "Image": "91e3806f-180f-4a98-a21d-079b30ca65b7.png"
+    },
+    {
+        "Name": "Daniel, McDermott and Douglas Square",
+        "Longitude": 33.503067,
+        "Latitude": -111.929405,
+        "MailingAddress": "7014 E Camelback Rd Scottsdale, AZ 85251",
+        "Rooms": [
+            {
+                "Description": "Team Office",
+                "MonthlyRate": 3690.77,
+                "Seats": 3,
+                "PrivateFacilities": false,
+                "PhoneIncluded": true,
+                "Windows": false,
+                "Corner": false
+            },
+            {
+                "Description": "Pair Suite",
+                "MonthlyRate": 3317.32,
+                "Seats": 2,
+                "PrivateFacilities": true,
+                "PhoneIncluded": true,
+                "Windows": false,
+                "Corner": false
+            }
+        ],
+        "ParkingIncluded": false,
+        "ConferenceRoomsIncluded": true,
+        "ReceptionIncluded": false,
+        "PublicAccess": true,
+        "LastRenovationDate": "2017-01-18T00:00:00+00:00",
+        "Image": "1132f6ad-a8c9-45d9-9859-c48b5ae51253.png"
+    },
+    {
+        "Name": "Mayer - Dare Complex",
+        "Longitude": 38.90166,
+        "Latitude": -77.03241,
+        "MailingAddress": "1401 I St NW Washington D.C.,  20005",
+        "Rooms": [
+            {
+                "Description": "Single Suite",
+                "MonthlyRate": 1711.0,
+                "Seats": 1,
+                "PrivateFacilities": true,
+                "PhoneIncluded": false,
+                "Windows": false,
+                "Corner": false
+            },
+            {
+                "Description": "Pair Corner Suite",
+                "MonthlyRate": 2983.95,
+                "Seats": 2,
+                "PrivateFacilities": true,
+                "PhoneIncluded": true,
+                "Windows": false,
+                "Corner": true
+            },
+            {
+                "Description": "Single Office",
+                "MonthlyRate": 1875.88,
+                "Seats": 1,
+                "PrivateFacilities": false,
+                "PhoneIncluded": true,
+                "Windows": false,
+                "Corner": false
+            }
+        ],
+        "ParkingIncluded": false,
+        "ConferenceRoomsIncluded": false,
+        "ReceptionIncluded": true,
+        "PublicAccess": false,
+        "LastRenovationDate": "1998-02-19T00:00:00+00:00",
+        "Image": "7b2b35b5-2bb6-4e07-8f8f-8615910c8664.png"
+    },
+    {
+        "Name": "Turner, Schoen and Bogisich Center",
+        "Longitude": 37.989769,
+        "Latitude": -84.527771,
+        "MailingAddress": "3401 Nicholasville Rd Lexington, KY 40503",
+        "Rooms": [
+            {
+                "Description": "Pair Corner Office",
+                "MonthlyRate": 2024.67,
+                "Seats": 2,
+                "PrivateFacilities": false,
+                "PhoneIncluded": false,
+                "Windows": false,
+                "Corner": true
+            },
+            {
+                "Description": "Team Suite",
+                "MonthlyRate": 7101.23,
+                "Seats": 4,
+                "PrivateFacilities": true,
+                "PhoneIncluded": false,
+                "Windows": false,
+                "Corner": false
+            },
+            {
+                "Description": "Coworking Suite",
+                "MonthlyRate": 8112.78,
+                "Seats": 5,
+                "PrivateFacilities": true,
+                "PhoneIncluded": true,
+                "Windows": false,
+                "Corner": false
+            },
+            {
+                "Description": "Pair Suite",
+                "MonthlyRate": 2332.04,
+                "Seats": 2,
+                "PrivateFacilities": true,
+                "PhoneIncluded": false,
+                "Windows": false,
+                "Corner": false
+            },
+            {
+                "Description": "Team Corner Office",
+                "MonthlyRate": 4899.36,
+                "Seats": 4,
+                "PrivateFacilities": false,
+                "PhoneIncluded": true,
+                "Windows": false,
+                "Corner": true
+            },
+            {
+                "Description": "Pair Corner Suite",
+                "MonthlyRate": 3187.35,
+                "Seats": 2,
+                "PrivateFacilities": true,
+                "PhoneIncluded": true,
+                "Windows": false,
+                "Corner": true
+            },
+            {
+                "Description": "Single Corner Office",
+                "MonthlyRate": 1743.9,
+                "Seats": 1,
+                "PrivateFacilities": false,
+                "PhoneIncluded": false,
+                "Windows": false,
+                "Corner": true
+            }
+        ],
+        "ParkingIncluded": false,
+        "ConferenceRoomsIncluded": true,
+        "ReceptionIncluded": true,
+        "PublicAccess": true,
+        "LastRenovationDate": "2016-07-12T00:00:00+00:00",
+        "Image": "72d63689-cb05-4749-914d-5a7b0884de5c.png"
+    },
+    {
+        "Name": "Wiza, Quitzon and Moen Complex",
+        "Longitude": 37.792259,
+        "Latitude": -122.403481,
+        "MailingAddress": "555 California St San Francisco, CA  94104",
+        "Rooms": [
+            {
+                "Description": "Coworking Corner Office",
+                "MonthlyRate": 7769.87,
+                "Seats": 5,
+                "PrivateFacilities": false,
+                "PhoneIncluded": false,
+                "Windows": false,
+                "Corner": true
+            },
+            {
+                "Description": "Team Corner Office",
+                "MonthlyRate": 4896.29,
+                "Seats": 4,
+                "PrivateFacilities": false,
+                "PhoneIncluded": false,
+                "Windows": false,
+                "Corner": true
+            }
+        ],
+        "ParkingIncluded": false,
+        "ConferenceRoomsIncluded": true,
+        "ReceptionIncluded": true,
+        "PublicAccess": false,
+        "LastRenovationDate": "2005-03-20T00:00:00+00:00",
+        "Image": "ea913d41-74af-445d-9191-54bb1ca78cd8.png"
+    },
+    {
+        "Name": "Buckridge LLC Square",
+        "Longitude": 32.875282,
+        "Latitude": -117.206993,
+        "MailingAddress": "9255 Towne Centre Dr San Diego, CA  92121",
+        "Rooms": [
+            {
+                "Description": "Coworking Suite",
+                "MonthlyRate": 8481.1,
+                "Seats": 5,
+                "PrivateFacilities": true,
+                "PhoneIncluded": true,
+                "Windows": false,
+                "Corner": false
+            },
+            {
+                "Description": "Team Corner Suite",
+                "MonthlyRate": 5847.08,
+                "Seats": 4,
+                "PrivateFacilities": true,
+                "PhoneIncluded": true,
+                "Windows": false,
+                "Corner": true
+            },
+            {
+                "Description": "Pair Corner Suite",
+                "MonthlyRate": 3750.94,
+                "Seats": 2,
+                "PrivateFacilities": true,
+                "PhoneIncluded": true,
+                "Windows": false,
+                "Corner": true
+            },
+            {
+                "Description": "Pair Office",
+                "MonthlyRate": 3385.72,
+                "Seats": 2,
+                "PrivateFacilities": false,
+                "PhoneIncluded": true,
+                "Windows": false,
+                "Corner": false
+            },
+            {
+                "Description": "Team Corner Office",
+                "MonthlyRate": 4266.03,
+                "Seats": 3,
+                "PrivateFacilities": false,
+                "PhoneIncluded": false,
+                "Windows": false,
+                "Corner": true
+            },
+            {
+                "Description": "Team Suite",
+                "MonthlyRate": 5513.53,
+                "Seats": 3,
+                "PrivateFacilities": true,
+                "PhoneIncluded": true,
+                "Windows": false,
+                "Corner": false
+            },
+            {
+                "Description": "Pair Corner Office",
+                "MonthlyRate": 2453.97,
+                "Seats": 2,
+                "PrivateFacilities": false,
+                "PhoneIncluded": true,
+                "Windows": false,
+                "Corner": true
+            },
+            {
+                "Description": "Single Suite",
+                "MonthlyRate": 1278.9,
+                "Seats": 1,
+                "PrivateFacilities": true,
+                "PhoneIncluded": false,
+                "Windows": false,
+                "Corner": false
+            }
+        ],
+        "ParkingIncluded": false,
+        "ConferenceRoomsIncluded": true,
+        "ReceptionIncluded": true,
+        "PublicAccess": true,
+        "LastRenovationDate": "2012-06-02T00:00:00+00:00",
+        "Image": "728e7683-ab60-4026-b7f0-528fe690717f.png"
+    },
+    {
+        "Name": "Friesen and Sons Square",
+        "Longitude": 45.322392,
+        "Latitude": -122.770576,
+        "MailingAddress": "9025 SW Hillman Ct Wilsonville, OR 97070",
+        "Rooms": [
+            {
+                "Description": "Team Corner Office",
+                "MonthlyRate": 5536.05,
+                "Seats": 4,
+                "PrivateFacilities": false,
+                "PhoneIncluded": true,
+                "Windows": false,
+                "Corner": true
+            },
+            {
+                "Description": "Single Corner Office",
+                "MonthlyRate": 1318.26,
+                "Seats": 1,
+                "PrivateFacilities": false,
+                "PhoneIncluded": false,
+                "Windows": false,
+                "Corner": true
+            },
+            {
+                "Description": "Team Office",
+                "MonthlyRate": 5320.04,
+                "Seats": 3,
+                "PrivateFacilities": false,
+                "PhoneIncluded": true,
+                "Windows": false,
+                "Corner": false
+            },
+            {
+                "Description": "Single Corner Office",
+                "MonthlyRate": 1132.24,
+                "Seats": 1,
+                "PrivateFacilities": false,
+                "PhoneIncluded": false,
+                "Windows": false,
+                "Corner": true
+            },
+            {
+                "Description": "Single Corner Office",
+                "MonthlyRate": 1193.97,
+                "Seats": 1,
+                "PrivateFacilities": false,
+                "PhoneIncluded": false,
+                "Windows": false,
+                "Corner": true
+            },
+            {
+                "Description": "Pair Corner Suite",
+                "MonthlyRate": 3854.67,
+                "Seats": 2,
+                "PrivateFacilities": true,
+                "PhoneIncluded": true,
+                "Windows": false,
+                "Corner": true
+            },
+            {
+                "Description": "Coworking Corner Suite",
+                "MonthlyRate": 8401.5,
+                "Seats": 5,
+                "PrivateFacilities": true,
+                "PhoneIncluded": true,
+                "Windows": false,
+                "Corner": true
+            }
+        ],
+        "ParkingIncluded": false,
+        "ConferenceRoomsIncluded": false,
+        "ReceptionIncluded": true,
+        "PublicAccess": false,
+        "LastRenovationDate": "1980-09-16T00:00:00+00:00",
+        "Image": "fc2ccc3c-84af-4207-ba20-a15e4311b753.png"
+    },
+    {
+        "Name": "Glover, Schaden and Senger Center",
+        "Longitude": 47.61166,
+        "Latitude": -122.347771,
+        "MailingAddress": "2211 Elliott Ave Seattle, WA 98121",
+        "Rooms": [
+            {
+                "Description": "Pair Suite",
+                "MonthlyRate": 2968.04,
+                "Seats": 2,
+                "PrivateFacilities": true,
+                "PhoneIncluded": true,
+                "Windows": false,
+                "Corner": false
+            },
+            {
+                "Description": "Pair Office",
+                "MonthlyRate": 3269.61,
+                "Seats": 2,
+                "PrivateFacilities": false,
+                "PhoneIncluded": false,
+                "Windows": false,
+                "Corner": false
+            },
+            {
+                "Description": "Pair Corner Suite",
+                "MonthlyRate": 3118.11,
+                "Seats": 2,
+                "PrivateFacilities": true,
+                "PhoneIncluded": false,
+                "Windows": false,
+                "Corner": true
+            },
+            {
+                "Description": "Single Corner Suite",
+                "MonthlyRate": 1124.82,
+                "Seats": 1,
+                "PrivateFacilities": true,
+                "PhoneIncluded": true,
+                "Windows": false,
+                "Corner": true
+            },
+            {
+                "Description": "Single Office",
+                "MonthlyRate": 1722.18,
+                "Seats": 1,
+                "PrivateFacilities": false,
+                "PhoneIncluded": false,
+                "Windows": false,
+                "Corner": false
+            }
+        ],
+        "ParkingIncluded": false,
+        "ConferenceRoomsIncluded": true,
+        "ReceptionIncluded": false,
+        "PublicAccess": false,
+        "LastRenovationDate": "1969-08-05T00:00:00+00:00",
+        "Image": "6597f7f4-a002-4c85-ab78-dc6e0096f0e9.png"
+    },
+    {
+        "Name": "Spencer and Sons Center",
+        "Longitude": 32.800762,
+        "Latitude": -96.819412,
+        "MailingAddress": "1950 N Stemmons Fw Dallas, TX 75207",
+        "Rooms": [
+            {
+                "Description": "Team Corner Suite",
+                "MonthlyRate": 6407.59,
+                "Seats": 4,
+                "PrivateFacilities": true,
+                "PhoneIncluded": false,
+                "Windows": false,
+                "Corner": true
+            },
+            {
+                "Description": "Coworking Office",
+                "MonthlyRate": 9191.36,
+                "Seats": 5,
+                "PrivateFacilities": false,
+                "PhoneIncluded": true,
+                "Windows": false,
+                "Corner": false
+            },
+            {
+                "Description": "Pair Corner Office",
+                "MonthlyRate": 3737.82,
+                "Seats": 2,
+                "PrivateFacilities": false,
+                "PhoneIncluded": true,
+                "Windows": false,
+                "Corner": true
+            },
+            {
+                "Description": "Coworking Corner Suite",
+                "MonthlyRate": 8344.22,
+                "Seats": 5,
+                "PrivateFacilities": true,
+                "PhoneIncluded": false,
+                "Windows": false,
+                "Corner": true
+            },
+            {
+                "Description": "Pair Office",
+                "MonthlyRate": 2592.53,
+                "Seats": 2,
+                "PrivateFacilities": false,
+                "PhoneIncluded": true,
+                "Windows": false,
+                "Corner": false
+            },
+            {
+                "Description": "Team Corner Suite",
+                "MonthlyRate": 4406.46,
+                "Seats": 4,
+                "PrivateFacilities": true,
+                "PhoneIncluded": false,
+                "Windows": false,
+                "Corner": true
+            },
+            {
+                "Description": "Pair Corner Office",
+                "MonthlyRate": 2449.91,
+                "Seats": 2,
+                "PrivateFacilities": false,
+                "PhoneIncluded": false,
+                "Windows": false,
+                "Corner": true
+            }
+        ],
+        "ParkingIncluded": false,
+        "ConferenceRoomsIncluded": true,
+        "ReceptionIncluded": false,
+        "PublicAccess": true,
+        "LastRenovationDate": "1959-11-14T00:00:00+00:00",
+        "Image": "7a1c935f-7782-4ab0-80cd-c18771b89ea7.png"
+    },
+    {
+        "Name": "Stanton - Stoltenberg Square",
+        "Longitude": 47.61702,
+        "Latitude": -122.193008,
+        "MailingAddress": "11025 NE 8th St Bellevue, WA 98004",
+        "Rooms": [
+            {
+                "Description": "Team Suite",
+                "MonthlyRate": 4612.81,
+                "Seats": 3,
+                "PrivateFacilities": true,
+                "PhoneIncluded": false,
+                "Windows": false,
+                "Corner": false
+            },
+            {
+                "Description": "Team Suite",
+                "MonthlyRate": 6053.15,
+                "Seats": 4,
+                "PrivateFacilities": true,
+                "PhoneIncluded": true,
+                "Windows": false,
+                "Corner": false
+            }
+        ],
+        "ParkingIncluded": false,
+        "ConferenceRoomsIncluded": true,
+        "ReceptionIncluded": true,
+        "PublicAccess": false,
+        "LastRenovationDate": "2000-01-19T00:00:00+00:00",
+        "Image": "bd86748a-34a0-42de-8309-f29f805ecdb1.png"
+    },
+    {
+        "Name": "Heidenreich - Hills Building",
+        "Longitude": 25.689901,
+        "Latitude": -80.312546,
+        "MailingAddress": "7535 Dadeland Mall Miami, FL 33156",
+        "Rooms": [
+            {
+                "Description": "Team Corner Office",
+                "MonthlyRate": 4206.6,
+                "Seats": 3,
+                "PrivateFacilities": false,
+                "PhoneIncluded": true,
+                "Windows": false,
+                "Corner": true
+            },
+            {
+                "Description": "Team Office",
+                "MonthlyRate": 6096.9,
+                "Seats": 4,
+                "PrivateFacilities": false,
+                "PhoneIncluded": false,
+                "Windows": false,
+                "Corner": false
+            },
+            {
+                "Description": "Coworking Suite",
+                "MonthlyRate": 7768.76,
+                "Seats": 5,
+                "PrivateFacilities": true,
+                "PhoneIncluded": false,
+                "Windows": false,
+                "Corner": false
+            },
+            {
+                "Description": "Pair Corner Office",
+                "MonthlyRate": 2056.67,
+                "Seats": 2,
+                "PrivateFacilities": false,
+                "PhoneIncluded": true,
+                "Windows": false,
+                "Corner": true
+            },
+            {
+                "Description": "Team Suite",
+                "MonthlyRate": 5306.41,
+                "Seats": 3,
+                "PrivateFacilities": true,
+                "PhoneIncluded": true,
+                "Windows": false,
+                "Corner": false
+            },
+            {
+                "Description": "Team Suite",
+                "MonthlyRate": 5902.69,
+                "Seats": 4,
+                "PrivateFacilities": true,
+                "PhoneIncluded": true,
+                "Windows": false,
+                "Corner": false
+            },
+            {
+                "Description": "Team Suite",
+                "MonthlyRate": 3017.75,
+                "Seats": 3,
+                "PrivateFacilities": true,
+                "PhoneIncluded": true,
+                "Windows": false,
+                "Corner": false
+            },
+            {
+                "Description": "Single Office",
+                "MonthlyRate": 1792.33,
+                "Seats": 1,
+                "PrivateFacilities": false,
+                "PhoneIncluded": false,
+                "Windows": false,
+                "Corner": false
+            },
+            {
+                "Description": "Team Office",
+                "MonthlyRate": 7086.87,
+                "Seats": 4,
+                "PrivateFacilities": false,
+                "PhoneIncluded": false,
+                "Windows": false,
+                "Corner": false
+            }
+        ],
+        "ParkingIncluded": false,
+        "ConferenceRoomsIncluded": true,
+        "ReceptionIncluded": false,
+        "PublicAccess": false,
+        "LastRenovationDate": "2003-07-23T00:00:00+00:00",
+        "Image": "2cba3a82-8bb1-444d-9fbe-8026349ab6c9.png"
+    },
+    {
+        "Name": "Kreiger - Langworth Square",
+        "Longitude": 46.814121,
+        "Latitude": -96.845932,
+        "MailingAddress": "4000 Great Plains Dr Fargo, ND 58104",
+        "Rooms": [
+            {
+                "Description": "Pair Office",
+                "MonthlyRate": 2748.89,
+                "Seats": 2,
+                "PrivateFacilities": false,
+                "PhoneIncluded": true,
+                "Windows": false,
+                "Corner": false
+            },
+            {
+                "Description": "Team Corner Office",
+                "MonthlyRate": 4913.37,
+                "Seats": 4,
+                "PrivateFacilities": false,
+                "PhoneIncluded": true,
+                "Windows": false,
+                "Corner": true
+            }
+        ],
+        "ParkingIncluded": false,
+        "ConferenceRoomsIncluded": true,
+        "ReceptionIncluded": false,
+        "PublicAccess": true,
+        "LastRenovationDate": "1978-02-21T00:00:00+00:00",
+        "Image": "cd2b2498-48b3-486b-b6ad-d428bc94100d.png"
+    },
+    {
+        "Name": "Legros Group Square",
+        "Longitude": 35.90416,
+        "Latitude": -78.940483,
+        "MailingAddress": "6910 Fayetteville Rd Durham, NC 27713",
+        "Rooms": [
+            {
+                "Description": "Pair Office",
+                "MonthlyRate": 3292.5,
+                "Seats": 2,
+                "PrivateFacilities": false,
+                "PhoneIncluded": false,
+                "Windows": false,
+                "Corner": false
+            },
+            {
+                "Description": "Coworking Corner Office",
+                "MonthlyRate": 6232.33,
+                "Seats": 5,
+                "PrivateFacilities": false,
+                "PhoneIncluded": true,
+                "Windows": false,
+                "Corner": true
+            },
+            {
+                "Description": "Coworking Corner Office",
+                "MonthlyRate": 9647.83,
+                "Seats": 5,
+                "PrivateFacilities": false,
+                "PhoneIncluded": true,
+                "Windows": false,
+                "Corner": true
+            },
+            {
+                "Description": "Coworking Suite",
+                "MonthlyRate": 7413.87,
+                "Seats": 5,
+                "PrivateFacilities": true,
+                "PhoneIncluded": false,
+                "Windows": false,
+                "Corner": false
+            },
+            {
+                "Description": "Team Corner Office",
+                "MonthlyRate": 4417.05,
+                "Seats": 4,
+                "PrivateFacilities": false,
+                "PhoneIncluded": false,
+                "Windows": false,
+                "Corner": true
+            }
+        ],
+        "ParkingIncluded": false,
+        "ConferenceRoomsIncluded": false,
+        "ReceptionIncluded": true,
+        "PublicAccess": false,
+        "LastRenovationDate": "1999-09-06T00:00:00+00:00",
+        "Image": "65b46dc4-4c84-494e-96d9-f665810d3325.png"
+    },
+    {
+        "Name": "Mills Inc Building",
+        "Longitude": 40.760586,
+        "Latitude": -73.975403,
+        "MailingAddress": "677 5th Ave New York, NY 10022",
+        "Rooms": [
+            {
+                "Description": "Team Suite",
+                "MonthlyRate": 6716.76,
+                "Seats": 4,
+                "PrivateFacilities": true,
+                "PhoneIncluded": false,
+                "Windows": false,
+                "Corner": false
+            },
+            {
+                "Description": "Team Corner Office",
+                "MonthlyRate": 7115.22,
+                "Seats": 4,
+                "PrivateFacilities": false,
+                "PhoneIncluded": true,
+                "Windows": false,
+                "Corner": true
+            },
+            {
+                "Description": "Coworking Corner Suite",
+                "MonthlyRate": 6510.03,
+                "Seats": 5,
+                "PrivateFacilities": true,
+                "PhoneIncluded": false,
+                "Windows": false,
+                "Corner": true
+            }
+        ],
+        "ParkingIncluded": false,
+        "ConferenceRoomsIncluded": false,
+        "ReceptionIncluded": false,
+        "PublicAccess": true,
+        "LastRenovationDate": "1970-01-18T00:00:00+00:00",
+        "Image": "1bd4e948-b155-4d12-ae0f-63ad5eacfd44.png"
+    },
+    {
+        "Name": "Stiedemann and Sons Building",
+        "Longitude": 45.531139,
+        "Latitude": -122.685928,
+        "MailingAddress": "1414 NW Northrup St Portland, OR 97209",
+        "Rooms": [
+            {
+                "Description": "Pair Corner Suite",
+                "MonthlyRate": 2497.45,
+                "Seats": 2,
+                "PrivateFacilities": true,
+                "PhoneIncluded": true,
+                "Windows": false,
+                "Corner": true
+            },
+            {
+                "Description": "Pair Office",
+                "MonthlyRate": 2842.26,
+                "Seats": 2,
+                "PrivateFacilities": false,
+                "PhoneIncluded": false,
+                "Windows": false,
+                "Corner": false
+            },
+            {
+                "Description": "Team Office",
+                "MonthlyRate": 5750.4,
+                "Seats": 4,
+                "PrivateFacilities": false,
+                "PhoneIncluded": false,
+                "Windows": false,
+                "Corner": false
+            }
+        ],
+        "ParkingIncluded": true,
+        "ConferenceRoomsIncluded": false,
+        "ReceptionIncluded": false,
+        "PublicAccess": false,
+        "LastRenovationDate": "2011-01-31T00:00:00+00:00",
+        "Image": "75cce71e-6ec5-43fb-ba71-c1f74ae65e72.png"
+    },
+    {
+        "Name": "Feil, McClure and Daugherty Building",
+        "Longitude": 47.616989,
+        "Latitude": -122.201195,
+        "MailingAddress": "700 Bellevue Way Bellevue, WA 98004",
+        "Rooms": [
+            {
+                "Description": "Coworking Suite",
+                "MonthlyRate": 9255.18,
+                "Seats": 5,
+                "PrivateFacilities": true,
+                "PhoneIncluded": false,
+                "Windows": false,
+                "Corner": false
+            },
+            {
+                "Description": "Coworking Corner Office",
+                "MonthlyRate": 8265.89,
+                "Seats": 5,
+                "PrivateFacilities": false,
+                "PhoneIncluded": false,
+                "Windows": false,
+                "Corner": true
+            },
+            {
+                "Description": "Pair Suite",
+                "MonthlyRate": 3847.05,
+                "Seats": 2,
+                "PrivateFacilities": true,
+                "PhoneIncluded": true,
+                "Windows": false,
+                "Corner": false
+            },
+            {
+                "Description": "Single Corner Suite",
+                "MonthlyRate": 1380.95,
+                "Seats": 1,
+                "PrivateFacilities": true,
+                "PhoneIncluded": false,
+                "Windows": false,
+                "Corner": true
+            },
+            {
+                "Description": "Pair Office",
+                "MonthlyRate": 3760.46,
+                "Seats": 2,
+                "PrivateFacilities": false,
+                "PhoneIncluded": true,
+                "Windows": false,
+                "Corner": false
+            },
+            {
+                "Description": "Pair Corner Office",
+                "MonthlyRate": 3204.63,
+                "Seats": 2,
+                "PrivateFacilities": false,
+                "PhoneIncluded": false,
+                "Windows": false,
+                "Corner": true
+            },
+            {
+                "Description": "Single Suite",
+                "MonthlyRate": 1969.82,
+                "Seats": 1,
+                "PrivateFacilities": true,
+                "PhoneIncluded": true,
+                "Windows": false,
+                "Corner": false
+            },
+            {
+                "Description": "Team Corner Suite",
+                "MonthlyRate": 4590.75,
+                "Seats": 3,
+                "PrivateFacilities": true,
+                "PhoneIncluded": false,
+                "Windows": false,
+                "Corner": true
+            }
+        ],
+        "ParkingIncluded": false,
+        "ConferenceRoomsIncluded": true,
+        "ReceptionIncluded": true,
+        "PublicAccess": true,
+        "LastRenovationDate": "2018-01-03T00:00:00+00:00",
+        "Image": "ff959e83-078b-48eb-aaa7-6d3aa14cb79c.png"
+    }
+]

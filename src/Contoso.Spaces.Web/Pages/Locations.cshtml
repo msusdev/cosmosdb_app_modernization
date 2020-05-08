@@ -1,0 +1,254 @@
+﻿@page "{id?}"
+@model Contoso.Spaces.Web.Pages.LocationsModel
+
+<main class="container text-white bg-dark py-3">
+    @if (Model.SpecificLocation != null)
+    {
+        <div class="row">
+            <img src="@System.IO.Path.Combine(Model.ImagePrefix, Model.SpecificLocation.Image)" class="col-sm-6" alt="@Model.SpecificLocation.Name">
+            <div class="col-sm-6">
+                <h4 class="display-4 text-white">
+                    @Model.SpecificLocation.Name
+                </h4>
+                <p class="text-muted">
+                    @Model.SpecificLocation.MailingAddress
+                </p>
+                <div class="my-2">
+                    <div class="row">
+                        <i class="fa-stack fa-lg col-sm-2 text-center @(Model.SpecificLocation.ParkingIncluded ? String.Empty : "text-muted")">
+                            <i class="fa fa-circle fa-stack-2x"></i>
+                            <i class="fa fa-car fa-stack-1x text-dark"></i>
+                        </i>
+                        @if (Model.SpecificLocation.ParkingIncluded)
+                        {
+                            <i class="fa fa-check text-success fa-2x col-sm-2 text-center" aria-hidden="true"></i>
+                        }
+                        else
+                        {
+                            <span class="col-sm-2"></span>
+                        }
+                        <span class="col-sm-8 text-center">
+                            @(Model.SpecificLocation.ParkingIncluded ? "Parking included" : "No parking available")
+                        </span>
+                    </div>
+                    <div class="row">
+                        <i class="fa-stack fa-lg col-sm-2 text-center @(Model.SpecificLocation.ConferenceRoomsIncluded ? String.Empty : "text-muted")">
+                            <i class="fa fa-circle fa-stack-2x"></i>
+                            <i class="fa fa-suitcase fa-stack-1x text-dark"></i>
+                        </i>
+                        @if (Model.SpecificLocation.ConferenceRoomsIncluded)
+                        {
+                            <i class="fa fa-check text-success fa-2x col-sm-2 text-center" aria-hidden="true"></i>
+                        }
+                        else
+                        {
+                            <span class="col-sm-2"></span>
+                        }
+                        <span class="col-sm-8 text-center">
+                            @(Model.SpecificLocation.ConferenceRoomsIncluded ? "Conference rooms available" : "No conference rooms")
+                        </span>
+                    </div>
+                    <div class="row">
+                        <i class="fa-stack fa-lg col-sm-2 text-center @(Model.SpecificLocation.ReceptionIncluded ? String.Empty : "text-muted")">
+                            <i class="fa fa-circle fa-stack-2x"></i>
+                            <i class="fa fa-car fa-stack-1x text-dark"></i>
+                        </i>
+                        @if (Model.SpecificLocation.ReceptionIncluded)
+                        {
+                            <i class="fa fa-check text-success fa-2x col-sm-2 text-center" aria-hidden="true"></i>
+                        }
+                        else
+                        {
+                            <span class="col-sm-2"></span>
+                        }
+                        <span class="col-sm-8 text-center">
+                            @(Model.SpecificLocation.ReceptionIncluded ? "Reception services provided" : "No reception services")
+                        </span>
+                    </div>
+                    <div class="row">
+                        <i class="fa-stack fa-lg col-sm-2 text-center @(Model.SpecificLocation.PublicAccess ? String.Empty : "text-muted")">
+                            <i class="fa fa-circle fa-stack-2x"></i>
+                            <i class="fa fa-car fa-stack-1x text-dark"></i>
+                        </i>
+                        @if (Model.SpecificLocation.PublicAccess)
+                        {
+                            <i class="fa fa-check text-success fa-2x col-sm-2 text-center" aria-hidden="true"></i>
+                        }
+                        else
+                        {
+                            <span class="col-sm-2"></span>
+                        }
+                        <span class="col-sm-8 text-center">
+                            @(Model.SpecificLocation.PublicAccess ? "Public access available" : "No public access")
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <table class="table table-bordered table-sm table-striped bg-secondary text-dark">
+            <thead>
+                <tr>
+                    <th scope="col">
+                        Room
+                    </th>
+                    <th scope="col">
+                        Monthly Rate
+                    </th>
+                    <th scope="col">
+                        Seats
+                    </th>
+                    <th scope="col">
+                        Private Washroom
+                    </th>
+                    <th scope="col">
+                        Phone
+                    </th>
+                    <th scope="col">
+                        Windows
+                    </th>
+                    <th scope="col">
+                        Corner
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var room in Model.SpecificLocation.Rooms)
+                {
+                    <tr>
+                        <th scope="row">
+                            @room.Description
+                        </th>
+                        <td>
+                            @($"{room.MonthlyRate:C}")
+                        </td>
+                        <td>
+                            @room.Seats
+                        </td>
+                        <td>
+                            @if (room.PrivateFacilities)
+                            {
+                                <i class="fa fa-check text-success fa-2x col-sm-2 text-center" aria-hidden="true"></i>
+                            }
+                        </td>
+                        <td>
+                            @if (room.PhoneIncluded)
+                            {
+                                <i class="fa fa-check text-success fa-2x col-sm-2 text-center" aria-hidden="true"></i>
+                            }
+                        </td>
+                        <td>
+                            @if (room.Windows)
+                            {
+                                <i class="fa fa-check text-success fa-2x col-sm-2 text-center" aria-hidden="true"></i>
+                            }
+                        </td>
+                        <td>
+                            @if (room.Corner)
+                            {
+                                <i class="fa fa-check text-success fa-2x col-sm-2 text-center" aria-hidden="true"></i>
+                            }
+                        </td>
+                    </tr>
+
+                }
+            </tbody>
+        </table>
+    }
+    @if (Model.AllLocations != null)
+    {
+        @foreach (var group in Model.AllLocations.Batch(3))
+        {
+            <div class="card-group">
+                @foreach (var location in group)
+                {
+                    <div class="card text-white bg-dark">
+                        <img src="@System.IO.Path.Combine(Model.ImagePrefix, location.Image)" class="card-img-top" alt="@location.Name">
+                        <div class="card-body">
+                            <h5 class="card-title text-center">
+                                @location.Name
+                            </h5>
+                            <div class="card-text my-2">
+                                <div class="row">
+                                    <i class="fa-stack fa-lg col-sm-2 text-center @(location.ParkingIncluded ? String.Empty : "text-muted")">
+                                        <i class="fa fa-circle fa-stack-2x"></i>
+                                        <i class="fa fa-car fa-stack-1x text-dark"></i>
+                                    </i>
+                                    @if (location.ParkingIncluded)
+                                    {
+                                        <i class="fa fa-check text-success fa-2x col-sm-2 text-center" aria-hidden="true"></i>
+                                    }
+                                    else
+                                    {
+                                        <span class="col-sm-2"></span>
+                                    }
+                                    <span class="col-sm-8 text-center">
+                                        @(location.ParkingIncluded ? "Parking included" : "No parking available")
+                                    </span>
+                                </div>
+                                <div class="row">
+                                    <i class="fa-stack fa-lg col-sm-2 text-center @(location.ConferenceRoomsIncluded ? String.Empty : "text-muted")">
+                                        <i class="fa fa-circle fa-stack-2x"></i>
+                                        <i class="fa fa-suitcase fa-stack-1x text-dark"></i>
+                                    </i>
+                                    @if (location.ConferenceRoomsIncluded)
+                                    {
+                                        <i class="fa fa-check text-success fa-2x col-sm-2 text-center" aria-hidden="true"></i>
+                                    }
+                                    else
+                                    {
+                                        <span class="col-sm-2"></span>
+                                    }
+                                    <span class="col-sm-8 text-center">
+                                        @(location.ConferenceRoomsIncluded ? "Conference rooms available" : "No conference rooms")
+                                    </span>
+                                </div>
+                                <div class="row">
+                                    <i class="fa-stack fa-lg col-sm-2 text-center @(location.ReceptionIncluded ? String.Empty : "text-muted")">
+                                        <i class="fa fa-circle fa-stack-2x"></i>
+                                        <i class="fa fa-car fa-stack-1x text-dark"></i>
+                                    </i>
+                                    @if (location.ReceptionIncluded)
+                                    {
+                                        <i class="fa fa-check text-success fa-2x col-sm-2 text-center" aria-hidden="true"></i>
+                                    }
+                                    else
+                                    {
+                                        <span class="col-sm-2"></span>
+                                    }
+                                    <span class="col-sm-8 text-center">
+                                        @(location.ReceptionIncluded ? "Reception services provided" : "No reception services")
+                                    </span>
+                                </div>
+                                <div class="row">
+                                    <i class="fa-stack fa-lg col-sm-2 text-center @(location.PublicAccess ? String.Empty : "text-muted")">
+                                        <i class="fa fa-circle fa-stack-2x"></i>
+                                        <i class="fa fa-car fa-stack-1x text-dark"></i>
+                                    </i>
+                                    @if (location.PublicAccess)
+                                    {
+                                        <i class="fa fa-check text-success fa-2x col-sm-2 text-center" aria-hidden="true"></i>
+                                    }
+                                    else
+                                    {
+                                        <span class="col-sm-2"></span>
+                                    }
+                                    <span class="col-sm-8 text-center">
+                                        @(location.PublicAccess ? "Public access available" : "No public access")
+                                    </span>
+                                </div>
+                            </div>
+                            <p class="card-text">
+                                <small class="text-muted">
+                                    @location.MailingAddress
+                                </small>
+                            </p>
+                            <a asp-page="/locations" asp-route-id="@location.Id" class="btn btn-secondary">
+                                Learn more
+                            </a>
+                        </div>
+                    </div>
+                }
+            </div>
+        }
+    }
+</main>

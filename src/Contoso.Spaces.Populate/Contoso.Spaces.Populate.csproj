@@ -1,0 +1,234 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp3.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="appsettings.json" />
+    <None Remove="Images\0284b16d-5908-4ca5-bf83-c7cf978795dc.png" />
+    <None Remove="Images\06f6ae63-8b94-432b-823e-86d94d415cea.png" />
+    <None Remove="Images\1010078e-2537-4aa1-be46-dd1c2e3ca015.png" />
+    <None Remove="Images\1132f6ad-a8c9-45d9-9859-c48b5ae51253.png" />
+    <None Remove="Images\14e04e68-d886-4e94-9d88-e980cf3bcf74.png" />
+    <None Remove="Images\1bd4e948-b155-4d12-ae0f-63ad5eacfd44.png" />
+    <None Remove="Images\210fad93-2ead-473f-9b3e-9ef63fd84bc7.png" />
+    <None Remove="Images\2cba3a82-8bb1-444d-9fbe-8026349ab6c9.png" />
+    <None Remove="Images\2e164e90-db72-4847-9a2a-a73ea6cd9d83.png" />
+    <None Remove="Images\3b9ad467-8d8e-42d8-b2a5-96204fafcb4b.png" />
+    <None Remove="Images\41aa4010-f1ce-4997-803d-4c18f2252ad8.png" />
+    <None Remove="Images\48f95173-5633-4ced-8988-7a6ecce52f9f.png" />
+    <None Remove="Images\588b4490-ac65-426f-848e-ee20bccb19ec.png" />
+    <None Remove="Images\59ab5aed-8acf-46c9-a544-58bef746334c.png" />
+    <None Remove="Images\59cf1b5a-9877-4f16-a303-3c55d0e3bac4.png" />
+    <None Remove="Images\5d6edd5c-469c-442f-9b7e-dc20d1cd5024.png" />
+    <None Remove="Images\601e072a-dfea-4928-ad87-dbf75d1d6448.png" />
+    <None Remove="Images\632240d8-edd6-440c-8c82-b871e705ccf3.png" />
+    <None Remove="Images\6597f7f4-a002-4c85-ab78-dc6e0096f0e9.png" />
+    <None Remove="Images\65b46dc4-4c84-494e-96d9-f665810d3325.png" />
+    <None Remove="Images\672adc6c-72f6-49c2-aa03-bb2d9b9b8a27.png" />
+    <None Remove="Images\68080618-a420-4659-a476-4d8438eb8859.png" />
+    <None Remove="Images\728e7683-ab60-4026-b7f0-528fe690717f.png" />
+    <None Remove="Images\72d63689-cb05-4749-914d-5a7b0884de5c.png" />
+    <None Remove="Images\75cce71e-6ec5-43fb-ba71-c1f74ae65e72.png" />
+    <None Remove="Images\771da4a1-87d4-4114-bc33-ae3dc50c5d0a.png" />
+    <None Remove="Images\7a1c935f-7782-4ab0-80cd-c18771b89ea7.png" />
+    <None Remove="Images\7b2b35b5-2bb6-4e07-8f8f-8615910c8664.png" />
+    <None Remove="Images\8233bd2d-8ca7-457a-8452-c302ebe21533.png" />
+    <None Remove="Images\8b6c58fc-45d0-4a14-8d87-15c2646499fb.png" />
+    <None Remove="Images\8c24048c-9feb-40fb-9bef-a9d768d89dc5.png" />
+    <None Remove="Images\91e3806f-180f-4a98-a21d-079b30ca65b7.png" />
+    <None Remove="Images\99821ccb-9293-4653-92a0-83a43d55411f.png" />
+    <None Remove="Images\9a26782e-136a-4d4d-af80-85fedb0097a8.png" />
+    <None Remove="Images\a01d958c-cf5e-438a-ba73-e6fd3ed3d2db.png" />
+    <None Remove="Images\a1cc99c1-7f0d-4d85-bb28-52d4b6d07967.png" />
+    <None Remove="Images\a2c415e9-2ba1-4273-abd9-83a6e245249f.png" />
+    <None Remove="Images\b498d2ac-5d23-4d7b-b7fb-d65370bfd296.png" />
+    <None Remove="Images\bd86748a-34a0-42de-8309-f29f805ecdb1.png" />
+    <None Remove="Images\c58285f0-081b-4afb-b616-f3edd2be34aa.png" />
+    <None Remove="Images\c7499088-d4af-45c3-8a64-7bfe0e7f49c4.png" />
+    <None Remove="Images\cd2b2498-48b3-486b-b6ad-d428bc94100d.png" />
+    <None Remove="Images\e2e10c64-be63-47af-942b-6da5a43438d1.png" />
+    <None Remove="Images\ea913d41-74af-445d-9191-54bb1ca78cd8.png" />
+    <None Remove="Images\f38845ea-15c2-4cc7-b46f-c657761f68c0.png" />
+    <None Remove="Images\f5aa7996-ca52-4419-9b5a-6e1288b9569a.png" />
+    <None Remove="Images\fc2ccc3c-84af-4207-ba20-a15e4311b753.png" />
+    <None Remove="Images\fed69212-cd44-4f1f-b845-94610c44074c.png" />
+    <None Remove="Images\ff959e83-078b-48eb-aaa7-6d3aa14cb79c.png" />
+    <None Remove="seed.json" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="appsettings.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\0284b16d-5908-4ca5-bf83-c7cf978795dc.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\06f6ae63-8b94-432b-823e-86d94d415cea.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\1010078e-2537-4aa1-be46-dd1c2e3ca015.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\1132f6ad-a8c9-45d9-9859-c48b5ae51253.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\14e04e68-d886-4e94-9d88-e980cf3bcf74.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\1bd4e948-b155-4d12-ae0f-63ad5eacfd44.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\210fad93-2ead-473f-9b3e-9ef63fd84bc7.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\2cba3a82-8bb1-444d-9fbe-8026349ab6c9.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\2e164e90-db72-4847-9a2a-a73ea6cd9d83.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\3b9ad467-8d8e-42d8-b2a5-96204fafcb4b.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\41aa4010-f1ce-4997-803d-4c18f2252ad8.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\48f95173-5633-4ced-8988-7a6ecce52f9f.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\588b4490-ac65-426f-848e-ee20bccb19ec.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\59ab5aed-8acf-46c9-a544-58bef746334c.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\59cf1b5a-9877-4f16-a303-3c55d0e3bac4.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\5d6edd5c-469c-442f-9b7e-dc20d1cd5024.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\601e072a-dfea-4928-ad87-dbf75d1d6448.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\632240d8-edd6-440c-8c82-b871e705ccf3.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\6597f7f4-a002-4c85-ab78-dc6e0096f0e9.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\65b46dc4-4c84-494e-96d9-f665810d3325.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\672adc6c-72f6-49c2-aa03-bb2d9b9b8a27.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\68080618-a420-4659-a476-4d8438eb8859.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\728e7683-ab60-4026-b7f0-528fe690717f.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\72d63689-cb05-4749-914d-5a7b0884de5c.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\75cce71e-6ec5-43fb-ba71-c1f74ae65e72.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\771da4a1-87d4-4114-bc33-ae3dc50c5d0a.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\7a1c935f-7782-4ab0-80cd-c18771b89ea7.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\7b2b35b5-2bb6-4e07-8f8f-8615910c8664.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\8233bd2d-8ca7-457a-8452-c302ebe21533.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\8b6c58fc-45d0-4a14-8d87-15c2646499fb.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\8c24048c-9feb-40fb-9bef-a9d768d89dc5.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\91e3806f-180f-4a98-a21d-079b30ca65b7.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\99821ccb-9293-4653-92a0-83a43d55411f.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\9a26782e-136a-4d4d-af80-85fedb0097a8.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\a01d958c-cf5e-438a-ba73-e6fd3ed3d2db.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\a1cc99c1-7f0d-4d85-bb28-52d4b6d07967.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\a2c415e9-2ba1-4273-abd9-83a6e245249f.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\b498d2ac-5d23-4d7b-b7fb-d65370bfd296.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\bd86748a-34a0-42de-8309-f29f805ecdb1.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\c58285f0-081b-4afb-b616-f3edd2be34aa.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\c7499088-d4af-45c3-8a64-7bfe0e7f49c4.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\cd2b2498-48b3-486b-b6ad-d428bc94100d.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\e2e10c64-be63-47af-942b-6da5a43438d1.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\ea913d41-74af-445d-9191-54bb1ca78cd8.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\f38845ea-15c2-4cc7-b46f-c657761f68c0.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\f5aa7996-ca52-4419-9b5a-6e1288b9569a.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\fc2ccc3c-84af-4207-ba20-a15e4311b753.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\fed69212-cd44-4f1f-b845-94610c44074c.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\ff959e83-078b-48eb-aaa7-6d3aa14cb79c.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="seed.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Colorful.Console" Version="1.2.9" />
+    <PackageReference Include="Microsoft.Azure.Cosmos" Version="3.3.2" />
+    <PackageReference Include="Microsoft.Azure.Storage.Blob" Version="11.1.0" />
+    <PackageReference Include="Microsoft.Extensions.Configuration" Version="3.0.0" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.Binder" Version="3.0.0" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.EnvironmentVariables" Version="3.0.0" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.Json" Version="3.0.0" />
+    <PackageReference Include="Newtonsoft.Json" Version="12.0.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Contoso.Spaces.Data\Contoso.Spaces.Data.csproj" />
+    <ProjectReference Include="..\Contoso.Spaces.Models\Contoso.Spaces.Models.csproj" />
+  </ItemGroup>
+
+</Project>
