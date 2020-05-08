@@ -1,1 +1,0 @@
-# cosmosdb_app_modernization
