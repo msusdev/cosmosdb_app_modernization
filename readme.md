@@ -1,6 +1,6 @@
 # The Azure Cosmos DB Workshop
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas rhoncus massa non lectus tincidunt, sed iaculis leo lacinia. Duis at urna sem. Quisque et tempor sem, a euismod tellus. Suspendisse molestie dui in malesuada consequat. Maecenas pulvinar tincidunt feugiat. Mauris quis tempor ligula. Aenean ultrices aliquet odio. Integer in elit ut nulla tincidunt malesuada in sed eros. Morbi commodo felis sed tincidunt tempus. Morbi ac ipsum sollicitudin, faucibus sem in, dui. Aliquam ut nulla mollis, lobortis felis nec, egestas purus.
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas rhoncus massa non lectus tincidunt, sed iaculis leo lacinia. Duis at urna sem. Quisque et tempor sem, a euismod tellus. Suspendisse molestie dui in malesuada consequat. Maecenas pulvinar tincidunt feugiat. Mauris quis tempor ligula. Aenean ultrices aliquet odio. Integer in elit ut nulla tincidunt malesuada in sed eros. Morbi commodo felis sed tincidunt tempus. Morbi ac ipsum sollicitudin, faucibus sem in, asdf dui. Aliquam ut nulla mollis, lobortis felis nec, egestas purus.
 
 ## Overview
 
