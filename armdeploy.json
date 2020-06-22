@@ -1,5 +1,5 @@
 {
-    "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#",
+    "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
     "contentVersion": "1.0.0.0",
     "variables": {
         "storageAccountName": "[concat('stor', uniqueString(resourceGroup().id))]",
@@ -11,15 +11,15 @@
         "containerInstanceName": "[concat('cont', uniqueString(resourceGroup().id))]",
         "databaseUsername": "applicationidentity",
         "databasePassword": "A#joK2z98qTR",
-        "populateContainerImage": "seesharprun/contoso.spaces.populate",
-        "webContainerImage": "seesharprun/contoso.spaces.web",
-        "functionContainerImage": "seesharprun/contoso.spaces.api"
+        "populateContainerImage": "msusdev/contoso.spaces.populate",
+        "webContainerImage": "msusdev/contoso.spaces.web",
+        "functionContainerImage": "msusdev/contoso.spaces.api"
     },
     "resources": [
         {
             "name": "[variables('sqlServerName')]",
             "type": "Microsoft.Sql/servers",
-            "apiVersion": "2015-05-01-preview",
+            "apiVersion": "2019-06-01-preview",
             "location": "[resourceGroup().location]",
             "properties": {
                 "version": "12.0",
@@ -28,8 +28,8 @@
             },
             "resources": [
                 {
-                    "name": "AllowAllWindowsAzureIps",
-                    "type": "firewallRules",
+                    "name": "allowAllWindowsAzureIps",
+                    "type": "Microsoft.Sql/servers/firewallRules",
                     "apiVersion": "2015-05-01-preview",
                     "location": "[resourceGroup().location]",
                     "dependsOn": [
@@ -43,7 +43,7 @@
                 {
                     "name": "[variables('sqlDatabaseName')]",
                     "type": "databases",
-                    "apiVersion": "2017-10-01-preview",
+                    "apiVersion": "2019-06-01-preview",
                     "location": "[resourceGroup().location]",
                     "dependsOn": [
                         "[resourceId('Microsoft.Sql/servers', variables('sqlServerName'))]"
@@ -54,7 +54,7 @@
                     },
                     "properties": {
                         "collation": "SQL_Latin1_General_CP1_CI_AS",
-                        "maxSizeBytes": "34359738368"
+                        "maxSizeBytes": 34359738368
                     }
                 }
             ]
@@ -62,7 +62,7 @@
         {
             "name": "[variables('storageAccountName')]",
             "type": "Microsoft.Storage/storageAccounts",
-            "apiVersion": "2019-04-01",
+            "apiVersion": "2019-06-01",
             "location": "[resourceGroup().location]",
             "kind": "StorageV2",
             "sku": {
@@ -75,8 +75,8 @@
             "resources": [
                 {
                     "name": "default/images",
-                    "type": "blobServices/containers",
-                    "apiVersion": "2019-04-01",
+                    "type": "Microsoft.Storage/storageAccounts/blobServices/containers",
+                    "apiVersion": "2019-06-01",
                     "dependsOn": [
                         "[resourceId('Microsoft.Storage/storageAccounts', variables('storageAccountName'))]"
                     ],
@@ -114,8 +114,8 @@
                             ],
                             "resources": {
                                 "requests": {
-                                    "cpu": "4.0",
-                                    "memoryInGb": "8.0"
+                                    "cpu": 4.0,
+                                    "memoryInGb": 8.0
                                 }
                             }
                         }
@@ -123,19 +123,6 @@
                 ],
                 "restartPolicy": "OnFailure",
                 "osType": "Linux"
-            }
-        },
-        {
-            "name": "[variables('appServicePlanName')]",
-            "type": "Microsoft.Web/serverfarms",
-            "apiVersion": "2018-02-01",
-            "location": "[resourceGroup().location]",
-            "sku": {
-                "name": "S1"
-            },
-            "kind": "linux",
-            "properties": {
-                "reserved": true
             }
         },
         {
@@ -188,6 +175,19 @@
             }
         },
         {
+            "name": "[variables('appServicePlanName')]",
+            "type": "Microsoft.Web/serverfarms",
+            "apiVersion": "2018-02-01",
+            "location": "[resourceGroup().location]",
+            "sku": {
+                "name": "S1"
+            },
+            "kind": "linux",
+            "properties": {
+                "reserved": true
+            }
+        },
+        {
             "name": "[variables('webAppName')]",
             "type": "Microsoft.Web/sites",
             "apiVersion": "2018-11-01",
@@ -198,12 +198,10 @@
                 "[resourceId('Microsoft.Sql/servers/databases', variables('sqlServerName'), variables('sqlDatabaseName'))]",
                 "[resourceId('Microsoft.ContainerInstance/containerGroups', variables('containerInstanceName'))]",
                 "[resourceId('Microsoft.Storage/storageAccounts', variables('storageAccountName'))]",
-                "[resourceId('Microsoft.Web/serverfarms', variables('appServicePlanName'))]",
                 "[resourceId('Microsoft.Web/sites', variables('functionAppName'))]"
             ],
             "properties": {
                 "serverFarmId": "[resourceId('Microsoft.Web/serverfarms', variables('appServicePlanName'))]",
-                "clientAffinityEnabled": false,
                 "siteConfig": {
                     "alwaysOn": true,
                     "appSettings": [
