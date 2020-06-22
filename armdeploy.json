@@ -29,7 +29,7 @@
             "resources": [
                 {
                     "name": "AllowAllWindowsAzureIps",
-                    "type": "Microsoft.Sql/servers/firewallRules",
+                    "type": "firewallRules",
                     "apiVersion": "2015-05-01-preview",
                     "location": "[resourceGroup().location]",
                     "dependsOn": [
@@ -75,7 +75,7 @@
             "resources": [
                 {
                     "name": "default/images",
-                    "type": "Microsoft.Storage/storageAccounts/blobServices/containers",
+                    "type": "blobServices/containers",
                     "apiVersion": "2019-06-01",
                     "dependsOn": [
                         "[resourceId('Microsoft.Storage/storageAccounts', variables('storageAccountName'))]"
