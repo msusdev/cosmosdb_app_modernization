@@ -1,4 +1,4 @@
-FROM mcr.microsoft.com/dotnet/core/sdk:2.2 AS base
+FROM mcr.microsoft.com/dotnet/core/sdk:3.1 AS base
 
 WORKDIR /app
 
@@ -8,7 +8,7 @@ RUN mkdir -p /home/site/wwwroot
 
 RUN dotnet publish Contoso.Spaces.Api/Contoso.Spaces.Api.csproj --output /home/site/wwwroot --configuration Release
 
-FROM mcr.microsoft.com/azure-functions/dotnet:2.0
+FROM mcr.microsoft.com/azure-functions/dotnet:3.0
 
 ENV AzureWebJobsScriptRoot=/home/site/wwwroot
 
