@@ -23,14 +23,6 @@ namespace Contoso.Spaces.Web
             services.AddRazorPages();
             services.Configure<ConnectionData>(_configuration.GetSection(nameof(ConnectionData)));
             services.Configure<ResourceData>(_configuration.GetSection(nameof(ResourceData)));
-            services.Configure<RequestLocalizationOptions>(
-                options =>
-                {
-                    var supportedCultures = new List<CultureInfo> { new CultureInfo("en-US") };
-                    options.DefaultRequestCulture = new RequestCulture(culture: "en-US", uiCulture: "en-US");
-                    options.SupportedCultures = options.SupportedUICultures = supportedCultures;
-                }
-            );
         }
 
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)

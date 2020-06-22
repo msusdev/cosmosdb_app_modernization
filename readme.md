@@ -1,5 +1,7 @@
 # The Azure Cosmos DB Workshop
 
+[![Deploy to Azure](https://docs.microsoft.com/en-us/azure/templates/media/deploy-to-azure.svg)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FMSUSDEV%2Fcosmosdb_app_modernization%2Fmaster%2Farmdeploy.json)
+
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas rhoncus massa non lectus tincidunt, sed iaculis leo lacinia. Duis at urna sem. Quisque et tempor sem, a euismod tellus. Suspendisse molestie dui in malesuada consequat. Maecenas pulvinar tincidunt feugiat. Mauris quis tempor ligula. Aenean ultrices aliquet odio. Integer in elit ut nulla tincidunt malesuada in sed eros. Morbi commodo felis sed tincidunt tempus. Morbi ac ipsum sollicitudin, faucibus sem in, asdf dui. Aliquam ut nulla mollis, lobortis felis nec, egestas purus.
 
 ## Overview
