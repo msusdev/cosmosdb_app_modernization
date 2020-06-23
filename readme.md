@@ -99,3 +99,43 @@ Now, it's time to perform the migration. There's no need to deal with the comple
 > [Hints](./hints/02-migrate/)
 
 > [Solution](./solutions/02-migrate/)
+
+## Challenge 3: Write new code for Azure Functions
+
+In this challenge, you are tasked with replacing the functions within your Azure Function with code that will query Azure Cosmos DB instead.
+
+### Step A: Review existing code
+
+The existing Azure Function that is deployed for your application uses [Entity Framework Core](https://github.com/dotnet/efcore) to [query a SQL database](https://github.com/MSUSDEV/cosmosdb_app_modernization/blob/42abddaa9b3a8f5112a295c88b6092819e475f01/src/Contoso.Spaces.Api.Sql/GetFeaturedLocations.cs#L35).
+
+If you explore the App Service components in the portal, you will quickly notice a few things:
+
+- The Azure Function code is deployed using a Docker container making it read-only
+- The Azure Web App has configuration settings for each of the three API it uses
+
+### Step B: Observe the existing APIs
+
+There are three APIs that you will eventually replace:
+
+- ``/api/getfeaturedlocations``: This API returns the four most recently renovated locations
+- ``/api/getalllocations``: This API returns all locations
+- ``/api/getspecificlocation?id=``: This API returns the location & rooms for a specific location specified by the ``id`` query string parameter
+
+The URL to each of the three APIs is configured in the Azure Web App's configuration settings.
+
+❗ It's highly recommended that you test calling the existing APIs before writing your own so you can become familiar with the way they return results.
+
+### Step C: Write your own code
+
+Now it's time to write your code to replace the outdated SQL code.
+
+❗ You are free to replace the APIs with ones you have written yourself deployed to any service you'd like.
+
+### Validation: Replace API code
+
+1. First, you should delete the existing SQL Database. Confirmation of the database's deletion will be a required step before moving on with the challenges.
+1. Your web application should now call the three APIs that query Azure Cosmos DB. This step will be validated by performing a query on Azure Cosmos DB directly using the Data Explorer and validating that the results match the Contoso Spaces website.
+
+> [Hints](./hints/03-refactor/)
+
+> [Solution](./solutions/03-refactor/)
