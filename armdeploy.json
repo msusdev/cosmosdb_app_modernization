@@ -271,7 +271,6 @@
             }
         },
         {
-
             "name": "[variables('functionAppName')]",
             "type": "Microsoft.Web/sites",
             "apiVersion": "2018-11-01",
