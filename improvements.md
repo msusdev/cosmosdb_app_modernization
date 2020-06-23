@@ -13,3 +13,10 @@
 
 - Add submission logging for locations and rooms
 - Add container variants for Node.js
+
+## Challenge 2
+
+- Significantly increase size of data set to force decision to have impact
+- Make data naturally git a single partition key for top 4 results
+- Change Id from int to string property in SQL (update EF Core)
+  - <https://stackoverflow.com/questions/32983524/how-to-use-string-property-as-primary-key-in-entity-framework>

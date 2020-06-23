@@ -32,6 +32,7 @@
   - synthetic key generate from ``/mailingAddress`` (just get state)
 - Remind team that they can "recover" from a poor partition key choice using a live migration: <https://devblogs.microsoft.com/cosmosdb/how-to-change-your-partition-key/>
 - Some tables may want to analyze the "featured" locations to see if they can fit them in a single partition using a query like: ``SELECT TOP 4 * FROM locations l ORDER BY l.lastRenovationDate DESC``
+- Tables could "cheat" by importing the seed JSON file
 
 ## Challenge 3
 
