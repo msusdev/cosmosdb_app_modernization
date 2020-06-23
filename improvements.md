@@ -12,3 +12,4 @@
 ## Challenge 1
 
 - Add submission logging for locations and rooms
+- Add container variants for Node.js
