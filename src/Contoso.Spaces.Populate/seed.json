@@ -393,7 +393,7 @@
         "Name": "Goyette - Luettgen Plaza",
         "Longitude": 37.793369,
         "Latitude": -122.394234,
-        "MailingAddress": "1 Market San Francisco, CA  94105",
+        "MailingAddress": "1 Market San Francisco, CA 94105",
         "Rooms": [
             {
                 "Description": "Coworking Suite",
@@ -1499,7 +1499,7 @@
         "Name": "Morissette, Wunsch and Boyle Square",
         "Longitude": 37.242077,
         "Latitude": -121.781952,
-        "MailingAddress": "9 Great Oaks Blvd, San Jose, CA  95119",
+        "MailingAddress": "9 Great Oaks Blvd, San Jose, CA 95119",
         "Rooms": [
             {
                 "Description": "Single Corner Office",
@@ -2057,7 +2057,7 @@
         "Name": "Champlin - Bauch Square",
         "Longitude": 37.362087,
         "Latitude": -121.946564,
-        "MailingAddress": "2045 Lafayette St Santa Clara, CA  95050",
+        "MailingAddress": "2045 Lafayette St Santa Clara, CA 95050",
         "Rooms": [
             {
                 "Description": "Team Corner Suite",
@@ -2184,7 +2184,7 @@
         "Name": "Hammes - Welch Square",
         "Longitude": 37.415588,
         "Latitude": -122.075577,
-        "MailingAddress": "1288 Pear Ave Mountain View, CA  94043",
+        "MailingAddress": "1288 Pear Ave Mountain View, CA 94043",
         "Rooms": [
             {
                 "Description": "Coworking Office",
@@ -2289,7 +2289,7 @@
         "Name": "Mayer - Dare Complex",
         "Longitude": 38.90166,
         "Latitude": -77.03241,
-        "MailingAddress": "1401 I St NW Washington D.C.,  20005",
+        "MailingAddress": "1401 I St NW Washington D.C., DC 20005",
         "Rooms": [
             {
                 "Description": "Single Suite",
@@ -2407,7 +2407,7 @@
         "Name": "Wiza, Quitzon and Moen Complex",
         "Longitude": 37.792259,
         "Latitude": -122.403481,
-        "MailingAddress": "555 California St San Francisco, CA  94104",
+        "MailingAddress": "555 California St San Francisco, CA 94104",
         "Rooms": [
             {
                 "Description": "Coworking Corner Office",
@@ -2439,7 +2439,7 @@
         "Name": "Buckridge LLC Square",
         "Longitude": 32.875282,
         "Latitude": -117.206993,
-        "MailingAddress": "9255 Towne Centre Dr San Diego, CA  92121",
+        "MailingAddress": "9255 Towne Centre Dr San Diego, CA 92121",
         "Rooms": [
             {
                 "Description": "Coworking Suite",
