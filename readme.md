@@ -62,3 +62,40 @@ While the template is deploying, you should check out some of the deployment det
 ![Contoso Spaces homepage](./media/01-validation.png)
 
 > [Hints](./hints/01-deploy/)
+
+## Challenge 2: Migrate data from Azure SQL Database to Azure Cosmos DB
+
+For the first "real" challenge in this workshop, we will migrate our existing data from Azure SQL Database to Azure Cosmos DB.
+
+❗ Remember, we are only migrating at this point. We are not changing our code or deleting our existing Azure SQL Database instance.
+
+Since our application is read-only, this opens up a lot of possible avenues to move our data from the existing SQL database to a container in Azure Cosmos DB.
+
+### Step A: Identify the existing database data
+
+The data in Azure SQL Database consists of two simple tables with a predictable relationship:
+
+![Database schema](./media/02-schema.png)
+
+At this point, you should query the Azure SQL Database instance using a tool of your choice and become familiar with the data set.
+
+Next, you should create a map of the data from SQL to JSON formats.
+
+### Step B: Create Azure Cosmos DB resources
+
+It is a best practice to pre-configure your destination resources in Azure Cosmos DB prior to performing your migration.
+
+At this point, you should plan and excute to creation of your Azure Cosmos DB **account**, **database**, and **container**.
+
+### Step C: Perform migration
+
+Now, it's time to perform the migration. There's no need to deal with the complexity of a live/online migration, you can use any tool or manual script you'd like.
+
+### Validation: Plan and execute deployment
+
+1. You should have a plan detailed on how you will perform the migration and how Azure Cosmos DB JSON documents will map to Azure SQL Database records
+1. You should have performed the migration. You can verify that your deployment is successful by issuing a query to your new account, database, and container in Azure Cosmos DB. You can use the ``SELECT * FROM locations`` query to test your migration.
+
+> [Hints](./hints/02-migrate/)
+
+> [Solution](./solutions/02-migrate/)
