@@ -35,8 +35,9 @@ The application stack consists of the following components:
   - This function app has the [msusdev/contoso.spaces.api.sql](https://hub.docker.com/r/msusdev/contoso.spaces.api.sql) container deployed by default.
 - Azure SQL Database and Server for the application data.
 - Azure Storage account to host the images used on the website and Azure Functions metadata
-- Azure Container Instance to populate the Azure SQL Database and Azure Storage accounts with sample data
+- Azure Container Instances to populate the Azure SQL Database and Azure Storage accounts with sample data
   - The [msusdev/contoso.spaces.populate.sql](https://hub.docker.com/r/msusdev/contoso.spaces.populate.sql) container is deployed to the container group.
+  - The [msusdev/contoso.spaces.populate.storage](https://hub.docker.com/r/msusdev/contoso.spaces.populate.storage) container is deployed to the container group.
 
 ![Existing application architecture](./media/01-arch.png)
 
