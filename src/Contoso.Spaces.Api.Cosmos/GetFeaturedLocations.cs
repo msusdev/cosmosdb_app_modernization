@@ -4,11 +4,9 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.Azure.Cosmos;
 using Microsoft.Azure.WebJobs;
 using Microsoft.Azure.WebJobs.Extensions.Http;
-using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Logging;
 using System;
 using System.Collections.Generic;
-using System.Linq;
 using System.Threading.Tasks;
 
 namespace Contoso.Spaces.Api.Solution
@@ -32,10 +30,19 @@ namespace Contoso.Spaces.Api.Solution
             Database database = client.GetDatabase("ContosoSpaces");
             Container container = database.GetContainer("Locations");
 
-            List<Location> locations = await container.GetItemLinqQueryable<Location>()
-                .OrderByDescending(o => o.LastRenovationDate)
-                .Take(4)
-                .ToListAsync();
+            List<Location> locations = new List<Location>();
+
+            string sql = $"SELECT TOP 4 * FROM locations l ORDER BY l.lastRenovationDate DESC";
+            var feed = container.GetItemQueryIterator<Location>();
+
+            while (feed.HasMoreResults)
+            {
+                var results = await feed.ReadNextAsync();
+                foreach (var result in results)
+                {
+                    locations.Add(result);
+                }
+            }
 
             return new OkObjectResult(locations);
         }

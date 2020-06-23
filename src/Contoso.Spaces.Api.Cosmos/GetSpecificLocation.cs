@@ -4,7 +4,6 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.Azure.Cosmos;
 using Microsoft.Azure.WebJobs;
 using Microsoft.Azure.WebJobs.Extensions.Http;
-using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Logging;
 using System;
 using System.Collections.Generic;
@@ -34,17 +33,28 @@ namespace Contoso.Spaces.Api.Solution
 
             log.LogInformation(connectionString);
 
-            List<Location> recentLocations = new List<Location>();
-
             using CosmosClient client = new CosmosClient(connectionString);
             Database database = client.GetDatabase("ContosoSpaces");
             Container container = database.GetContainer("Locations");
 
-            Location location = await container.GetItemLinqQueryable<Location>()
-                .Where(l => l.Id == id)
-                .SingleOrDefaultAsync();
+            List<Location> locations = new List<Location>();
 
-            return new OkObjectResult(location);
+            string sql = $"SELECT TOP 1 * FROM locations l WHERE l.id = '{id}'";
+            var feed = container.GetItemQueryIterator<Location>();
+
+            while (feed.HasMoreResults)
+            {
+                var results = await feed.ReadNextAsync();
+                foreach (var result in results)
+                {
+                    locations.Add(result);
+                }
+            }
+
+            var location = locations.FirstOrDefault();
+
+            if (location is null) { return new NotFoundResult(); }
+            else { return new OkObjectResult(location); }
         }
     }
 }
