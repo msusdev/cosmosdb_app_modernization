@@ -6,7 +6,7 @@ COPY . ./
 
 RUN mkdir -p /home/site/wwwroot
 
-RUN dotnet publish Contoso.Spaces.Api/Contoso.Spaces.Api.csproj --output /home/site/wwwroot --configuration Release
+RUN dotnet publish Contoso.Spaces.Api.Sql/Contoso.Spaces.Api.Sql.csproj --output /home/site/wwwroot --configuration Release
 
 FROM mcr.microsoft.com/azure-functions/dotnet:3.0
 
