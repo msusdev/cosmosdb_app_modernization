@@ -99,7 +99,6 @@ Now, it's time to perform the migration. There's no need to deal with the comple
 > [Hints](./hints/02-migrate/)
 
 > [Solution](./solutions/02-migrate/)
-<<<<<<< HEAD
 
 ## Challenge 3: Write new code for Azure Functions
 
@@ -140,5 +139,3 @@ Now it's time to write your code to replace the outdated SQL code.
 > [Hints](./hints/03-refactor/)
 
 > [Solution](./solutions/03-refactor/)
-=======
->>>>>>> 7d3ec818296a067b3f7fcc45270f5ae9e261d579
