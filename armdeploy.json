@@ -257,11 +257,13 @@
             "location": "[resourceGroup().location]",
             "kind": "app",
             "dependsOn": [
-                "[resourceId('Microsoft.Sql/servers', variables('sqlServerName'))]",
-                "[resourceId('Microsoft.Sql/servers/databases', variables('sqlServerName'), variables('sqlDatabaseName'))]",
-                "[resourceId('Microsoft.ContainerInstance/containerGroups', variables('containerSqlInstanceName'))]",
+                "[resourceId('Microsoft.DocumentDB/databaseAccounts', variables('cosmosAccountName'))]",
+                "[resourceId('Microsoft.DocumentDB/databaseAccounts/sqlDatabases', variables('cosmosAccountName'), variables('cosmosDatabaseName'))]",
+                "[resourceId('Microsoft.DocumentDB/databaseAccounts/sqlDatabases/containers', variables('cosmosAccountName'), variables('cosmosDatabaseName'), variables('cosmosContainerName'))]",
                 "[resourceId('Microsoft.ContainerInstance/containerGroups', variables('containerStorageInstanceName'))]",
+                "[resourceId('Microsoft.ContainerInstance/containerGroups', variables('containerCosmosInstanceName'))]",
                 "[resourceId('Microsoft.Storage/storageAccounts', variables('storageAccountName'))]",
+                "[resourceId('Microsoft.Web/serverfarms', variables('appServicePlanName'))]",
                 "[resourceId('Microsoft.Web/sites', variables('functionAppName'))]"
             ],
             "properties": {
