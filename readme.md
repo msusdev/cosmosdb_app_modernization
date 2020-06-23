@@ -1,100 +1,98 @@
 # The Azure Cosmos DB Workshop
 
-[![Deploy to Azure](https://docs.microsoft.com/en-us/azure/templates/media/deploy-to-azure.svg)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FMSUSDEV%2Fcosmosdb_app_modernization%2Fmaster%2Farmdeploy.json)
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas rhoncus massa non lectus tincidunt, sed iaculis leo lacinia. Duis at urna sem. Quisque et tempor sem, a euismod tellus. Suspendisse molestie dui in malesuada consequat. Maecenas pulvinar tincidunt feugiat. Mauris quis tempor ligula. Aenean ultrices aliquet odio. Integer in elit ut nulla tincidunt malesuada in sed eros. Morbi commodo felis sed tincidunt tempus. Morbi ac ipsum sollicitudin, faucibus sem in, asdf dui. Aliquam ut nulla mollis, lobortis felis nec, egestas purus.
-
 ## Overview
 
-Etiam vulputate libero quam, ac convallis eros sollicitudin ac. Morbi cursus, odio eu convallis euismod, felis magna suscipit felis, non pretium justo erat non neque. Donec nec tortor finibus, aliquam ligula sed, mollis lorem. Ut risus nunc, placerat ac feugiat a, gravida eu purus. Nunc mollis egestas sapien sit amet cursus. Curabitur condimentum nisl id bibendum consequat. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Donec enim lorem, molestie id dictum nec, eleifend ac sapien. Sed tincidunt lobortis justo condimentum vulputate.
+Welcome to the Azure Cosmos DB hands-on workshop! Throughout this workshop, you will go through tasks to take a reasonably modern web application, migrate it to [Azure Cosmos DB](https://azure.microsoft.com/services/cosmos-db/), and implement features to make the application better than ever.
 
-Quisque magna diam, luctus id scelerisque sed, scelerisque sit amet neque. Suspendisse ornare et mauris quis cursus. Integer sodales dolor elit, vel laoreet velit cursus tristique. Vestibulum nisi nulla, venenatis eget turpis ac, faucibus luctus massa. Nunc sed ex cursus, vestibulum mauris faucibus, tincidunt augue. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus neque mi, mollis vestibulum lorem sed, interdum vehicula leo. Fusce bibendum, felis sit amet eleifend eleifend, nulla justo porta orci, gravida sollicitudin nibh nisi eget augue. Quisque pellentesque varius nisl. Duis vitae nulla vitae est egestas vehicula. Nulla facilisi. Ut quis mi lectus. Donec ornare ornare vehicula. Ut blandit interdum lectus. Donec scelerisque ipsum ac quam tincidunt commodo. Donec vehicula dignissim lobortis.
+After you are done with the workshop, you can continue to use the content available in our [GitHub repository](https://github.com/msusdev/cosmosdb_app_modernization) to learn about Azure Cosmos DB at your own pace.
+
+> [Schedule](.\schedule\readme.md)
 
 ## Goals
 
--   Praesent tortor sapien, iaculis vitae tellus eu, congue mattis est. Morbi placerat felis eleifend purus pulvinar, nec dapibus magna tincidunt. Donec aliquam tortor id mattis eleifend. Fusce dui dolor, ultrices id ultrices et, suscipit id lectus. Morbi id semper dolor, suscipit tempor ante. 
--   Nulla facilisis nisi et lorem vehicula, quis luctus ante rutrum. Etiam id justo enim. Pellentesque at dolor consequat, convallis sapien eu, posuere magna. In a tortor volutpat, maximus nisl vitae, vehicula mi. Mauris lectus lorem, tristique in leo in, dictum lacinia neque. Vivamus mollis turpis at sagittis rhoncus.
--   Donec quis lacus nec turpis porttitor porttitor. Praesent aliquam augue ligula, sit amet tempus odio iaculis eget. Proin pellentesque lobortis sem sit amet finibus. Cras pretium urna eu magna fringilla, eget iaculis tortor congue. Quisque ex libero, interdum eget fringilla sit amet, rhoncus sit amet felis. 
--   Fusce eget efficitur libero. Integer quis nibh porttitor, commodo urna sed, imperdiet orci. Integer quis sem suscipit, fermentum quam non, finibus tortor. Nam id diam pellentesque, auctor neque vitae, interdum tellus. 
--   Vivamus vitae tellus sed mauris maximus posuere. Vivamus venenatis pulvinar eros sit amet aliquet. Etiam eu est tempus ipsum auctor tempor. Vivamus semper tortor arcu, id pretium magna consequat non. Sed viverra mauris in augue tristique, posuere ornare sem luctus.
+In this workshop, you will be asked to:
 
-## Challenge 0
+- Migrate a small dataset from Azure SQL Database to Azure Cosmos DB.
+- Write code in Azure Functions to query Azure Cosmos DB.
+- Globally distribute your Azure Cosmos DB account to multiple Azure regions.
+- Extend the SQL query grammar using a user-defined function (UDF).
+- Use Jupyter Notebooks to create a simple dashboard for your database and containers.
 
-Maecenas non euismod ante. Maecenas sed justo at ex tempus mollis. Quisque quis tempor urna. Ut eget felis lorem. Pellentesque bibendum sapien et leo vehicula dignissim. Etiam pretium bibendum luctus. Fusce sed ex finibus, volutpat metus quis, varius turpis. Sed eget ultrices purus. Praesent et mollis eros. Suspendisse potenti. Aliquam imperdiet tempus rutrum. Pellentesque tempor lorem metus, in sodales tortor euismod ut. Proin ligula ex, condimentum ut lacus eu, porta commodo libero. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Quisque ac leo interdum mi efficitur aliquet. Aenean tellus dui, ornare a erat a, auctor vulputate felis.
+## Challenge 01: Deploy the existing application stack
 
-### Do Something
+### Step A: Deploy with an ARM template
 
-Ut dictum mollis tortor, nec egestas ipsum gravida id. Ut iaculis, nisl sed ornare iaculis, diam tortor pharetra lorem, et tincidunt diam ligula sit amet ligula. Donec nec nulla nec eros fermentum hendrerit a a velit. Nullam id iaculis felis. Ut lacinia sem erat, varius lacinia turpis lobortis a.
+For your first challenge, you will take the existing application stack and deploy it to your Azure subscription.
 
-1.  Duis sollicitudin convallis magna, ut accumsan magna faucibus non. 
-1.  Nulla faucibus commodo elit, at aliquet urna semper id. 
-1.  Integer malesuada purus sed dapibus venenatis. 
-1.  Quisque iaculis leo metus. 
-1.  Quisque ultricies mauris sed faucibus feugiat. 
+![Existing application architecture](./media/01-arch.png)
 
-### Do Something
+The application stack consists of the following components:
 
-Ut dictum mollis tortor, nec egestas ipsum gravida id. Ut iaculis, nisl sed ornare iaculis, diam tortor pharetra lorem, et tincidunt diam ligula sit amet ligula. Donec nec nulla nec eros fermentum hendrerit a a velit. Nullam id iaculis felis. Ut lacinia sem erat, varius lacinia turpis lobortis a.
+- Azure Web App hosting the application website
+  - The application code is deployed using the [msusdev/contoso.spaces.web](https://hub.docker.com/r/msusdev/contoso.spaces.web) container.
+- Azure Functions to host the back-end APIs that power the application
+  - ❗ Any code you modify in this workshop will only happen here.
+  - This function app has the [msusdev/contoso.spaces.api](https://hub.docker.com/r/msusdev/contoso.spaces.api) container deployed by default.
+- Azure SQL Database and Server for the application data.
+- Azure Storage account to host the images used on the website and Azure Functions metadata
+- Azure Container Instance to populate the Azure SQL Database and Azure Storage accounts with sample data
+  - The [msusdev/contoso.spaces.populate](https://hub.docker.com/r/msusdev/contoso.spaces.populate) container is deployed to the container group.
 
-1.  Duis sollicitudin convallis magna, ut accumsan magna faucibus non. 
-1.  Nulla faucibus commodo elit, at aliquet urna semper id. 
-1.  Integer malesuada purus sed dapibus venenatis. 
-1.  Quisque iaculis leo metus. 
-1.  Quisque ultricies mauris sed faucibus feugiat. 
+Fortunately, you can deploy the application to your Azure subscription using an ARM template:
 
-### Do Something
+[![Deploy to Azure](https://docs.microsoft.com/en-us/azure/templates/media/deploy-to-azure.svg)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FMSUSDEV%2Fcosmosdb_app_modernization%2Fmaster%2Farmdeploy.json)
 
-Ut dictum mollis tortor, nec egestas ipsum gravida id. Ut iaculis, nisl sed ornare iaculis, diam tortor pharetra lorem, et tincidunt diam ligula sit amet ligula. Donec nec nulla nec eros fermentum hendrerit a a velit. Nullam id iaculis felis. Ut lacinia sem erat, varius lacinia turpis lobortis a.
+The deployment should take about **10 minutes**.
 
-1.  Duis sollicitudin convallis magna, ut accumsan magna faucibus non. 
-1.  Nulla faucibus commodo elit, at aliquet urna semper id. 
-1.  Integer malesuada purus sed dapibus venenatis. 
-1.  Quisque iaculis leo metus. 
-1.  Quisque ultricies mauris sed faucibus feugiat. 
+While the template is deploying, you should check out some of the deployment details from the Azure Resource Manager (ARM) template:
 
-## Challenge 1
+- The username and password for the SQL database are stored as variables in the template: [armdeploy.json#12](https://github.com/MSUSDEV/cosmosdb_app_modernization/blob/fb8685af8a93301801d9f612b35c9dd791de2d79/armdeploy.json#L12)
+- The template also contains variables that points to the Docker container images on [Docker Hub](https://hub.docker.com/r/msusdev): [armdeploy.json#14](https://github.com/MSUSDEV/cosmosdb_app_modernization/blob/fb8685af8a93301801d9f612b35c9dd791de2d79/armdeploy.json#L14)
+- The template deploys an Azure Container Instance to seed the Azure Storage and Azure Cosmos DB accounts with data: [armdeploy.json#105](https://github.com/MSUSDEV/cosmosdb_app_modernization/blob/fb8685af8a93301801d9f612b35c9dd791de2d79/armdeploy.json#L105)
+- The Azure Function created by the template has a connection string to the SQL Database: [armdeploy.json#146](https://github.com/MSUSDEV/cosmosdb_app_modernization/blob/fb8685af8a93301801d9f612b35c9dd791de2d79/armdeploy.json#L146)
+- The Azure Web App created by the template has multiple configuration settings to point to HTTP APIs hosted on Azure Functions: [armdeploy.json#207](https://github.com/MSUSDEV/cosmosdb_app_modernization/blob/fb8685af8a93301801d9f612b35c9dd791de2d79/armdeploy.json#L207)
 
-Maecenas non euismod ante. Maecenas sed justo at ex tempus mollis. Quisque quis tempor urna. Ut eget felis lorem. Pellentesque bibendum sapien et leo vehicula dignissim. Etiam pretium bibendum luctus. Fusce sed ex finibus, volutpat metus quis, varius turpis. Sed eget ultrices purus. Praesent et mollis eros. Suspendisse potenti. Aliquam imperdiet tempus rutrum. Pellentesque tempor lorem metus, in sodales tortor euismod ut. Proin ligula ex, condimentum ut lacus eu, porta commodo libero. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Quisque ac leo interdum mi efficitur aliquet. Aenean tellus dui, ornare a erat a, auctor vulputate felis.
+### Validation: Review the deployment
 
-![Google Logo](https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png)
+1. Browse to the URL for the Azure Web App created by the ARM template deployment. If you have deployed the website successfully, you should see the following homepage:
 
-### Do Something
+![Contoso Spaces homepage](./media/01-validation.png)
 
-Ut dictum mollis tortor, nec egestas ipsum gravida id. Ut iaculis, nisl sed ornare iaculis, diam tortor pharetra lorem, et tincidunt diam ligula sit amet ligula. Donec nec nulla nec eros fermentum hendrerit a a velit. Nullam id iaculis felis. Ut lacinia sem erat, varius lacinia turpis lobortis a.
+> [Hints](./hints/01-deploy/)
 
-1.  Duis sollicitudin convallis magna, ut accumsan magna faucibus non. 
-1.  Nulla faucibus commodo elit, at aliquet urna semper id. 
-1.  Integer malesuada purus sed dapibus venenatis. 
-1.  Quisque iaculis leo metus. 
-1.  Quisque ultricies mauris sed faucibus feugiat. 
+## Challenge 02: Migrate data from Azure SQL Database to Azure Cosmos DB
 
-### Do Something
+For the first "real" challenge in this workshop, we will migrate our existing data from Azure SQL Database to Azure Cosmos DB.
 
-Ut dictum mollis tortor, nec egestas ipsum gravida id. Ut iaculis, nisl sed ornare iaculis, diam tortor pharetra lorem, et tincidunt diam ligula sit amet ligula. Donec nec nulla nec eros fermentum hendrerit a a velit. Nullam id iaculis felis. Ut lacinia sem erat, varius lacinia turpis lobortis a.
+❗ Remember, we are only migrating at this point. We are not changing our code or deleting our existing Azure SQL Database instance.
 
-1.  Duis sollicitudin convallis magna, ut accumsan magna faucibus non. 
-1.  Nulla faucibus commodo elit, at aliquet urna semper id. 
-1.  Integer malesuada purus sed dapibus venenatis. 
-1.  Quisque iaculis leo metus. 
-1.  Quisque ultricies mauris sed faucibus feugiat. 
+Since our application is read-only, this opens up a lot of possible avenues to move our data from the existing SQL database to a container in Azure Cosmos DB.
 
-### Do Something
+### Step A: Identify the existing database data
 
-Ut dictum mollis tortor, nec egestas ipsum gravida id. Ut iaculis, nisl sed ornare iaculis, diam tortor pharetra lorem, et tincidunt diam ligula sit amet ligula. Donec nec nulla nec eros fermentum hendrerit a a velit. Nullam id iaculis felis. Ut lacinia sem erat, varius lacinia turpis lobortis a.
+The data in Azure SQL Database consists of two simple tables with a predictable relationship:
 
-1.  Duis sollicitudin convallis magna, ut accumsan magna faucibus non. 
-1.  Nulla faucibus commodo elit, at aliquet urna semper id. 
-1.  Integer malesuada purus sed dapibus venenatis. 
-1.  Quisque iaculis leo metus. 
-1.  Quisque ultricies mauris sed faucibus feugiat. 
+![Database schema](./media/02-schema.png)
 
-```csharp
-public void Main(string[] args)
-{
-  Console.WriteLine("Hello, world!");
-}
-```
+At this point, you should query the Azure SQL Database instance using a tool of your choice and become familiar with the data set.
 
-## Wrap-up
+Next, you should create a map of the data from SQL to JSON formats.
 
-Donec a leo vitae erat bibendum pulvinar ac vitae elit. Proin at felis vitae lorem congue iaculis. Donec nec est non arcu consequat finibus id et felis. Cras pellentesque cursus fringilla. Morbi a magna a tellus accumsan tempor eu ut risus. Duis pretium velit nibh, quis viverra nisi luctus sed. Praesent sit amet vulputate felis. Sed consectetur diam non urna elementum accumsan. Nam vel tincidunt elit, et cursus justo. Vivamus sed urna porttitor, placerat odio in, faucibus est. Nulla volutpat, est sed venenatis venenatis, ante ligula porta diam, et pharetra orci mi et sapien. Donec convallis dolor ut tristique aliquam. Pellentesque tincidunt mauris nec enim fringilla, id pharetra lorem hendrerit.
+### Step B: Create Azure Cosmos DB resources
+
+It is a best practice to pre-configure your destination resources in Azure Cosmos DB prior to performing your migration.
+
+At this point, you should plan and excute to creation of your Azure Cosmos DB **account**, **database**, and **container**.
+
+### Step C: Perform migration
+
+Now, it's time to perform the migration. There's no need to deal with the complexity of a live/online migration, you can use any tool or manual script you'd like.
+
+### Validation: Plan and execute deployment
+
+1. You should have a plan detailed on how you will perform the migration and how Azure Cosmos DB JSON documents will map to Azure SQL Database records
+1. You should have performed the migration. You can verify that your deployment is successful by issuing a query to your new account, database, and container in Azure Cosmos DB.
+
+> [Hints](./hints/02-migrate/)
+
+> [Solution](./solutions/02-migrate/)
