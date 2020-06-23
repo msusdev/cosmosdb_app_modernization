@@ -8,12 +8,14 @@
         "appServicePlanName": "[concat('plan', uniqueString(resourceGroup().id))]",
         "webAppName": "[concat('weba', uniqueString(resourceGroup().id))]",
         "functionAppName": "[concat('func', uniqueString(resourceGroup().id))]",
-        "containerInstanceName": "[concat('cont', uniqueString(resourceGroup().id))]",
-        "databaseUsername": "applicationidentity",
-        "databasePassword": "A#joK2z98qTR",
-        "populateContainerImage": "msusdev/contoso.spaces.populate",
+        "containerStorageInstanceName": "[concat('cont', uniqueString(resourceGroup().id))]",
+        "containerSqlInstanceName": "[concat('cons', uniqueString(resourceGroup().id))]",
+        "sqlDatabaseUsername": "applicationidentity",
+        "sqlDatabasePassword": "A#joK2z98qTR",
+        "populateStorageContainerImage": "msusdev/contoso.spaces.populate.storage",
+        "populateSqlContainerImage": "msusdev/contoso.spaces.populate.sql",
         "webContainerImage": "msusdev/contoso.spaces.web",
-        "functionContainerImage": "msusdev/contoso.spaces.api"
+        "functionContainerImage": "msusdev/contoso.spaces.api.sql"
     },
     "resources": [
         {
@@ -23,8 +25,8 @@
             "location": "[resourceGroup().location]",
             "properties": {
                 "version": "12.0",
-                "administratorLogin": "[variables('databaseUsername')]",
-                "administratorLoginPassword": "[variables('databasePassword')]"
+                "administratorLogin": "[variables('sqlDatabaseUsername')]",
+                "administratorLoginPassword": "[variables('sqlDatabasePassword')]"
             },
             "resources": [
                 {
@@ -89,11 +91,9 @@
         {
             "type": "Microsoft.ContainerInstance/containerGroups",
             "apiVersion": "2018-10-01",
-            "name": "[variables('containerInstanceName')]",
+            "name": "[variables('containerStorageInstanceName')]",
             "location": "[resourceGroup().location]",
             "dependsOn": [
-                "[resourceId('Microsoft.Sql/servers', variables('sqlServerName'))]",
-                "[resourceId('Microsoft.Sql/servers/databases', variables('sqlServerName'), variables('sqlDatabaseName'))]",
                 "[resourceId('Microsoft.Storage/storageAccounts', variables('storageAccountName'))]"
             ],
             "properties": {
@@ -101,15 +101,45 @@
                     {
                         "name": "populate",
                         "properties": {
-                            "image": "[variables('populateContainerImage')]",
+                            "image": "[variables('populateStorageContainerImage')]",
                             "environmentVariables": [
                                 {
                                     "name": "ConnectionStrings__AzureStorage",
                                     "value": "[concat('DefaultEndpointsProtocol=https;AccountName=', variables('storageAccountName'), ';AccountKey=', listKeys(resourceId('Microsoft.Storage/storageAccounts', variables('storageAccountName')), '2019-04-01').keys[0].value, ';')]"
-                                },
+                                }
+                            ],
+                            "resources": {
+                                "requests": {
+                                    "cpu": 4.0,
+                                    "memoryInGb": 8.0
+                                }
+                            }
+                        }
+                    }
+                ],
+                "restartPolicy": "OnFailure",
+                "osType": "Linux"
+            }
+        },
+        {
+            "type": "Microsoft.ContainerInstance/containerGroups",
+            "apiVersion": "2018-10-01",
+            "name": "[variables('containerSqlInstanceName')]",
+            "location": "[resourceGroup().location]",
+            "dependsOn": [
+                "[resourceId('Microsoft.Sql/servers', variables('sqlServerName'))]",
+                "[resourceId('Microsoft.Sql/servers/databases', variables('sqlServerName'), variables('sqlDatabaseName'))]"
+            ],
+            "properties": {
+                "containers": [
+                    {
+                        "name": "populate",
+                        "properties": {
+                            "image": "[variables('populateSqlContainerImage')]",
+                            "environmentVariables": [
                                 {
                                     "name": "ConnectionStrings__AzureSqlDb",
-                                    "value": "[concat('Data Source=tcp:', reference(concat('Microsoft.Sql/servers/', variables('sqlServerName'))).fullyQualifiedDomainName, ',1433;Initial Catalog=', variables('sqlDatabaseName'), ';User Id=', variables('databaseUsername'), '@', reference(concat('Microsoft.Sql/servers/', variables('sqlServerName'))).fullyQualifiedDomainName, ';Password=', variables('databasePassword'), ';')]"
+                                    "value": "[concat('Data Source=tcp:', reference(concat('Microsoft.Sql/servers/', variables('sqlServerName'))).fullyQualifiedDomainName, ',1433;Initial Catalog=', variables('sqlDatabaseName'), ';User Id=', variables('sqlDatabaseUsername'), '@', reference(concat('Microsoft.Sql/servers/', variables('sqlServerName'))).fullyQualifiedDomainName, ';Password=', variables('sqlDatabasePassword'), ';')]"
                                 }
                             ],
                             "resources": {
@@ -134,7 +164,8 @@
             "dependsOn": [
                 "[resourceId('Microsoft.Sql/servers', variables('sqlServerName'))]",
                 "[resourceId('Microsoft.Sql/servers/databases', variables('sqlServerName'), variables('sqlDatabaseName'))]",
-                "[resourceId('Microsoft.ContainerInstance/containerGroups', variables('containerInstanceName'))]",
+                "[resourceId('Microsoft.ContainerInstance/containerGroups', variables('containerStorageInstanceName'))]",
+                "[resourceId('Microsoft.ContainerInstance/containerGroups', variables('containerSqlInstanceName'))]",
                 "[resourceId('Microsoft.Web/serverfarms', variables('appServicePlanName'))]"
             ],
             "kind": "functionapp",
@@ -158,7 +189,7 @@
                         },
                         {
                             "name": "FUNCTIONS_EXTENSION_VERSION",
-                            "value": "~2"
+                            "value": "~3"
                         },
                         {
                             "name": "WEBSITE_NODE_DEFAULT_VERSION",
@@ -196,7 +227,8 @@
             "dependsOn": [
                 "[resourceId('Microsoft.Sql/servers', variables('sqlServerName'))]",
                 "[resourceId('Microsoft.Sql/servers/databases', variables('sqlServerName'), variables('sqlDatabaseName'))]",
-                "[resourceId('Microsoft.ContainerInstance/containerGroups', variables('containerInstanceName'))]",
+                "[resourceId('Microsoft.ContainerInstance/containerGroups', variables('containerSqlInstanceName'))]",
+                "[resourceId('Microsoft.ContainerInstance/containerGroups', variables('containerStorageInstanceName'))]",
                 "[resourceId('Microsoft.Storage/storageAccounts', variables('storageAccountName'))]",
                 "[resourceId('Microsoft.Web/sites', variables('functionAppName'))]"
             ],
@@ -228,18 +260,6 @@
                         {
                             "name": "ConnectionData__GetSpecificLocationApiUrl",
                             "value": "[concat('https://', reference(concat('Microsoft.Web/sites/', variables('functionAppName')), '2018-11-01').defaultHostName, '/api/getspecificlocation')]"
-                        },
-                        {
-                            "name": "ConnectionData__AddToCartApiUrl",
-                            "value": "[concat('https://', reference(concat('Microsoft.Web/sites/', variables('functionAppName')), '2018-11-01').defaultHostName, '/api/addtocart')]"
-                        },
-                        {
-                            "name": "ConnectionData__GetCartApiUrl",
-                            "value": "[concat('https://', reference(concat('Microsoft.Web/sites/', variables('functionAppName')), '2018-11-01').defaultHostName, '/api/getcart')]"
-                        },
-                        {
-                            "name": "ConnectionData__ClearCartApiUrl",
-                            "value": "[concat('https://', reference(concat('Microsoft.Web/sites/', variables('functionAppName')), '2018-11-01').defaultHostName, '/api/clearcart')]"
                         }
                     ],
                     "appCommandLine": "",
