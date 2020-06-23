@@ -3,27 +3,21 @@
     "contentVersion": "1.0.0.0",
     "variables": {
         "storageAccountName": "[concat('stor', uniqueString(resourceGroup().id))]",
-        "sqlServerName": "[concat('srvr', uniqueString(resourceGroup().id))]",
-        "sqlDatabaseName": "[concat('sqld', uniqueString(resourceGroup().id))]",
         "cosmosAccountName": "[concat('csms', uniqueString(resourceGroup().id))]",
         "appServicePlanName": "[concat('plan', uniqueString(resourceGroup().id))]",
         "webAppName": "[concat('weba', uniqueString(resourceGroup().id))]",
         "functionAppName": "[concat('func', uniqueString(resourceGroup().id))]",
         "containerStorageInstanceName": "[concat('cont', uniqueString(resourceGroup().id))]",
-        "containerSqlInstanceName": "[concat('cons', uniqueString(resourceGroup().id))]",
         "containerCosmosInstanceName": "[concat('conc', uniqueString(resourceGroup().id))]",
         "cosmosPrimaryRegion": "eastus",
         "cosmosDatabaseName": "ContosoSpaces",
         "cosmosContainerName": "Locations",
         "cosmosContainerPartitionKey": "/territory",
         "cosmosContainerThroughput": "1000",
-        "sqlDatabaseUsername": "applicationidentity",
-        "sqlDatabasePassword": "A#joK2z98qTR",
         "populateStorageContainerImage": "msusdev/contoso.spaces.populate.storage",
-        "populateSqlContainerImage": "msusdev/contoso.spaces.populate.sql",
         "populateCosmosContainerImage": "msusdev/contoso.spaces.populate.cosmos",
         "webContainerImage": "msusdev/contoso.spaces.web",
-        "functionContainerImage": "msusdev/contoso.spaces.api.sql"
+        "functionContainerImage": "msusdev/contoso.spaces.api.cosmos"
     },
     "resources": [
         {
@@ -99,49 +93,6 @@
             ]
         },
         {
-            "name": "[variables('sqlServerName')]",
-            "type": "Microsoft.Sql/servers",
-            "apiVersion": "2019-06-01-preview",
-            "location": "[resourceGroup().location]",
-            "properties": {
-                "version": "12.0",
-                "administratorLogin": "[variables('sqlDatabaseUsername')]",
-                "administratorLoginPassword": "[variables('sqlDatabasePassword')]"
-            },
-            "resources": [
-                {
-                    "name": "AllowAllWindowsAzureIps",
-                    "type": "firewallRules",
-                    "apiVersion": "2015-05-01-preview",
-                    "location": "[resourceGroup().location]",
-                    "dependsOn": [
-                        "[resourceId('Microsoft.Sql/servers', variables('sqlServerName'))]"
-                    ],
-                    "properties": {
-                        "endIpAddress": "0.0.0.0",
-                        "startIpAddress": "0.0.0.0"
-                    }
-                },
-                {
-                    "name": "[variables('sqlDatabaseName')]",
-                    "type": "databases",
-                    "apiVersion": "2019-06-01-preview",
-                    "location": "[resourceGroup().location]",
-                    "dependsOn": [
-                        "[resourceId('Microsoft.Sql/servers', variables('sqlServerName'))]"
-                    ],
-                    "sku": {
-                        "name": "GP_Gen5_4",
-                        "tier": "GeneralPurpose"
-                    },
-                    "properties": {
-                        "collation": "SQL_Latin1_General_CP1_CI_AS",
-                        "maxSizeBytes": 34359738368
-                    }
-                }
-            ]
-        },
-        {
             "name": "[variables('storageAccountName')]",
             "type": "Microsoft.Storage/storageAccounts",
             "apiVersion": "2019-06-01",
@@ -204,40 +155,6 @@
         {
             "type": "Microsoft.ContainerInstance/containerGroups",
             "apiVersion": "2018-10-01",
-            "name": "[variables('containerSqlInstanceName')]",
-            "location": "[resourceGroup().location]",
-            "dependsOn": [
-                "[resourceId('Microsoft.Sql/servers', variables('sqlServerName'))]",
-                "[resourceId('Microsoft.Sql/servers/databases', variables('sqlServerName'), variables('sqlDatabaseName'))]"
-            ],
-            "properties": {
-                "containers": [
-                    {
-                        "name": "populate",
-                        "properties": {
-                            "image": "[variables('populateSqlContainerImage')]",
-                            "environmentVariables": [
-                                {
-                                    "name": "ConnectionStrings__AzureSqlDb",
-                                    "value": "[concat('Data Source=tcp:', reference(concat('Microsoft.Sql/servers/', variables('sqlServerName'))).fullyQualifiedDomainName, ',1433;Initial Catalog=', variables('sqlDatabaseName'), ';User Id=', variables('sqlDatabaseUsername'), '@', reference(concat('Microsoft.Sql/servers/', variables('sqlServerName'))).fullyQualifiedDomainName, ';Password=', variables('sqlDatabasePassword'), ';')]"
-                                }
-                            ],
-                            "resources": {
-                                "requests": {
-                                    "cpu": 4.0,
-                                    "memoryInGb": 8.0
-                                }
-                            }
-                        }
-                    }
-                ],
-                "restartPolicy": "OnFailure",
-                "osType": "Linux"
-            }
-        },
-        {
-            "type": "Microsoft.ContainerInstance/containerGroups",
-            "apiVersion": "2018-10-01",
             "name": "[variables('containerCosmosInstanceName')]",
             "location": "[resourceGroup().location]",
             "dependsOn": [
@@ -271,16 +188,16 @@
             }
         },
         {
-
             "name": "[variables('functionAppName')]",
             "type": "Microsoft.Web/sites",
             "apiVersion": "2018-11-01",
             "location": "[resourceGroup().location]",
             "dependsOn": [
-                "[resourceId('Microsoft.Sql/servers', variables('sqlServerName'))]",
-                "[resourceId('Microsoft.Sql/servers/databases', variables('sqlServerName'), variables('sqlDatabaseName'))]",
+                "[resourceId('Microsoft.DocumentDB/databaseAccounts', variables('cosmosAccountName'))]",
+                "[resourceId('Microsoft.DocumentDB/databaseAccounts/sqlDatabases', variables('cosmosAccountName'), variables('cosmosDatabaseName'))]",
+                "[resourceId('Microsoft.DocumentDB/databaseAccounts/sqlDatabases/containers', variables('cosmosAccountName'), variables('cosmosDatabaseName'), variables('cosmosContainerName'))]",
                 "[resourceId('Microsoft.ContainerInstance/containerGroups', variables('containerStorageInstanceName'))]",
-                "[resourceId('Microsoft.ContainerInstance/containerGroups', variables('containerSqlInstanceName'))]",
+                "[resourceId('Microsoft.ContainerInstance/containerGroups', variables('containerCosmosInstanceName'))]",
                 "[resourceId('Microsoft.Web/serverfarms', variables('appServicePlanName'))]"
             ],
             "kind": "functionapp",
@@ -311,8 +228,8 @@
                             "value": "10.14.1"
                         },
                         {
-                            "name": "SqlConnectionString",
-                            "value": "[concat('Data Source=tcp:', reference(concat('Microsoft.Sql/servers/', variables('sqlServerName'))).fullyQualifiedDomainName, ',1433;Initial Catalog=', variables('sqlDatabaseName'), ';User Id=', variables('sqlDatabaseUsername'), '@', reference(concat('Microsoft.Sql/servers/', variables('sqlServerName'))).fullyQualifiedDomainName, ';Password=', variables('sqlDatabasePassword'), ';')]"
+                            "name": "CosmosConnectionString",
+                            "value": "[concat('AccountEndpoint=https://', variables('cosmosAccountName'),'.documents.azure.com:443/;AccountKey=', listKeys(resourceId('Microsoft.DocumentDB/databaseAccounts', variables('cosmosAccountName')), '2019-08-01').primaryMasterKey, ';')]"
                         }
                     ],
                     "appCommandLine": "",
