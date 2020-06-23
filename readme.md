@@ -6,7 +6,7 @@ Welcome to the Azure Cosmos DB hands-on workshop! Throughout this workshop, you 
 
 After you are done with the workshop, you can continue to use the content available in our [GitHub repository](https://github.com/msusdev/cosmosdb_app_modernization) to learn about Azure Cosmos DB at your own pace.
 
-> [Schedule](.\schedule\readme.md)
+> [Schedule](./schedule/)
 
 ## Goals
 
