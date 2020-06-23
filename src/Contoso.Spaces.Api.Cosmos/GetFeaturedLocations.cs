@@ -33,7 +33,7 @@ namespace Contoso.Spaces.Api.Solution
             List<Location> locations = new List<Location>();
 
             string sql = $"SELECT TOP 4 * FROM locations l ORDER BY l.lastRenovationDate DESC";
-            var feed = container.GetItemQueryIterator<Location>();
+            var feed = container.GetItemQueryIterator<Location>(sql);
 
             while (feed.HasMoreResults)
             {

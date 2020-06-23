@@ -40,7 +40,7 @@ namespace Contoso.Spaces.Api.Solution
             List<Location> locations = new List<Location>();
 
             string sql = $"SELECT TOP 1 * FROM locations l WHERE l.id = '{id}'";
-            var feed = container.GetItemQueryIterator<Location>();
+            var feed = container.GetItemQueryIterator<Location>(sql);
 
             while (feed.HasMoreResults)
             {
