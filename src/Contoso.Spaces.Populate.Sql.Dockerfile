@@ -10,4 +10,8 @@ FROM mcr.microsoft.com/dotnet/core/runtime:3.1-alpine
 
 COPY --from=build /app/out .
 
+RUN apk add icu-libs
+
+ENV DOTNET_SYSTEM_GLOBALIZATION_INVARIANT=false
+
 ENTRYPOINT ["dotnet", "Contoso.Spaces.Populate.Sql.dll"]
