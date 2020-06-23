@@ -6,7 +6,7 @@ Welcome to the Azure Cosmos DB hands-on workshop! Throughout this workshop, you 
 
 After you are done with the workshop, you can continue to use the content available in our [GitHub repository](https://github.com/msusdev/cosmosdb_app_modernization) to learn about Azure Cosmos DB at your own pace.
 
-> [Schedule](.\schedule\readme.md)
+> [Schedule](./schedule/)
 
 ## Goals
 
@@ -32,11 +32,12 @@ The application stack consists of the following components:
   - The application code is deployed using the [msusdev/contoso.spaces.web](https://hub.docker.com/r/msusdev/contoso.spaces.web) container.
 - Azure Functions to host the back-end APIs that power the application
   - ❗ Any code you modify in this workshop will only happen here.
-  - This function app has the [msusdev/contoso.spaces.api](https://hub.docker.com/r/msusdev/contoso.spaces.api) container deployed by default.
+  - This function app has the [msusdev/contoso.spaces.api.sql](https://hub.docker.com/r/msusdev/contoso.spaces.api.sql) container deployed by default.
 - Azure SQL Database and Server for the application data.
 - Azure Storage account to host the images used on the website and Azure Functions metadata
-- Azure Container Instance to populate the Azure SQL Database and Azure Storage accounts with sample data
-  - The [msusdev/contoso.spaces.populate](https://hub.docker.com/r/msusdev/contoso.spaces.populate) container is deployed to the container group.
+- Azure Container Instances to populate the Azure SQL Database and Azure Storage accounts with sample data
+  - The [msusdev/contoso.spaces.populate.sql](https://hub.docker.com/r/msusdev/contoso.spaces.populate.sql) container is deployed to the container group.
+  - The [msusdev/contoso.spaces.populate.storage](https://hub.docker.com/r/msusdev/contoso.spaces.populate.storage) container is deployed to the container group.
 
 ![Existing application architecture](./media/01-arch.png)
 
@@ -98,6 +99,7 @@ Now, it's time to perform the migration. There's no need to deal with the comple
 > [Hints](./hints/02-migrate/)
 
 > [Solution](./solutions/02-migrate/)
+<<<<<<< HEAD
 
 ## Challenge 3: Write new code for Azure Functions
 
@@ -138,3 +140,5 @@ Now it's time to write your code to replace the outdated SQL code.
 > [Hints](./hints/03-refactor/)
 
 > [Solution](./solutions/03-refactor/)
+=======
+>>>>>>> 7d3ec818296a067b3f7fcc45270f5ae9e261d579
