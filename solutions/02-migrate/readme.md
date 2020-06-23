@@ -1,4 +1,4 @@
-# Challenge 02: Solution
+# Challenge 2: Solution
 
 ## Walkthrough
 
@@ -63,7 +63,7 @@ Now that you have a basic JSON schema, you can begin to consider some of the oth
 - A unique identifier for each document
 - A partition key field.
 
-A unique identifier can be created by simply generating a GUID and printing it to a string. For the partition key field, you may need to create a synthetic partition key. As an example solution (among many others), we decided to create a synthetic key named ``territory`` that is parsed from the address string. For example, if we have this JSON document:
+A unique identifier can be created by simply generating an integer and printing it to a string. For the partition key field, you may need to create a synthetic partition key. As an example solution (among many others), we decided to create a synthetic key named ``territory`` that is parsed from the address string. For example, if we have this JSON document:
 
 ```json
 {
@@ -76,7 +76,7 @@ We can update the document by adding ``id`` and ``territory`` properties:
 
 ```json
 {
-    "id": "0c561821-61a0-45b8-a573-afa14d32eb46",
+    "id": "1",
     "name": "McGlynn - Kunze Square",
     "mailingAddress": "320 Westlake Ave N Seattle, WA 98109",
     "territory": "Washington",
