@@ -6,7 +6,7 @@ Welcome to the Azure Cosmos DB hands-on workshop! Throughout this workshop, you 
 
 After you are done with the workshop, you can continue to use the content available in our [GitHub repository](https://github.com/msusdev/cosmosdb_app_modernization) to learn about Azure Cosmos DB at your own pace.
 
-> [Schedule](.\schedule\readme.md)
+> [Schedule](./schedule/)
 
 ## Goals
 
@@ -32,11 +32,12 @@ The application stack consists of the following components:
   - The application code is deployed using the [msusdev/contoso.spaces.web](https://hub.docker.com/r/msusdev/contoso.spaces.web) container.
 - Azure Functions to host the back-end APIs that power the application
   - ❗ Any code you modify in this workshop will only happen here.
-  - This function app has the [msusdev/contoso.spaces.api](https://hub.docker.com/r/msusdev/contoso.spaces.api) container deployed by default.
+  - This function app has the [msusdev/contoso.spaces.api.sql](https://hub.docker.com/r/msusdev/contoso.spaces.api.sql) container deployed by default.
 - Azure SQL Database and Server for the application data.
 - Azure Storage account to host the images used on the website and Azure Functions metadata
-- Azure Container Instance to populate the Azure SQL Database and Azure Storage accounts with sample data
-  - The [msusdev/contoso.spaces.populate](https://hub.docker.com/r/msusdev/contoso.spaces.populate) container is deployed to the container group.
+- Azure Container Instances to populate the Azure SQL Database and Azure Storage accounts with sample data
+  - The [msusdev/contoso.spaces.populate.sql](https://hub.docker.com/r/msusdev/contoso.spaces.populate.sql) container is deployed to the container group.
+  - The [msusdev/contoso.spaces.populate.storage](https://hub.docker.com/r/msusdev/contoso.spaces.populate.storage) container is deployed to the container group.
 
 ![Existing application architecture](./media/01-arch.png)
 
@@ -61,3 +62,80 @@ While the template is deploying, you should check out some of the deployment det
 ![Contoso Spaces homepage](./media/01-validation.png)
 
 > [Hints](./hints/01-deploy/)
+
+## Challenge 2: Migrate data from Azure SQL Database to Azure Cosmos DB
+
+For the first "real" challenge in this workshop, we will migrate our existing data from Azure SQL Database to Azure Cosmos DB.
+
+❗ Remember, we are only migrating at this point. We are not changing our code or deleting our existing Azure SQL Database instance.
+
+Since our application is read-only, this opens up a lot of possible avenues to move our data from the existing SQL database to a container in Azure Cosmos DB.
+
+### Step A: Identify the existing database data
+
+The data in Azure SQL Database consists of two simple tables with a predictable relationship:
+
+![Database schema](./media/02-schema.png)
+
+At this point, you should query the Azure SQL Database instance using a tool of your choice and become familiar with the data set.
+
+Next, you should create a map of the data from SQL to JSON formats.
+
+### Step B: Create Azure Cosmos DB resources
+
+It is a best practice to pre-configure your destination resources in Azure Cosmos DB prior to performing your migration.
+
+At this point, you should plan and excute to creation of your Azure Cosmos DB **account**, **database**, and **container**.
+
+### Step C: Perform migration
+
+Now, it's time to perform the migration. There's no need to deal with the complexity of a live/online migration, you can use any tool or manual script you'd like.
+
+### Validation: Plan and execute deployment
+
+1. You should have a plan detailed on how you will perform the migration and how Azure Cosmos DB JSON documents will map to Azure SQL Database records
+1. You should have performed the migration. You can verify that your deployment is successful by issuing a query to your new account, database, and container in Azure Cosmos DB. You can use the ``SELECT * FROM locations`` query to test your migration.
+
+> [Hints](./hints/02-migrate/)
+
+> [Solution](./solutions/02-migrate/)
+
+## Challenge 3: Write new code for Azure Functions
+
+In this challenge, you are tasked with replacing the functions within your Azure Function with code that will query Azure Cosmos DB instead.
+
+### Step A: Review existing code
+
+The existing Azure Function that is deployed for your application uses [Entity Framework Core](https://github.com/dotnet/efcore) to [query a SQL database](https://github.com/MSUSDEV/cosmosdb_app_modernization/blob/42abddaa9b3a8f5112a295c88b6092819e475f01/src/Contoso.Spaces.Api.Sql/GetFeaturedLocations.cs#L35).
+
+If you explore the App Service components in the portal, you will quickly notice a few things:
+
+- The Azure Function code is deployed using a Docker container making it read-only
+- The Azure Web App has configuration settings for each of the three API it uses
+
+### Step B: Observe the existing APIs
+
+There are three APIs that you will eventually replace:
+
+- ``/api/getfeaturedlocations``: This API returns the four most recently renovated locations
+- ``/api/getalllocations``: This API returns all locations
+- ``/api/getspecificlocation?id=``: This API returns the location & rooms for a specific location specified by the ``id`` query string parameter
+
+The URL to each of the three APIs is configured in the Azure Web App's configuration settings.
+
+❗ It's highly recommended that you test calling the existing APIs before writing your own so you can become familiar with the way they return results.
+
+### Step C: Write your own code
+
+Now it's time to write your code to replace the outdated SQL code.
+
+❗ You are free to replace the APIs with ones you have written yourself deployed to any service you'd like.
+
+### Validation: Replace API code
+
+1. First, you should delete the existing SQL Database. Confirmation of the database's deletion will be a required step before moving on with the challenges.
+1. Your web application should now call the three APIs that query Azure Cosmos DB. This step will be validated by performing a query on Azure Cosmos DB directly using the Data Explorer and validating that the results match the Contoso Spaces website.
+
+> [Hints](./hints/03-refactor/)
+
+> [Solution](./solutions/03-refactor/)
