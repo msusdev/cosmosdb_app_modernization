@@ -91,7 +91,7 @@ Now, it's time to perform the migration. There's no need to deal with the comple
 ### Validation: Plan and execute deployment
 
 1. You should have a plan detailed on how you will perform the migration and how Azure Cosmos DB JSON documents will map to Azure SQL Database records
-1. You should have performed the migration. You can verify that your deployment is successful by issuing a query to your new account, database, and container in Azure Cosmos DB.
+1. You should have performed the migration. You can verify that your deployment is successful by issuing a query to your new account, database, and container in Azure Cosmos DB. You can use the ``SELECT * FROM locations`` query to test your migration.
 
 > [Hints](./hints/02-migrate/)
 

@@ -1,5 +1,7 @@
 # Challenge 02: Solution
 
+## Walkthrough
+
 After reviewing the existing application and dataset, there are a few observations you can make:
 
 - The **room** data is only ever queried as a ``JOIN`` to the **location** data
@@ -13,6 +15,8 @@ So, using an example SQL query result:
 | Id | Name | Longitude | Latitude | MailingAddress | ParkingIncluded | ConferenceRoomsIncluded | ReceptionIncluded| PublicAccess | LastRenovationDate | Image |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |  
 | 1 | McGlynn - Kunze Square | 47.621201 | -122.338181 | 320 Westlake Ave N Seattle, WA 98109 | True | True | True | False | 1982-05-08T00:00:00.0000000+00:00 | 601e072a-dfea-4928-ad87-dbf75d1d6448.png |
+
+---
 
 | Id | Description | MonthlyRate | Seats | PrivateFacilities | PhoneIncluded | Windows | Corner | LocationId |
 |--- |--- |--- |--- |--- |--- |--- |--- |--- |
@@ -53,3 +57,38 @@ We, can shape this as a JSON document like [this sample document](./example.json
     ]
 }
 ```
+
+Now that you have a basic JSON schema, you can begin to consider some of the other things you need before migrating to Azure Cosmos DB:
+
+- A unique identifier for each document
+- A partition key field.
+
+A unique identifier can be created by simply generating a GUID and printing it to a string. For the partition key field, you may need to create a synthetic partition key. As an example solution (among many others), we decided to create a synthetic key named ``territory`` that is parsed from the address string. For example, if we have this JSON document:
+
+```json
+{
+    "name": "McGlynn - Kunze Square",
+    "mailingAddress": "320 Westlake Ave N Seattle, WA 98109"
+}
+```
+
+We can update the document by adding ``id`` and ``territory`` properties:
+
+```json
+{
+    "id": "0c561821-61a0-45b8-a573-afa14d32eb46",
+    "name": "McGlynn - Kunze Square",
+    "mailingAddress": "320 Westlake Ave N Seattle, WA 98109",
+    "territory": "Washington",
+}
+```
+
+Once your design tasks are complete, you can move forward with migrating the data.
+
+For this challenge, it's easiest to migrate using the [Data Migration Tool instructions found here](https://docs.microsoft.com/azure/cosmos-db/import-data#SQL).
+
+## Deployment Template
+
+Use this template to deploy a pre-baked solution to your Azure subscription:
+
+[![Deploy to Azure](https://docs.microsoft.com/en-us/azure/templates/media/deploy-to-azure.svg)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fgithub.com%2FMSUSDEV%2Fcosmosdb_app_modernization%2Fblob%2F02-solution%2Farmdeploy.json)
