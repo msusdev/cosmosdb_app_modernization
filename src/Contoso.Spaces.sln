@@ -17,8 +17,6 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Contoso.Spaces.Api.Sql", "C
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Contoso.Spaces.Populate.Cosmos", "Contoso.Spaces.Populate.Cosmos\Contoso.Spaces.Populate.Cosmos.csproj", "{6E8B6351-E440-4D00-8830-09FE3EF51F44}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Contoso.Spaces.Api.Cosmos", "Contoso.Spaces.Api.Cosmos\Contoso.Spaces.Api.Cosmos.csproj", "{B8B8777C-36D5-4063-838F-0E00A595048F}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -113,18 +111,6 @@ Global
 		{6E8B6351-E440-4D00-8830-09FE3EF51F44}.Release|x64.Build.0 = Release|Any CPU
 		{6E8B6351-E440-4D00-8830-09FE3EF51F44}.Release|x86.ActiveCfg = Release|Any CPU
 		{6E8B6351-E440-4D00-8830-09FE3EF51F44}.Release|x86.Build.0 = Release|Any CPU
-		{B8B8777C-36D5-4063-838F-0E00A595048F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{B8B8777C-36D5-4063-838F-0E00A595048F}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{B8B8777C-36D5-4063-838F-0E00A595048F}.Debug|x64.ActiveCfg = Debug|Any CPU
-		{B8B8777C-36D5-4063-838F-0E00A595048F}.Debug|x64.Build.0 = Debug|Any CPU
-		{B8B8777C-36D5-4063-838F-0E00A595048F}.Debug|x86.ActiveCfg = Debug|Any CPU
-		{B8B8777C-36D5-4063-838F-0E00A595048F}.Debug|x86.Build.0 = Debug|Any CPU
-		{B8B8777C-36D5-4063-838F-0E00A595048F}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{B8B8777C-36D5-4063-838F-0E00A595048F}.Release|Any CPU.Build.0 = Release|Any CPU
-		{B8B8777C-36D5-4063-838F-0E00A595048F}.Release|x64.ActiveCfg = Release|Any CPU
-		{B8B8777C-36D5-4063-838F-0E00A595048F}.Release|x64.Build.0 = Release|Any CPU
-		{B8B8777C-36D5-4063-838F-0E00A595048F}.Release|x86.ActiveCfg = Release|Any CPU
-		{B8B8777C-36D5-4063-838F-0E00A595048F}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
