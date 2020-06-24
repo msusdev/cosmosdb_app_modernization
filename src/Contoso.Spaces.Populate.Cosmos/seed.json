@@ -5,7 +5,7 @@
         "longitude": 47.621201,
         "latitude": -122.338181,
         "mailingAddress": "320 Westlake Ave N Seattle, WA 98109",
-        "territory": "Washington",
+        "territory": "US",
         "rooms": [
             {
                 "description": "Coworking Office",
@@ -66,7 +66,7 @@
         "longitude": 35.1087,
         "latitude": -106.605949,
         "mailingAddress": "3400 Menaul Blvd NE Albuquerque, NM 87107",
-        "territory": "New Mexico",
+        "territory": "US",
         "rooms": [
             {
                 "description": "Team Corner Suite",
@@ -154,7 +154,7 @@
         "longitude": 36.107281,
         "latitude": -86.816017,
         "mailingAddress": "2126 Abbott Martin Rd Nashville, TN 37215",
-        "territory": "Tennessee",
+        "territory": "US",
         "rooms": [
             {
                 "description": "Single Suite",
@@ -188,7 +188,7 @@
         "longitude": 47.676857,
         "latitude": -122.198074,
         "mailingAddress": "550 Kirkland Way Kirkland, WA 98033",
-        "territory": "Washington",
+        "territory": "US",
         "rooms": [
             {
                 "description": "Coworking Suite",
@@ -258,7 +258,7 @@
         "longitude": 33.846432,
         "latitude": -84.362465,
         "mailingAddress": "3393 Peachtree Rd Atlanta, GA 30326",
-        "territory": "Georgia",
+        "territory": "US",
         "rooms": [
             {
                 "description": "Team Office",
@@ -346,7 +346,7 @@
         "longitude": 25.956699,
         "latitude": -80.146729,
         "mailingAddress": "19575 Biscayne Blvd Aventura, FL 33180",
-        "territory": "Florida",
+        "territory": "US",
         "rooms": [
             {
                 "description": "Team Suite",
@@ -407,7 +407,7 @@
         "longitude": 37.793369,
         "latitude": -122.394234,
         "mailingAddress": "1 Market San Francisco, CA 94105",
-        "territory": "California",
+        "territory": "US",
         "rooms": [
             {
                 "description": "Coworking Suite",
@@ -441,7 +441,7 @@
         "longitude": 39.717941,
         "latitude": -104.952133,
         "mailingAddress": "3000 E 1st Ave, Denver, CO 80206",
-        "territory": "Colorado",
+        "territory": "US",
         "rooms": [
             {
                 "description": "Coworking Corner Suite",
@@ -529,7 +529,7 @@
         "longitude": 47.612839,
         "latitude": -122.335114,
         "mailingAddress": "600 Pine St Seattle, WA 98101",
-        "territory": "Washington",
+        "territory": "US",
         "rooms": [
             {
                 "description": "Team Office",
@@ -608,7 +608,7 @@
         "longitude": 47.79454,
         "latitude": -122.1967,
         "mailingAddress": "22422 29th Dr SE Bothell, WA 98021",
-        "territory": "Washington",
+        "territory": "US",
         "rooms": [
             {
                 "description": "Coworking Suite",
@@ -714,7 +714,7 @@
         "longitude": 35.104061,
         "latitude": -89.847656,
         "mailingAddress": "6465 N Quail Hollow Rd Memphis, TN 38120",
-        "territory": "Tennessee",
+        "territory": "US",
         "rooms": [
             {
                 "description": "Team Corner Office",
@@ -775,7 +775,7 @@
         "longitude": 29.518398,
         "latitude": -98.495422,
         "mailingAddress": "7400 San Pedro Ave San Antonio, TX 78216",
-        "territory": "Texas",
+        "territory": "US",
         "rooms": [
             {
                 "description": "Team Suite",
@@ -809,7 +809,7 @@
         "longitude": 27.384417,
         "latitude": -82.452843,
         "mailingAddress": "140 University Town Center Dr Sarasota, FL 34243",
-        "territory": "Florida",
+        "territory": "US",
         "rooms": [
             {
                 "description": "Pair Corner Suite",
@@ -870,7 +870,7 @@
         "longitude": 33.923931,
         "latitude": -84.34153,
         "mailingAddress": "4400 Ashford Dunwoody Rd NE Atlanta, GA 30346",
-        "territory": "Georgia",
+        "territory": "US",
         "rooms": [
             {
                 "description": "Team Suite",
@@ -940,7 +940,7 @@
         "longitude": 42.347179,
         "latitude": -71.082466,
         "mailingAddress": "800 Boylston St Boston, MA 02199",
-        "territory": "Massachusetts",
+        "territory": "US",
         "rooms": [
             {
                 "description": "Single Suite",
@@ -1019,7 +1019,7 @@
         "longitude": 27.943701,
         "latitude": -82.537735,
         "mailingAddress": "5426 Bay Center Dr Tampa, FL 33609",
-        "territory": "Florida",
+        "territory": "US",
         "rooms": [
             {
                 "description": "Team Corner Office",
@@ -1098,7 +1098,7 @@
         "longitude": 30.40016,
         "latitude": -97.726486,
         "mailingAddress": "3309 Esperanza Xing Austin, TX 78758",
-        "territory": "Texas",
+        "territory": "US",
         "rooms": [
             {
                 "description": "Coworking Office",
@@ -1177,7 +1177,7 @@
         "longitude": 40.738651,
         "latitude": -74.003571,
         "mailingAddress": "8th Ave New York, NY 10014",
-        "territory": "New York",
+        "territory": "US",
         "rooms": [
             {
                 "description": "Pair Suite",
@@ -1274,7 +1274,7 @@
         "longitude": 42.336109,
         "latitude": -83.049103,
         "mailingAddress": "1555 Broadway St Detroit, MI 48226",
-        "territory": "Michigan",
+        "territory": "US",
         "rooms": [
             {
                 "description": "Pair Corner Office",
@@ -1344,7 +1344,7 @@
         "longitude": 30.004539,
         "latitude": -90.156708,
         "mailingAddress": "3301 Veterans Memorial Blvd Metairie, LA 70002",
-        "territory": "Louisiana",
+        "territory": "US",
         "rooms": [
             {
                 "description": "Coworking Corner Office",
@@ -1396,7 +1396,7 @@
         "longitude": 21.295841,
         "latitude": -157.846817,
         "mailingAddress": "1450 Ala Moana Blvd 2238 Ala Moana Ctr Honolulu, HI 96814",
-        "territory": "Hawaii",
+        "territory": "US",
         "rooms": [
             {
                 "description": "Team Office",
@@ -1466,7 +1466,7 @@
         "longitude": 42.36137,
         "latitude": -71.08123,
         "mailingAddress": "1 Memorial Dr Cambridge, MA 02142",
-        "territory": "Massachusetts",
+        "territory": "US",
         "rooms": [
             {
                 "description": "Single Corner Suite",
@@ -1545,7 +1545,7 @@
         "longitude": 37.242077,
         "latitude": -121.781952,
         "mailingAddress": "9 Great Oaks Blvd, San Jose, CA 95119",
-        "territory": "California",
+        "territory": "US",
         "rooms": [
             {
                 "description": "Single Corner Office",
@@ -1588,7 +1588,7 @@
         "longitude": 41.88951,
         "latitude": -87.62864,
         "mailingAddress": "20 W Kinzie St Chicago, IL 60654",
-        "territory": "Illinois",
+        "territory": "US",
         "rooms": [
             {
                 "description": "Single Corner Suite",
@@ -1631,7 +1631,7 @@
         "longitude": 43.616871,
         "latitude": -116.220711,
         "mailingAddress": "1649 Shoreline Dr Boise, ID 83702",
-        "territory": "Idaho",
+        "territory": "US",
         "rooms": [
             {
                 "description": "Pair Corner Suite",
@@ -1737,7 +1737,7 @@
         "longitude": 45.448959,
         "latitude": -122.782829,
         "mailingAddress": "9585 SW Washington Square Rd Portland, OR 97223",
-        "territory": "Oregon",
+        "territory": "US",
         "rooms": [
             {
                 "description": "Coworking Corner Office",
@@ -1780,7 +1780,7 @@
         "longitude": 40.756729,
         "latitude": -73.989792,
         "mailingAddress": "11 Times Sq New York, NY 10036",
-        "territory": "New York",
+        "territory": "US",
         "rooms": [
             {
                 "description": "Team Corner Suite",
@@ -1877,7 +1877,7 @@
         "longitude": 47.640656,
         "latitude": -122.126381,
         "mailingAddress": "16021 NE 36th Way Redmond, WA 98052",
-        "territory": "Washington",
+        "territory": "US",
         "rooms": [
             {
                 "description": "Single Corner Office",
@@ -1974,7 +1974,7 @@
         "longitude": 41.725285,
         "latitude": -72.761261,
         "mailingAddress": "1500 New Britain Ave West Hartford, CT 06110",
-        "territory": "Connecticut",
+        "territory": "US",
         "rooms": [
             {
                 "description": "Pair Office",
@@ -2017,7 +2017,7 @@
         "longitude": 47.644508,
         "latitude": -122.13694,
         "mailingAddress": "15255 NE 40th Redmond, WA 98052",
-        "territory": "Washington",
+        "territory": "US",
         "rooms": [
             {
                 "description": "Coworking Corner Suite",
@@ -2087,7 +2087,7 @@
         "longitude": 38.863659,
         "latitude": -77.060066,
         "mailingAddress": "1100 S Hayes St Arlington, VA 22202",
-        "territory": "Virginia",
+        "territory": "US",
         "rooms": [
             {
                 "description": "Team Corner Suite",
@@ -2121,7 +2121,7 @@
         "longitude": 37.362087,
         "latitude": -121.946564,
         "mailingAddress": "2045 Lafayette St Santa Clara, CA 95050",
-        "territory": "California",
+        "territory": "US",
         "rooms": [
             {
                 "description": "Team Corner Suite",
@@ -2200,7 +2200,7 @@
         "longitude": 38.67219,
         "latitude": -90.44081,
         "mailingAddress": "3 Cityplace Dr St. Louis, MO 63141",
-        "territory": "Missouri",
+        "territory": "US",
         "rooms": [
             {
                 "description": "Pair Corner Suite",
@@ -2252,7 +2252,7 @@
         "longitude": 37.415588,
         "latitude": -122.075577,
         "mailingAddress": "1288 Pear Ave Mountain View, CA 94043",
-        "territory": "California",
+        "territory": "US",
         "rooms": [
             {
                 "description": "Coworking Office",
@@ -2295,7 +2295,7 @@
         "longitude": 36.072445,
         "latitude": -95.889305,
         "mailingAddress": "7633 E 63rd Pl Tulsa, OK 74133",
-        "territory": "Oklahoma",
+        "territory": "US",
         "rooms": [
             {
                 "description": "Team Corner Office",
@@ -2329,7 +2329,7 @@
         "longitude": 33.503067,
         "latitude": -111.929405,
         "mailingAddress": "7014 E Camelback Rd Scottsdale, AZ 85251",
-        "territory": "Arizona",
+        "territory": "US",
         "rooms": [
             {
                 "description": "Team Office",
@@ -2363,7 +2363,7 @@
         "longitude": 38.90166,
         "latitude": -77.03241,
         "mailingAddress": "1401 I St NW Washington D.C., DC 20005",
-        "territory": "Washington D.C.",
+        "territory": "US",
         "rooms": [
             {
                 "description": "Single Suite",
@@ -2406,7 +2406,7 @@
         "longitude": 37.989769,
         "latitude": -84.527771,
         "mailingAddress": "3401 Nicholasville Rd Lexington, KY 40503",
-        "territory": "Kentucky",
+        "territory": "US",
         "rooms": [
             {
                 "description": "Pair Corner Office",
@@ -2485,7 +2485,7 @@
         "longitude": 37.792259,
         "latitude": -122.403481,
         "mailingAddress": "555 California St San Francisco, CA 94104",
-        "territory": "California",
+        "territory": "US",
         "rooms": [
             {
                 "description": "Coworking Corner Office",
@@ -2519,7 +2519,7 @@
         "longitude": 32.875282,
         "latitude": -117.206993,
         "mailingAddress": "9255 Towne Centre Dr San Diego, CA 92121",
-        "territory": "California",
+        "territory": "US",
         "rooms": [
             {
                 "description": "Coworking Suite",
@@ -2607,7 +2607,7 @@
         "longitude": 45.322392,
         "latitude": -122.770576,
         "mailingAddress": "9025 SW Hillman Ct Wilsonville, OR 97070",
-        "territory": "Oregon",
+        "territory": "US",
         "rooms": [
             {
                 "description": "Team Corner Office",
@@ -2686,7 +2686,7 @@
         "longitude": 47.61166,
         "latitude": -122.347771,
         "mailingAddress": "2211 Elliott Ave Seattle, WA 98121",
-        "territory": "Washington",
+        "territory": "US",
         "rooms": [
             {
                 "description": "Pair Suite",
@@ -2747,7 +2747,7 @@
         "longitude": 32.800762,
         "latitude": -96.819412,
         "mailingAddress": "1950 N Stemmons Fw Dallas, TX 75207",
-        "territory": "Texas",
+        "territory": "US",
         "rooms": [
             {
                 "description": "Team Corner Suite",
@@ -2826,7 +2826,7 @@
         "longitude": 47.61702,
         "latitude": -122.193008,
         "mailingAddress": "11025 NE 8th St Bellevue, WA 98004",
-        "territory": "Washington",
+        "territory": "US",
         "rooms": [
             {
                 "description": "Team Suite",
@@ -2860,7 +2860,7 @@
         "longitude": 25.689901,
         "latitude": -80.312546,
         "mailingAddress": "7535 Dadeland Mall Miami, FL 33156",
-        "territory": "Florida",
+        "territory": "US",
         "rooms": [
             {
                 "description": "Team Corner Office",
@@ -2957,7 +2957,7 @@
         "longitude": 46.814121,
         "latitude": -96.845932,
         "mailingAddress": "4000 Great Plains Dr Fargo, ND 58104",
-        "territory": "North Dakota",
+        "territory": "US",
         "rooms": [
             {
                 "description": "Pair Office",
@@ -2991,7 +2991,7 @@
         "longitude": 35.90416,
         "latitude": -78.940483,
         "mailingAddress": "6910 Fayetteville Rd Durham, NC 27713",
-        "territory": "North Carolina",
+        "territory": "US",
         "rooms": [
             {
                 "description": "Pair Office",
@@ -3052,7 +3052,7 @@
         "longitude": 40.760586,
         "latitude": -73.975403,
         "mailingAddress": "677 5th Ave New York, NY 10022",
-        "territory": "New York",
+        "territory": "US",
         "rooms": [
             {
                 "description": "Team Suite",
@@ -3095,7 +3095,7 @@
         "longitude": 45.531139,
         "latitude": -122.685928,
         "mailingAddress": "1414 NW Northrup St Portland, OR 97209",
-        "territory": "Oregon",
+        "territory": "US",
         "rooms": [
             {
                 "description": "Pair Corner Suite",
@@ -3138,7 +3138,7 @@
         "longitude": 47.616989,
         "latitude": -122.201195,
         "mailingAddress": "700 Bellevue Way Bellevue, WA 98004",
-        "territory": "Washington",
+        "territory": "US",
         "rooms": [
             {
                 "description": "Coworking Suite",

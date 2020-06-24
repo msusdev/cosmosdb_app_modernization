@@ -1,0 +1,88 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
+    "contentVersion": "1.0.0.0",
+    "variables": {
+        "storageAccountName": "[concat('stor', uniqueString(resourceGroup().id))]",
+        "cosmosAccountName": "[concat('csms', uniqueString(resourceGroup().id))]",
+        "appServicePlanName": "[concat('plan', uniqueString(resourceGroup().id))]",
+        "functionAppName": "[concat('func', uniqueString(resourceGroup().id))]"
+    },
+    "resources": [
+        {
+            "name": "[variables('functionAppName')]",
+            "type": "Microsoft.Web/sites",
+            "apiVersion": "2018-11-01",
+            "location": "[resourceGroup().location]",
+            "kind": "functionapp",
+            "properties": {
+                "serverFarmId": "[resourceId('Microsoft.Web/serverfarms', variables('appServicePlanName'))]",
+                "clientAffinityEnabled": false,
+                "siteConfig": {
+                    "alwaysOn": true,
+                    "appSettings": [
+                        {
+                            "name": "AzureWebJobsStorage",
+                            "value": "[concat('DefaultEndpointsProtocol=https;AccountName=', variables('storageAccountName'), ';AccountKey=', listKeys(resourceId('Microsoft.Storage/storageAccounts', variables('storageAccountName')), '2019-04-01').keys[0].value, ';')]"
+                        },
+                        {
+                            "name": "CosmosConnectionString",
+                            "value": "[concat('AccountEndpoint=https://', variables('cosmosAccountName'),'.documents.azure.com:443/;AccountKey=', listKeys(resourceId('Microsoft.DocumentDB/databaseAccounts', variables('cosmosAccountName')), '2019-08-01').primaryMasterKey, ';')]"
+                        },
+                        {
+                            "name": "FUNCTIONS_WORKER_RUNTIME",
+                            "value": "dotnet"
+                        },
+                        {
+                            "name": "FUNCTIONS_EXTENSION_VERSION",
+                            "value": "~3"
+                        }
+                    ],
+                    "linuxFxVersion": "dotnet|3.1"
+                }
+            },
+            "resources": [
+                {
+                    "apiVersion": "2018-02-01",
+                    "name": "all",
+                    "type": "functions",
+                    "dependsOn": [
+                        "[resourceId('Microsoft.Web/sites', variables('functionAppName'))]"
+                    ],
+                    "properties": {
+                        "config": {
+                            "bindings": [
+                                {
+                                    "name": "req",
+                                    "authLevel": "anonymous",
+                                    "methods": [
+                                        "get"
+                                    ],
+                                    "direction": "in",
+                                    "type": "httpTrigger",
+                                    "route": "getalllocations"
+                                },
+                                {
+                                    "name": "$return",
+                                    "type": "http",
+                                    "direction": "out"
+                                },
+                                {
+                                    "type": "cosmosDB",
+                                    "name": "docs",
+                                    "databaseName": "ContosoSpaces",
+                                    "collectionName": "Locations",
+                                    "connectionStringSetting": "CosmosConnectionString",
+                                    "direction": "in",
+                                    "sqlQuery": "SELECT * FROM locations"
+                                }
+                            ]
+                        },
+                        "files": {
+                            "run.csx": "using Microsoft.AspNetCore.Mvc;using System.Net;public static IActionResult Run(HttpRequest req,IEnumerable<dynamic>docs)=>new OkObjectResult(docs);"
+                        }
+                    }
+                }
+            ]
+        }
+    ]
+}

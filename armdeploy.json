@@ -16,8 +16,7 @@
         "cosmosContainerThroughput": "1000",
         "populateStorageContainerImage": "msusdev/contoso.spaces.populate.storage",
         "populateCosmosContainerImage": "msusdev/contoso.spaces.populate.cosmos",
-        "webContainerImage": "msusdev/contoso.spaces.web",
-        "functionContainerImage": "msusdev/contoso.spaces.api.cosmos"
+        "webContainerImage": "msusdev/contoso.spaces.web"
     },
     "resources": [
         {
@@ -192,15 +191,16 @@
             "type": "Microsoft.Web/sites",
             "apiVersion": "2018-11-01",
             "location": "[resourceGroup().location]",
+            "kind": "functionapp",
             "dependsOn": [
                 "[resourceId('Microsoft.DocumentDB/databaseAccounts', variables('cosmosAccountName'))]",
                 "[resourceId('Microsoft.DocumentDB/databaseAccounts/sqlDatabases', variables('cosmosAccountName'), variables('cosmosDatabaseName'))]",
                 "[resourceId('Microsoft.DocumentDB/databaseAccounts/sqlDatabases/containers', variables('cosmosAccountName'), variables('cosmosDatabaseName'), variables('cosmosContainerName'))]",
                 "[resourceId('Microsoft.ContainerInstance/containerGroups', variables('containerStorageInstanceName'))]",
                 "[resourceId('Microsoft.ContainerInstance/containerGroups', variables('containerCosmosInstanceName'))]",
+                "[resourceId('Microsoft.Storage/storageAccounts', variables('storageAccountName'))]",
                 "[resourceId('Microsoft.Web/serverfarms', variables('appServicePlanName'))]"
             ],
-            "kind": "functionapp",
             "properties": {
                 "serverFarmId": "[resourceId('Microsoft.Web/serverfarms', variables('appServicePlanName'))]",
                 "clientAffinityEnabled": false,
@@ -208,34 +208,151 @@
                     "alwaysOn": true,
                     "appSettings": [
                         {
-                            "name": "WEBSITES_ENABLE_APP_SERVICE_STORAGE",
-                            "value": "false"
-                        },
-                        {
-                            "name": "DOCKER_REGISTRY_SERVER_URL",
-                            "value": "https://index.docker.io"
-                        },
-                        {
                             "name": "AzureWebJobsStorage",
                             "value": "[concat('DefaultEndpointsProtocol=https;AccountName=', variables('storageAccountName'), ';AccountKey=', listKeys(resourceId('Microsoft.Storage/storageAccounts', variables('storageAccountName')), '2019-04-01').keys[0].value, ';')]"
                         },
                         {
-                            "name": "FUNCTIONS_EXTENSION_VERSION",
-                            "value": "~3"
-                        },
-                        {
-                            "name": "WEBSITE_NODE_DEFAULT_VERSION",
-                            "value": "10.14.1"
-                        },
-                        {
                             "name": "CosmosConnectionString",
                             "value": "[concat('AccountEndpoint=https://', variables('cosmosAccountName'),'.documents.azure.com:443/;AccountKey=', listKeys(resourceId('Microsoft.DocumentDB/databaseAccounts', variables('cosmosAccountName')), '2019-08-01').primaryMasterKey, ';')]"
+                        },
+                        {
+                            "name": "FUNCTIONS_WORKER_RUNTIME",
+                            "value": "dotnet"
+                        },
+                        {
+                            "name": "FUNCTIONS_EXTENSION_VERSION",
+                            "value": "~3"
                         }
                     ],
-                    "appCommandLine": "",
-                    "linuxFxVersion": "[concat('DOCKER|', variables('functionContainerImage'))]"
+                    "linuxFxVersion": "dotnet|3.1"
                 }
-            }
+            },
+            "resources": [
+                {
+                    "apiVersion": "2018-02-01",
+                    "name": "all",
+                    "type": "functions",
+                    "dependsOn": [
+                        "[resourceId('Microsoft.Web/sites', variables('functionAppName'))]"
+                    ],
+                    "properties": {
+                        "config": {
+                            "bindings": [
+                                {
+                                    "name": "req",
+                                    "authLevel": "anonymous",
+                                    "methods": [
+                                        "get"
+                                    ],
+                                    "direction": "in",
+                                    "type": "httpTrigger",
+                                    "route": "getalllocations"
+                                },
+                                {
+                                    "name": "$return",
+                                    "type": "http",
+                                    "direction": "out"
+                                },
+                                {
+                                    "type": "cosmosDB",
+                                    "name": "docs",
+                                    "databaseName": "ContosoSpaces",
+                                    "collectionName": "Locations",
+                                    "connectionStringSetting": "CosmosConnectionString",
+                                    "direction": "in",
+                                    "sqlQuery": "SELECT * FROM locations"
+                                }
+                            ]
+                        },
+                        "files": {
+                            "run.csx": "using Microsoft.AspNetCore.Mvc;using System.Net;public static IActionResult Run(HttpRequest req,IEnumerable<dynamic>docs)=>new OkObjectResult(docs);"
+                        }
+                    }
+                },
+                {
+                    "apiVersion": "2018-02-01",
+                    "name": "featured",
+                    "type": "functions",
+                    "dependsOn": [
+                        "[resourceId('Microsoft.Web/sites', variables('functionAppName'))]"
+                    ],
+                    "properties": {
+                        "config": {
+                            "bindings": [
+                                {
+                                    "name": "req",
+                                    "authLevel": "anonymous",
+                                    "methods": [
+                                        "get"
+                                    ],
+                                    "direction": "in",
+                                    "type": "httpTrigger",
+                                    "route": "getfeaturedlocations"
+                                },
+                                {
+                                    "name": "$return",
+                                    "type": "http",
+                                    "direction": "out"
+                                },
+                                {
+                                    "type": "cosmosDB",
+                                    "name": "docs",
+                                    "databaseName": "ContosoSpaces",
+                                    "collectionName": "Locations",
+                                    "connectionStringSetting": "CosmosConnectionString",
+                                    "direction": "in",
+                                    "sqlQuery": "SELECT TOP 4 * FROM locations l ORDER BY l.lastRenovationDate DESC"
+                                }
+                            ]
+                        },
+                        "files": {
+                            "run.csx": "using Microsoft.AspNetCore.Mvc;using System.Net;public static IActionResult Run(HttpRequest req,IEnumerable<dynamic>docs)=>new OkObjectResult(docs);"
+                        }
+                    }
+                },
+                {
+                    "apiVersion": "2018-02-01",
+                    "name": "all",
+                    "type": "functions",
+                    "dependsOn": [
+                        "[resourceId('Microsoft.Web/sites', variables('functionAppName'))]"
+                    ],
+                    "properties": {
+                        "config": {
+                            "bindings": [
+                                {
+                                    "name": "req",
+                                    "authLevel": "anonymous",
+                                    "methods": [
+                                        "get"
+                                    ],
+                                    "direction": "in",
+                                    "type": "httpTrigger",
+                                    "route": "specific/{id}"
+                                },
+                                {
+                                    "name": "$return",
+                                    "type": "http",
+                                    "direction": "out"
+                                },
+                                {
+                                    "type": "cosmosDB",
+                                    "name": "doc",
+                                    "databaseName": "ContosoSpaces",
+                                    "collectionName": "Locations",
+                                    "connectionStringSetting": "CosmosConnectionString",
+                                    "direction": "in",
+                                    "id": "{id}",
+                                    "partitionKey": "US"
+                                }
+                            ]
+                        },
+                        "files": {
+                            "run.csx": "using Microsoft.AspNetCore.Mvc;using System.Linq;using System.Net;public static IActionResult Run(HttpRequest req,dynamic doc)=>doc is null?new NotFoundResult():new OkObjectResult(doc)as IActionResult;"
+                        }
+                    }
+                }
+            ]
         },
         {
             "name": "[variables('appServicePlanName')]",

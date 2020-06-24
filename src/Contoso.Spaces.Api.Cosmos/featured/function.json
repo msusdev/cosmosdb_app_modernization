@@ -1,0 +1,28 @@
+{
+    "bindings": [
+        {
+            "name": "req",
+            "authLevel": "anonymous",
+            "methods": [
+                "get"
+            ],
+            "direction": "in",
+            "type": "httpTrigger",
+            "route": "getfeaturedlocations"
+        },
+        {
+            "name": "$return",
+            "type": "http",
+            "direction": "out"
+        },
+        {
+            "type": "cosmosDB",
+            "name": "docs",
+            "databaseName": "ContosoSpaces",
+            "collectionName": "Locations",
+            "connectionStringSetting": "CosmosConnectionString",
+            "direction": "in",
+            "sqlQuery": "SELECT TOP 4 * FROM locations l ORDER BY l.lastRenovationDate DESC"
+        }
+    ]
+}

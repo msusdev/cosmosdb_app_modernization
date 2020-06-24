@@ -1,0 +1,29 @@
+{
+    "bindings": [
+        {
+            "name": "req",
+            "authLevel": "anonymous",
+            "methods": [
+                "get"
+            ],
+            "direction": "in",
+            "type": "httpTrigger",
+            "route": "specific/{id}"
+        },
+        {
+            "name": "$return",
+            "type": "http",
+            "direction": "out"
+        },
+        {
+            "type": "cosmosDB",
+            "name": "doc",
+            "databaseName": "ContosoSpaces",
+            "collectionName": "Locations",
+            "connectionStringSetting": "CosmosConnectionString",
+            "direction": "in",
+            "id": "{id}",
+            "partitionKey": "US"
+        }
+    ]
+}
