@@ -85,7 +85,23 @@
                                 "options": {
                                     "throughput": "[variables('cosmosContainerThroughput')]"
                                 }
-                            }
+                            },
+                            "resources": [
+                                {
+                                    "type": "userDefinedFunctions",
+                                    "name": "addMandatoryFees",
+                                    "apiVersion": "2020-03-01",
+                                    "dependsOn": [ 
+                                        "[resourceId('Microsoft.DocumentDB/databaseAccounts/sqlDatabases/containers', variables('cosmosAccountName'), variables('cosmosDatabaseName'), variables('cosmosContainerName'))]" 
+                                    ],
+                                    "properties": {
+                                        "resource": {
+                                            "id": "addMandatoryFees",
+                                            "body": "addMandatoryFees(rate){return rate*1.25}"
+                                        }
+                                    }
+                                }
+                            ]
                         }
                     ]
                 }
