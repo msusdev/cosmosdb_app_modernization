@@ -139,3 +139,30 @@ Now it's time to write your code to replace the outdated SQL code.
 > [Hints](./hints/03-refactor/)
 
 > [Solution](./solutions/03-refactor/)
+
+## Challenge 4: Update the SQL query grammar
+
+In this challenge, you will add new functionality to the SQL query grammar that will allow you to manipulate values without changing the underlying data.
+
+The Contoso Spaces company has found out that they need to add a 25% assessment to any office space rentals. This was a recent change made by the local council and it goes into effect in a few days.
+
+Instead of taking on the arduous tax of changing the data, your team has decided to simply update their queries. The team was to update the query such that:
+
+- Only the **increased monthly rate** that includes the assessment is shown on the pages for each location
+- The original unassessed rate, should still be the date stored in the database
+- The query should use a programmatic feature of Azure Cosmos DB that stores the assesment factor
+- The team would like the ability to change the assessment factor at any time
+- The team will not commit to changing the source code for the web application
+
+## Validation
+
+To validate the change was applied successfully, the team will perform the following steps:
+
+- Open the Contoso Spaces website
+- Navigate to the "Mcglynn - Kunze Square" location (Location #1)
+- Observe the price of the **Pair Corner Office** room.
+- This price was originally ``$2,948.00`` but it should now be ``$3,685.00``.
+
+> [Hints](./hints/04-query/)
+
+> [Solution](./solutions/04-query/)

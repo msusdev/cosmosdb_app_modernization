@@ -140,6 +140,10 @@ public static IActionResult Run(HttpRequest req, dynamic doc)
     => doc is null ? new NotFoundResult() : new OkObjectResult(doc) as IActionResult;
 ```
 
+### Source Code
+
+You can [view the Gist](https://gist.github.com/seesharprun/95844afd94209b36a0503af57e6c6992#file-all-function-json) for the Function App .
+
 ### Final Configuration
 
 To wrap things up, make sure the application settings in your Web App point to the correct URLs for the functions and proxies on your Function App.
