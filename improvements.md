@@ -11,6 +11,8 @@
 
 ## Additional feedback
 
+- Add presentation deck with TTT notes
+- Add global distribution challenge
 - Cosmos DB backend for Spark (Change Feed)
   - How do we capture this in a challenge?
   - Materialized Views? other stuff that can only be done well in SQL API
