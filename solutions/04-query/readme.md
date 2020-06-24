@@ -26,39 +26,39 @@ You can then refer to this udf using the ``udf.getRoomsWithNewRate`` expression 
 Unfortunately, our base query is too simple:
 
 ```sql
-SELECT * FROM locations l WHERE l.id = '{id}'
+SELECT * FROM locations l WHERE l.id = {id}
 ```
 
 To make this work, we will need to expand the query so we can reference the ``monthlyRate`` property directly:
 
 ```sql
-SELECT VALUE {
-    "id": l.id,
-    "name": l.name,
-    "longitude": l.longitude,
-    "latitude": l.latitude,
-    "mailingAddress": l.mailingAddress,
-    "territory": l.territory,
-    "parkingIncluded": l.parkingIncluded,
-    "conferenceRoomsIncluded": l.conferenceRoomsIncluded,
-    "rooms": l.rooms
-} FROM locations l WHERE l.id = '{id}'
+SELECT
+    l.id,
+    l.name,
+    l.longitude,
+    l.latitude,
+    l.mailingAddress,
+    l.territory,
+    l.parkingIncluded,
+    l.conferenceRoomsIncluded,
+    l.rooms
+FROM locations l WHERE l.id = {id}
 ```
 
 Now, we can make use of the UDF:
 
 ```sql
-SELECT VALUE {
-    "id": l.id,
-    "name": l.name,
-    "longitude": l.longitude,
-    "latitude": l.latitude,
-    "mailingAddress": l.mailingAddress,
-    "territory": l.territory,
-    "parkingIncluded": l.parkingIncluded,
-    "conferenceRoomsIncluded": l.conferenceRoomsIncluded,
-    "rooms": udf.getRoomsWithRate(l.rooms)
-} FROM locations l WHERE l.id = '{id}'
+SELECT
+    l.id,
+    l.name,
+    l.longitude,
+    l.latitude,
+    l.mailingAddress,
+    l.territory,
+    l.parkingIncluded,
+    l.conferenceRoomsIncluded,
+    udf.getRoomsWithNewRate(l.rooms)
+FROM locations l WHERE l.id = {id}
 ```
 
 ## Deployment Template

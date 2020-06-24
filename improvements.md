@@ -20,3 +20,13 @@
 - Make data naturally git a single partition key for top 4 results
 - Change Id from int to string property in SQL (update EF Core)
   - <https://stackoverflow.com/questions/32983524/how-to-use-string-property-as-primary-key-in-entity-framework>
+
+
+## Challenge 3
+
+- Fix ARM Template
+- Fix Seed Document
+
+## Challenge 4
+
+- Fix ARM Template

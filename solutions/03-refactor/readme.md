@@ -119,25 +119,24 @@ You can then use that route parameter as part of the **cosmosDB** binding to get
 ```json
 {
     "type": "cosmosDB",
-    "name": "doc",
+    "name": "docs",
     "databaseName": "ContosoSpaces",
     "collectionName": "Locations",
     "connectionStringSetting": "CosmosConnectionString",
     "direction": "in",
-    "id": "{id}",
-    "partitionKey": "US"
+    "sqlQuery": "SELECT * FROM locations l WHERE l.id = {id}"
 }
 ```
 
-The code for this function is very trivial, it will get the resulting document. If it's null, return a **404 Not Found**. If it's not null, return a **200** with the document as the body of the response:
+The code for this function is very trivial, it will get the resulting single document. If it's null, return a **404 Not Found**. If it's not null, return a **200** with the document as the body of the response:
 
 ```cs
 using Microsoft.AspNetCore.Mvc;
 using System.Linq;
 using System.Net;
 
-public static IActionResult Run(HttpRequest req, dynamic doc)
-    => doc is null ? new NotFoundResult() : new OkObjectResult(doc) as IActionResult;
+public static IActionResult Run(HttpRequest req, IEnumerable<dynamic> docs)
+    => docs.SingleOrDefault() is null ? new NotFoundResult() : new OkObjectResult(docs.Single()) as IActionResult;
 ```
 
 ### Source Code
