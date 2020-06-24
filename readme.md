@@ -146,6 +146,8 @@ In this challenge, you will add new functionality to the SQL query grammar that 
 
 The Contoso Spaces company has found out that they need to add a 25% assessment to any office space rentals. This was a recent change made by the local council and it goes into effect in a few days.
 
+### Step A: Update Queries
+
 Instead of taking on the arduous tax of changing the data, your team has decided to simply update their queries. The team was to update the query such that:
 
 - Only the **increased monthly rate** that includes the assessment is shown on the pages for each location
@@ -166,3 +168,17 @@ To validate the change was applied successfully, the team will perform the follo
 > [Hints](./hints/04-query/)
 
 > [Solution](./solutions/04-query/)
+
+## Challenge 5: Add a Jupyter notebook
+
+In this challenge, you have decided that you'd like to create a single "pane of glass"
+
+### Step A: Create a Jupyter Notebook
+
+
+
+## Validation
+
+This challenge is open-ended so you are free to decide on your own validation terms.
+
+> [Hints](./hints/05-notebook/)
